@@ -1,3 +1,60 @@
 {
-  "extends": "next/core-web-vitals"
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "env": {
+    "es2021": true
+  },
+  "ignorePatterns": [
+    "/dist/"
+  ],
+  "overrides": [
+    {
+      "plugins": [
+        "jest"
+      ],
+      "files": [
+        "*.test.ts"
+      ],
+      "env": {
+        "jest": true
+      },
+      "extends": "plugin:jest/all"
+    }
+  ],
+  "parserOptions": {
+    "tsconfigRootDir": "./",
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.eslint.json"
+  },
+  "root": true,
+  "rules": {
+    "@typescript-eslint/consistent-type-imports": "error",
+    "react/react-in-jsx-scope": "off",
+    "import/consistent-type-specifier-style": [
+      "error",
+      "prefer-top-level"
+    ],
+    "@typescript-eslint/no-import-type-side-effects": "error",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.*",
+          "gulpfile.*js",
+          "*.config.*js",
+          "*.config.ts"
+        ]
+      }
+    ]
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "airbnb-typescript",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "prettier"
+  ]
 }

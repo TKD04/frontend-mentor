@@ -8,7 +8,8 @@
     "start": "next start",
     "update": "ncu -u && npm i",
     "lint": "eslint .",
-    "test": "jest"
+    "test": "jest",
+    "format": "prettier . --write"
   },
   "dependencies": {
     "next": "14.2.4",
@@ -39,6 +40,8 @@
     "jest-environment-jsdom": "^29.7.0",
     "npm-check-updates": "^16.14.20",
     "postcss": "^8",
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.6.4",
     "tailwindcss": "^3.4.1",
     "ts-jest": "^29.1.5",
     "typescript": "^5"

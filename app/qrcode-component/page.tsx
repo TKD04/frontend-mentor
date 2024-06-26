@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div
-      className={`${outfit.className} wrapper grid min-h-screen place-items-center`}
+      className={`${outfit.className} wrapper grid min-h-screen place-items-center text-gray-800`}
     >
       <div className="card w-72 space-y-4 rounded-lg p-4 shadow-md">
         <figure>

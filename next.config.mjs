@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  basePath: "/frontend-mentor",
-  output: "export",
-};
+const nextConfig =
+  process.env.NODE_ENV === "production"
+    ? {
+        basePath: "/frontend-mentor",
+        output: "export",
+      }
+    : {};
 
 export default nextConfig;

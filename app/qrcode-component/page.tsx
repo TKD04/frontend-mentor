@@ -17,7 +17,7 @@ export default function Page() {
     <div
       className={`${outfit.className} wrapper grid min-h-screen place-items-center`}
     >
-      <div className="card w-72 space-y-4 rounded-lg p-4 shadow-sm">
+      <div className="card w-72 space-y-4 rounded-lg p-4 shadow-md">
         <figure>
           <Image
             height={576}

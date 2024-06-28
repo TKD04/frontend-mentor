@@ -13,10 +13,6 @@
   box-shadow: var(--black) 8px 8px 0;
 }
 
-.card h1 {
-  cursor: pointer;
-}
-
 .card h1:hover {
   color: var(--yellow);
 }

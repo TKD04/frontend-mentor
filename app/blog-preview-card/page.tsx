@@ -36,7 +36,9 @@ export default function Page() {
             </span>
             <div>Published 21 Dec 2023</div>
           </div>
-          <h1 className="text-2xl font-bold">HTML & CSS foundations</h1>
+          <h1 className="cursor-pointer text-2xl font-bold">
+            HTML & CSS foundations
+          </h1>
           <p>
             These languages are the backbone of every website, defining
             structure, content, and presentation.

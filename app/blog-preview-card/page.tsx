@@ -31,7 +31,7 @@ export default function Page() {
         </figure>
         <div className="card__body space-y-4">
           <div className="space-y-3 text-sm">
-            <span className="card__tag rounded px-2 py-1 font-bold">
+            <span className="card__tag rounded px-3 py-1.5 font-bold">
               Learning
             </span>
             <div>Published 21 Dec 2023</div>

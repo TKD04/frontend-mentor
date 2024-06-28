@@ -19,7 +19,7 @@ export default function Page() {
     <main
       className={`${figtree.className} wrapper grid min-h-screen place-items-center p-4 text-gray-800`}
     >
-      <div className="card w-96 space-y-6 rounded-2xl border bg-white p-5">
+      <div className="card w-96 space-y-6 rounded-2xl border p-5">
         <figure>
           <Image
             width={336}

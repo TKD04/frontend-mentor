@@ -30,9 +30,9 @@ export default function Page() {
           />
         </figure>
         <div className="card-body space-y-4 pb-4 text-center">
-          <h2 className="text-xl font-bold">
+          <h1 className="text-xl font-bold">
             Improve your front-end skills by building projects
-          </h2>
+          </h1>
           <p>
             Scan the QR code to visit Frontend Mentor and take your coding
             skills to the next level

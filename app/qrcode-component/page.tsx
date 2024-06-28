@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div
+    <main
       className={`${outfit.className} wrapper grid min-h-screen place-items-center text-gray-800`}
     >
       <div className="card w-80 space-y-4 rounded-lg p-4 shadow-md">
@@ -39,6 +39,6 @@ export default function Page() {
           </p>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

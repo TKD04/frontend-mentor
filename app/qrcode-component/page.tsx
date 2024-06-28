@@ -29,7 +29,7 @@ export default function Page() {
             className="w-full rounded-lg object-contain"
           />
         </figure>
-        <div className="card__body space-y-4 pb-4 text-center">
+        <div className="card__body space-y-4 p-3 pb-5 text-center">
           <h1 className="text-xl font-bold">
             Improve your front-end skills by building projects
           </h1>

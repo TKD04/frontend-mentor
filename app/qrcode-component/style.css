@@ -10,11 +10,11 @@
   background-color: var(--white);
 }
 
-.card-body h2 {
+.card__body h2 {
   color: var(--darkblue);
 }
 
-.card-body p {
+.card__body p {
   font-size: 15px;
   color: var(--grayishblue);
 }

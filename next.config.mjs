@@ -1,13 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfigDev = {};
+const isProd = process.env.NODE_ENV === "production";
 
 /** @type {import('next').NextConfig} */
-const nextCofnigProduction = {
-  basePath: "/frontend-mentor",
-  output: "export",
-};
+const nextCofnig = isProd
+  ? {
+      basePath: "/frontend-mentor",
+      output: "export",
+    }
+  : {};
 
-// Because there is not "process" environment variable on GitHub Action.
-export default typeof process === "undefined"
-  ? nextCofnigProduction
-  : nextConfigDev;
+export default nextCofnig;

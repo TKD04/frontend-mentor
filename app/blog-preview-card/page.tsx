@@ -47,7 +47,7 @@ export default function Page() {
                 width={64}
                 height={65}
                 src={`${BASE_PATH}/blog-preview-card/image-avatar.webp`}
-                alt="User's avatar"
+                alt="Greg Hooper avatar"
                 className="aspect-square w-8"
               />
             </figure>

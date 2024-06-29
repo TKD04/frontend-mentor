@@ -24,7 +24,7 @@ export default function Page() {
           <Image
             height={576}
             width={576}
-            src={`${BASE_PATH}/qrcode-component/image-qr-code.png`}
+            src={`${BASE_PATH}/qr-code-component/image-qr-code.png`}
             alt="QR Code"
             className="w-full rounded-lg object-contain"
           />

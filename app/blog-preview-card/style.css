@@ -10,7 +10,7 @@
   background-color: var(--white);
   color: var(--black);
   border-color: var(--black);
-  box-shadow: var(--black) 8px 8px 0;
+  box-shadow: 8px 8px 0 var(--black);
 }
 
 .card h1:hover {

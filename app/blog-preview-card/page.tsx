@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main
-      className={`${figtree.className} wrapper grid min-h-screen place-items-center p-4 text-gray-800`}
+      className={`${figtree.className} wrapper grid min-h-screen place-items-center p-6 text-gray-800`}
     >
       <article className="card w-96 space-y-6 rounded-2xl border p-5">
         <figure>

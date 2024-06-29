@@ -15,6 +15,6 @@
 }
 
 .card__body p {
-  font-size: 15px;
   color: var(--grayishblue);
+  font-size: 15px;
 }

@@ -10,7 +10,7 @@ const outfit = Outfit({ subsets: ["latin"], weight: ["400", "700"] });
 export const metadata: Metadata = {
   title: "Frontend Mentor | QR Code component",
   icons: {
-    icon: "/qrcode-component/favicon-32x32.png",
+    icon: "/qr-code-component/favicon-32x32.png",
   },
 };
 

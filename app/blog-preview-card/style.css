@@ -11,6 +11,15 @@
   color: var(--black);
   border-color: var(--black);
   box-shadow: 8px 8px 0 var(--black);
+  pointer-events: none;
+}
+
+.card:hover {
+  box-shadow: 16px 16px 0 var(--black);
+}
+
+.card h1 {
+  pointer-events: auto;
 }
 
 .card h1:hover {

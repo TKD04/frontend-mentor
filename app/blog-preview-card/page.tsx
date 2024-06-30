@@ -26,7 +26,7 @@ export default function Page() {
             width={336}
             height={201}
             src={`${BASE_PATH}/blog-preview-card/illustration-article.svg`}
-            alt="Illustration article"
+            alt="Picture of illustration article"
             className="w-full rounded-xl object-contain"
           />
         </figure>
@@ -48,7 +48,7 @@ export default function Page() {
             <figure>
               <Image
                 src={authorAvatarPic}
-                alt="Greg Hooper avatar"
+                alt="Picture of author's avatar"
                 placeholder="blur"
                 className="aspect-square w-8"
               />

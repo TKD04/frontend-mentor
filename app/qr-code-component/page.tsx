@@ -24,7 +24,7 @@ export default function Page() {
           alt="QR Code"
           placeholder="blur"
           priority
-          className="w-full rounded-lg"
+          className="h-auto w-full rounded-lg"
         />
         <div className="space-y-4 p-3 pb-5 text-center">
           <h1 className="text-xl font-bold text-[var(--darkblue)]">

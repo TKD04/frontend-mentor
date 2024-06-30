@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main
-      className={`${outfit.className} wrapper grid min-h-screen place-items-center bg-[var(--lightgray)] p-4 text-gray-800`}
+      className={`${outfit.className} grid min-h-screen place-items-center bg-[var(--lightgray)] p-4 text-gray-800`}
     >
       <div className="w-80 space-y-2 rounded-2xl bg-[var(--white)] p-4 shadow">
         <figure>

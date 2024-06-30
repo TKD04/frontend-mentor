@@ -1,4 +1,5 @@
 import nextCofnig from "@/next.config.mjs";
+import authorAvatarPic from "@/public/blog-preview-card/image-avatar.webp";
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import Image from "next/image";
@@ -46,10 +47,9 @@ export default function Page() {
           <div className="flex flex-row items-center gap-3 pb-1 text-sm">
             <figure>
               <Image
-                width={64}
-                height={65}
-                src={`${BASE_PATH}/blog-preview-card/image-avatar.webp`}
+                src={authorAvatarPic}
                 alt="Greg Hooper avatar"
+                placeholder="blur"
                 className="aspect-square w-8"
               />
             </figure>

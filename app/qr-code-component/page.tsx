@@ -1,10 +1,9 @@
-import nextConfig from "@/next.config.mjs";
+import qrCodePic from "@/public/qr-code-component/image-qr-code.png";
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import Image from "next/image";
 import "./style.css";
 
-const BASE_PATH = nextConfig.basePath ?? "";
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
@@ -22,10 +21,10 @@ export default function Page() {
       <div className="card w-80 space-y-2 rounded-2xl p-4 shadow">
         <figure>
           <Image
-            height={576}
-            width={576}
-            src={`${BASE_PATH}/qr-code-component/image-qr-code.png`}
+            src={qrCodePic}
             alt="QR Code"
+            placeholder="blur"
+            priority
             className="w-full rounded-lg object-contain"
           />
         </figure>

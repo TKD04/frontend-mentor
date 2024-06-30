@@ -16,9 +16,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main
-      className={`${outfit.className} wrapper grid min-h-screen place-items-center p-4 text-gray-800`}
+      className={`${outfit.className} wrapper grid min-h-screen place-items-center bg-[var(--lightgray)] p-4 text-gray-800`}
     >
-      <div className="card w-80 space-y-2 rounded-2xl p-4 shadow">
+      <div className="w-80 space-y-2 rounded-2xl bg-[var(--white)] p-4 shadow">
         <figure>
           <Image
             src={qrCodePic}
@@ -28,11 +28,11 @@ export default function Page() {
             className="w-full rounded-lg object-contain"
           />
         </figure>
-        <div className="card__body space-y-4 p-3 pb-5 text-center">
-          <h1 className="text-xl font-bold">
+        <div className="space-y-4 p-3 pb-5 text-center">
+          <h1 className="text-xl font-bold text-[var(--darkblue)]">
             Improve your front-end skills by building projects
           </h1>
-          <p>
+          <p className="text-[15px] text-[var(--grayishblue)]">
             Scan the QR code to visit Frontend Mentor and take your coding
             skills to the next level
           </p>

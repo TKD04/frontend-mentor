@@ -3,18 +3,4 @@
   --lightgray: hsl(212, 45%, 89%);
   --grayishblue: hsl(220, 15%, 55%);
   --darkblue: hsl(218, 44%, 22%);
-  background-color: var(--lightgray);
-}
-
-.card {
-  background-color: var(--white);
-}
-
-.card__body h2 {
-  color: var(--darkblue);
-}
-
-.card__body p {
-  color: var(--grayishblue);
-  font-size: 15px;
 }

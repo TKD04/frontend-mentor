@@ -32,7 +32,7 @@ export default function Page() {
           <h1 className="text-xl font-bold text-[var(--darkblue)]">
             Improve your front-end skills by building projects
           </h1>
-          <p className="text-[15px] text-[var(--grayishblue)]">
+          <p className="text-[15px] font-normal text-[var(--grayishblue)]">
             Scan the QR code to visit Frontend Mentor and take your coding
             skills to the next level
           </p>

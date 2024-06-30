@@ -32,15 +32,15 @@ export default function Page() {
         </figure>
         <div className="card__body space-y-4">
           <div className="space-y-3 text-sm">
-            <span className="card__tag rounded bg-[var(--yellow)] px-3 py-1.5 font-bold">
+            <span className="card__tag rounded bg-[var(--yellow)] px-3 py-1.5 font-extrabold">
               Learning
             </span>
             <div>Published 21 Dec 2023</div>
           </div>
-          <h1 className="pointer-events-auto cursor-pointer text-2xl font-bold hover:text-[var(--yellow)]">
+          <h1 className="pointer-events-auto cursor-pointer text-2xl font-extrabold hover:text-[var(--yellow)]">
             HTML & CSS foundations
           </h1>
-          <p className="text-base text-[var(--gray)]">
+          <p className="text-base font-medium text-[var(--gray)]">
             These languages are the backbone of every website, defining
             structure, content, and presentation.
           </p>
@@ -53,7 +53,7 @@ export default function Page() {
                 className="aspect-square w-8"
               />
             </figure>
-            <span className="font-bold">Greg Hooper</span>
+            <span className="font-extrabold">Greg Hooper</span>
           </div>
         </div>
       </article>

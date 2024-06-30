@@ -27,7 +27,7 @@ export default function Page() {
             height={201}
             src={`${BASE_PATH}/blog-preview-card/illustration-article.svg`}
             alt="Picture of illustration article"
-            className="w-full rounded-xl object-contain"
+            className="w-full rounded-xl"
           />
         </figure>
         <div className="card__body space-y-4">

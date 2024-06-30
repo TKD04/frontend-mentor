@@ -25,7 +25,7 @@ export default function Page() {
             alt="QR Code"
             placeholder="blur"
             priority
-            className="w-full rounded-lg object-contain"
+            className="w-full rounded-lg"
           />
         </figure>
         <div className="space-y-4 p-3 pb-5 text-center">

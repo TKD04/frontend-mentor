@@ -19,15 +19,13 @@ export default function Page() {
       className={`${outfit.className} grid min-h-screen place-items-center bg-[var(--lightgray)] p-4 text-gray-800`}
     >
       <div className="w-80 space-y-2 rounded-2xl bg-[var(--white)] p-4 shadow">
-        <figure>
-          <Image
-            src={qrCodePic}
-            alt="QR Code"
-            placeholder="blur"
-            priority
-            className="w-full rounded-lg"
-          />
-        </figure>
+        <Image
+          src={qrCodePic}
+          alt="QR Code"
+          placeholder="blur"
+          priority
+          className="w-full rounded-lg"
+        />
         <div className="space-y-4 p-3 pb-5 text-center">
           <h1 className="text-xl font-bold text-[var(--darkblue)]">
             Improve your front-end skills by building projects

@@ -21,7 +21,7 @@ export default function Page() {
     <main
       className={`${figtree.className} grid min-h-screen place-items-center bg-[var(--yellow)] p-6 font-medium text-gray-800`}
     >
-      <article className="pointer-events-none flex w-full max-w-96 flex-col gap-6 rounded-2xl border border-[var(--black)] bg-[var(--white)] p-6 shadow-[8px_8px_0_0_var(--black)] hover:shadow-[16px_16px_0_0_var(--black)]">
+      <article className="pointer-events-none flex w-full max-w-96 flex-col gap-6 rounded-2xl border border-[var(--black)] bg-[var(--white)] p-6 shadow-[8px_8px_0_0_var(--black)] transition-shadow hover:shadow-[16px_16px_0_0_var(--black)]">
         <Image
           width={336}
           height={201}
@@ -38,7 +38,7 @@ export default function Page() {
             </span>
             <span>Published 21 Dec 2023</span>
           </div>
-          <h1 className="pointer-events-auto cursor-pointer text-2xl font-extrabold hover:text-[var(--yellow)]">
+          <h1 className="pointer-events-auto cursor-pointer text-2xl font-extrabold transition-colors hover:text-[var(--yellow)]">
             <Link href="/blog-preview-card">HTML & CSS foundations</Link>
           </h1>
           <p className="text-base font-medium text-[var(--grey)]">

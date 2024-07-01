@@ -51,7 +51,7 @@ export default function Page() {
                 alt="Picture of author's avatar"
                 loading="eager"
                 placeholder="blur"
-                className="aspect-square w-8"
+                className="aspect-square w-8 rounded-full"
               />
             </figure>
             <span className="font-extrabold">Greg Hooper</span>

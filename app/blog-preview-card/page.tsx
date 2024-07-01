@@ -41,7 +41,7 @@ export default function Page() {
           <h1 className="pointer-events-auto cursor-pointer text-xl font-extrabold transition-colors hover:text-[var(--yellow)] md:text-2xl">
             <Link href="/blog-preview-card">HTML & CSS foundations</Link>
           </h1>
-          <p className="font-medium text-[var(--grey)]">
+          <p className="text-[var(--grey)]">
             These languages are the backbone of every website, defining
             structure, content, and presentation.
           </p>
@@ -53,9 +53,7 @@ export default function Page() {
               placeholder="blur"
               className="aspect-square w-8 rounded-full"
             />
-            <span className="font-extrabold">
-              Greg Hooper
-            </span>
+            <span className="font-extrabold">Greg Hooper</span>
           </div>
         </div>
       </article>

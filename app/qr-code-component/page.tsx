@@ -31,7 +31,7 @@ export default function Page() {
           <h1 className="text-[1.4rem] font-bold leading-7 text-[var(--darkblue)]">
             Improve your front-end skills by building projects
           </h1>
-          <p className="text-[15px] font-normal text-[var(--grayishblue)]">
+          <p className="text-[15px] font-normal leading-5 text-[var(--grayishblue)]">
             Scan the QR code to visit Frontend Mentor and take your coding
             skills to the next level
           </p>

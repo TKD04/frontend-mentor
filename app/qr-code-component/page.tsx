@@ -22,6 +22,7 @@ export default function Page() {
         <Image
           src={qrCodePic}
           alt="QR Code"
+          loading="eager"
           placeholder="blur"
           priority
           className="h-auto w-full rounded-lg"

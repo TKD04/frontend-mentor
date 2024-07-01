@@ -26,6 +26,7 @@ export default function Page() {
           height={201}
           src={`${BASE_PATH}/blog-preview-card/illustration-article.svg`}
           alt="Picture of illustration article"
+          loading="eager"
           priority
           className="h-auto w-full rounded-xl"
         />
@@ -48,6 +49,7 @@ export default function Page() {
               <Image
                 src={authorAvatarPic}
                 alt="Picture of author's avatar"
+                loading="eager"
                 placeholder="blur"
                 className="aspect-square w-8"
               />

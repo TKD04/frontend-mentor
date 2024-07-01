@@ -27,6 +27,7 @@ export default function Page() {
             src={userAvatarPic}
             alt="Picture of user's avatar"
             loading="eager"
+            placeholder="blur"
             priority
             className="mb-6 h-[5.5rem] w-[5.5rem] rounded-full"
           />

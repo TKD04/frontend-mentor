@@ -3,13 +3,15 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import Image from "next/image";
 import "./style.css";
+import nextCofnig from "@/next.config.mjs";
 
+const BASE_PATH = nextCofnig.basePath ?? "";
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: "Frontend Mentor | QR Code component",
   icons: {
-    icon: "/qr-code-component/favicon-32x32.png",
+    icon: `${BASE_PATH}/qr-code-component/favicon-32x32.png`,
   },
 };
 

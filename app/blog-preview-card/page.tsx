@@ -12,7 +12,7 @@ const figtree = Figtree({ subsets: ["latin"], weight: ["500", "800"] });
 export const metadata: Metadata = {
   title: "Frontend Mentor | Blog preview card",
   icons: {
-    icon: "/blog-preview-card/favicon-32x32.png",
+    icon: `${BASE_PATH}/blog-preview-card/favicon-32x32.png`,
   },
 };
 
@@ -53,7 +53,7 @@ export default function Page() {
               alt="Picture of author's avatar"
               loading="eager"
               placeholder="blur"
-              className="aspect-square w-8 rounded-full"
+              className="h-8 w-8 rounded-full"
             />
             <span className="text-xs font-extrabold md:text-sm">
               Greg Hooper

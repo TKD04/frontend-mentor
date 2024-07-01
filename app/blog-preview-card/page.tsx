@@ -31,7 +31,7 @@ export default function Page() {
           priority
           className="h-auto w-full rounded-xl"
         />
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-4">
           <div className="flex flex-col items-start gap-3">
             <span className="rounded bg-[var(--yellow)] px-3 py-1.5 text-xs font-extrabold md:text-sm">
               Learning
@@ -47,7 +47,7 @@ export default function Page() {
             These languages are the backbone of every website, defining
             structure, content, and presentation.
           </p>
-          <div className="mt-3 flex flex-row items-center gap-3">
+          <div className="mt-2 flex flex-row items-center gap-3">
             <Image
               src={authorAvatarPic}
               alt="Picture of author's avatar"

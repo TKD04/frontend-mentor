@@ -21,7 +21,7 @@ export default function Page() {
     <main
       className={`${figtree.className} grid min-h-screen place-items-center bg-[var(--yellow)] p-6 font-medium text-gray-800`}
     >
-      <article className="pointer-events-none flex w-full max-w-96 flex-col gap-6 rounded-2xl border border-[var(--black)] bg-[var(--white)] p-6 shadow-[8px_8px_0_0_var(--black)] transition-shadow hover:shadow-[16px_16px_0_0_var(--black)]">
+      <article className="pointer-events-none flex w-full max-w-[20.5rem] flex-col gap-6 rounded-2xl border border-[var(--black)] bg-[var(--white)] p-6 shadow-[8px_8px_0_0_var(--black)] transition-shadow hover:shadow-[16px_16px_0_0_var(--black)] md:max-w-96">
         <Image
           width={336}
           height={201}
@@ -31,21 +31,21 @@ export default function Page() {
           priority
           className="h-auto w-full rounded-xl"
         />
-        <div className="flex flex-col gap-3">
-          <div className="flex flex-col items-start gap-3 text-sm">
+        <div className="flex flex-col gap-3 text-sm md:text-base">
+          <div className="flex flex-col items-start gap-3 text-xs md:text-sm">
             <span className="rounded bg-[var(--yellow)] px-3 py-1.5 font-extrabold">
               Learning
             </span>
             <span>Published 21 Dec 2023</span>
           </div>
-          <h1 className="pointer-events-auto cursor-pointer text-2xl font-extrabold transition-colors hover:text-[var(--yellow)]">
+          <h1 className="pointer-events-auto cursor-pointer text-xl font-extrabold transition-colors hover:text-[var(--yellow)] md:text-2xl">
             <Link href="/blog-preview-card">HTML & CSS foundations</Link>
           </h1>
-          <p className="text-base font-medium text-[var(--grey)]">
+          <p className="font-medium text-[var(--grey)]">
             These languages are the backbone of every website, defining
             structure, content, and presentation.
           </p>
-          <div className="mt-3 flex flex-row items-center gap-3 text-sm">
+          <div className="mt-3 flex flex-row items-center gap-3">
             <Image
               src={authorAvatarPic}
               alt="Picture of author's avatar"
@@ -53,7 +53,9 @@ export default function Page() {
               placeholder="blur"
               className="aspect-square w-8 rounded-full"
             />
-            <span className="font-extrabold">Greg Hooper</span>
+            <span className="font-extrabold">
+              Greg Hooper
+            </span>
           </div>
         </div>
       </article>

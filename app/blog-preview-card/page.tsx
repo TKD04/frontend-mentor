@@ -40,7 +40,7 @@ export default function Page() {
               Published 21 Dec 2023
             </span>
           </div>
-          <h1 className="pointer-events-auto cursor-pointer text-xl font-extrabold transition-colors hover:text-[var(--yellow)] md:text-2xl">
+          <h1 className="pointer-events-auto text-xl font-extrabold transition-colors hover:text-[var(--yellow)] md:text-2xl">
             <Link href="/blog-preview-card">HTML & CSS foundations</Link>
           </h1>
           <p className="text-sm font-medium text-[var(--grey)] md:text-base">

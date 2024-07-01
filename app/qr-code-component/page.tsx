@@ -18,7 +18,7 @@ export default function Page() {
     <main
       className={`${outfit.className} grid min-h-screen place-items-center bg-[var(--lightgray)] p-4 text-gray-800`}
     >
-      <div className="w-80 space-y-2 rounded-2xl bg-[var(--white)] p-4 shadow">
+      <div className="w-80 space-y-2 rounded-2xl bg-[var(--white)] p-4 shadow-[0_28px_32px_0_rgba(0,0,0,0.08)]">
         <Image
           src={qrCodePic}
           alt="QR Code"

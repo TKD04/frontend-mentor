@@ -6,8 +6,35 @@ import Image from "next/image";
 import Link from "next/link";
 import "./style.css";
 
+type SocialSiteLink = {
+  siteName: string;
+  url: string;
+};
+
 const BASE_PATH = nextCofnig.basePath ?? "";
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"] });
+const socialSiteLinks: SocialSiteLink[] = [
+  {
+    siteName: "GitHub",
+    url: "https://github.com/",
+  },
+  {
+    siteName: "Frontend Mentor",
+    url: "https://www.frontendmentor.io/",
+  },
+  {
+    siteName: "LinkedIn",
+    url: "https://www.linkedin.com/",
+  },
+  {
+    siteName: "Twitter",
+    url: "https://x.com/",
+  },
+  {
+    siteName: "Instagram",
+    url: "https://www.instagram.com/",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Frontend Mentor | Social links profile",
@@ -40,41 +67,15 @@ export default function Page() {
           </p>
         </div>
         <ul className="flex flex-col gap-4 text-center">
-          <li>
-            <Link href="https://github.com/">
-              <div className="rounded-lg bg-[var(--grey)] py-3 text-sm font-semibold transition-colors hover:bg-[var(--green)] hover:text-[var(--darkgrey)]">
-                GitHub
-              </div>
-            </Link>
-          </li>
-          <li>
-            <Link href="https://www.frontendmentor.io/">
-              <div className="rounded-lg bg-[var(--grey)] py-3 text-sm font-semibold transition-colors hover:bg-[var(--green)] hover:text-[var(--darkgrey)]">
-                Frontend Mentor
-              </div>
-            </Link>
-          </li>
-          <li>
-            <Link href="https://www.linkedin.com/">
-              <div className="rounded-lg bg-[var(--grey)] py-3 text-sm font-semibold transition-colors hover:bg-[var(--green)] hover:text-[var(--darkgrey)]">
-                LinkedIn
-              </div>
-            </Link>
-          </li>
-          <li>
-            <Link href="https://x.com/">
-              <div className="rounded-lg bg-[var(--grey)] py-3 text-sm font-semibold transition-colors hover:bg-[var(--green)] hover:text-[var(--darkgrey)]">
-                Twitter
-              </div>
-            </Link>
-          </li>
-          <li>
-            <Link href="https://www.instagram.com/">
-              <div className="rounded-lg bg-[var(--grey)] py-3 text-sm font-semibold transition-colors hover:bg-[var(--green)] hover:text-[var(--darkgrey)]">
-                Instagram
-              </div>
-            </Link>
-          </li>
+          {socialSiteLinks.map((socialSiteLink) => (
+            <li key={socialSiteLink.siteName}>
+              <Link href={socialSiteLink.url}>
+                <div className="rounded-lg bg-[var(--grey)] py-3 text-sm font-semibold transition-colors hover:bg-[var(--green)] hover:text-[var(--darkgrey)]">
+                  {socialSiteLink.siteName}
+                </div>
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </main>

@@ -18,7 +18,7 @@ export default function Page() {
     <main
       className={`${outfit.className} grid min-h-screen place-items-center bg-[var(--lightgray)] p-4 text-gray-800`}
     >
-      <div className="w-full max-w-80 space-y-2 rounded-2xl bg-[var(--white)] p-4 shadow-[0_28px_32px_0_rgba(0,0,0,0.08)]">
+      <div className="flex w-full max-w-80 flex-col gap-6 rounded-2xl bg-[var(--white)] p-4 shadow-[0_28px_32px_0_rgba(0,0,0,0.08)]">
         <Image
           src={qrCodePic}
           alt="QR Code"
@@ -27,7 +27,7 @@ export default function Page() {
           priority
           className="h-auto w-full rounded-lg"
         />
-        <div className="space-y-4 p-3 pb-5 text-center">
+        <div className="mb-6 flex flex-col gap-3 px-3 text-center">
           <h1 className="text-[1.4rem] font-bold leading-7 text-[var(--darkblue)]">
             Improve your front-end skills by building projects
           </h1>

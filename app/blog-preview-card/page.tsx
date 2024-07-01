@@ -3,6 +3,7 @@ import authorAvatarPic from "@/public/blog-preview-card/image-avatar.webp";
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 import "./style.css";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
@@ -38,7 +39,7 @@ export default function Page() {
             <span>Published 21 Dec 2023</span>
           </div>
           <h1 className="pointer-events-auto cursor-pointer text-2xl font-extrabold hover:text-[var(--yellow)]">
-            HTML & CSS foundations
+            <Link href="/blog-preview-card">HTML & CSS foundations</Link>
           </h1>
           <p className="text-base font-medium text-[var(--grey)]">
             These languages are the backbone of every website, defining

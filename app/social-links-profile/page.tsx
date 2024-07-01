@@ -30,7 +30,7 @@ export default function Page() {
             priority
             className="mb-6 h-[5.5rem] w-[5.5rem] rounded-full"
           />
-          <span className="mb-2 text-2xl font-semibold">Jessica Randall</span>
+          <h1 className="mb-2 text-2xl font-semibold">Jessica Randall</h1>
           <span className="mb-6 text-sm font-semibold text-[var(--green)]">
             London, United Kingdom
           </span>

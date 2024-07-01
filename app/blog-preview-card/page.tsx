@@ -40,7 +40,7 @@ export default function Page() {
           <h1 className="pointer-events-auto cursor-pointer text-2xl font-extrabold hover:text-[var(--yellow)]">
             HTML & CSS foundations
           </h1>
-          <p className="text-base font-medium text-[var(--gray)]">
+          <p className="text-base font-medium text-[var(--grey)]">
             These languages are the backbone of every website, defining
             structure, content, and presentation.
           </p>

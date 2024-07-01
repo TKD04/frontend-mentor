@@ -28,7 +28,7 @@ export default function Page() {
           className="h-auto w-full rounded-lg"
         />
         <div className="space-y-4 p-3 pb-5 text-center">
-          <h1 className="text-xl font-bold text-[var(--darkblue)]">
+          <h1 className="text-[1.4rem] font-bold leading-7 text-[var(--darkblue)]">
             Improve your front-end skills by building projects
           </h1>
           <p className="text-[15px] font-normal text-[var(--grayishblue)]">

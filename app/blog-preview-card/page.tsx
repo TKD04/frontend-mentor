@@ -21,7 +21,7 @@ export default function Page() {
     <main
       className={`${figtree.className} grid min-h-screen place-items-center bg-[var(--yellow)] p-6 text-gray-800`}
     >
-      <article className="pointer-events-none flex w-full max-w-[20.5rem] flex-col gap-6 rounded-2xl border border-[var(--black)] bg-[var(--white)] p-6 shadow-[8px_8px_0_0_var(--black)] transition-shadow hover:shadow-[16px_16px_0_0_var(--black)] md:max-w-96">
+      <article className="pointer-events-none flex w-full max-w-[20.5rem] flex-col gap-6 rounded-3xl border border-[var(--black)] bg-[var(--white)] p-6 shadow-[8px_8px_0_0_var(--black)] transition-shadow hover:shadow-[16px_16px_0_0_var(--black)] md:max-w-96">
         <Image
           width={336}
           height={201}

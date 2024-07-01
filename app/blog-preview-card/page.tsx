@@ -30,9 +30,9 @@ export default function Page() {
           priority
           className="h-auto w-full rounded-xl"
         />
-        <div className="card__body space-y-4">
+        <div className="space-y-4">
           <div className="space-y-3 text-sm">
-            <span className="card__tag rounded bg-[var(--yellow)] px-3 py-1.5 font-extrabold">
+            <span className="rounded bg-[var(--yellow)] px-3 py-1.5 font-extrabold">
               Learning
             </span>
             <div>Published 21 Dec 2023</div>

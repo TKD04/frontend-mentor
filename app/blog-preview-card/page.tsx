@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main
-      className={`${figtree.className} grid min-h-screen place-items-center bg-[var(--yellow)] p-6 font-medium text-gray-800`}
+      className={`${figtree.className} grid min-h-screen place-items-center bg-[var(--yellow)] p-6 text-gray-800`}
     >
       <article className="pointer-events-none flex w-full max-w-[20.5rem] flex-col gap-6 rounded-2xl border border-[var(--black)] bg-[var(--white)] p-6 shadow-[8px_8px_0_0_var(--black)] transition-shadow hover:shadow-[16px_16px_0_0_var(--black)] md:max-w-96">
         <Image
@@ -31,17 +31,19 @@ export default function Page() {
           priority
           className="h-auto w-full rounded-xl"
         />
-        <div className="flex flex-col gap-3 text-sm md:text-base">
-          <div className="flex flex-col items-start gap-3 text-xs md:text-sm">
-            <span className="rounded bg-[var(--yellow)] px-3 py-1.5 font-extrabold">
+        <div className="flex flex-col gap-3">
+          <div className="flex flex-col items-start gap-3">
+            <span className="rounded bg-[var(--yellow)] px-3 py-1.5 text-xs font-extrabold md:text-sm">
               Learning
             </span>
-            <span>Published 21 Dec 2023</span>
+            <span className="text-xs font-medium md:text-sm">
+              Published 21 Dec 2023
+            </span>
           </div>
           <h1 className="pointer-events-auto cursor-pointer text-xl font-extrabold transition-colors hover:text-[var(--yellow)] md:text-2xl">
             <Link href="/blog-preview-card">HTML & CSS foundations</Link>
           </h1>
-          <p className="text-[var(--grey)]">
+          <p className="text-sm font-medium text-[var(--grey)] md:text-base">
             These languages are the backbone of every website, defining
             structure, content, and presentation.
           </p>
@@ -53,7 +55,9 @@ export default function Page() {
               placeholder="blur"
               className="aspect-square w-8 rounded-full"
             />
-            <span className="font-extrabold">Greg Hooper</span>
+            <span className="text-xs font-extrabold md:text-sm">
+              Greg Hooper
+            </span>
           </div>
         </div>
       </article>

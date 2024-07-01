@@ -1,5 +1,5 @@
 import nextCofnig from "@/next.config.mjs";
-import jessicaAvatarPic from "@/public/social-links-profile/avatar-jessica.jpeg";
+import userAvatarPic from "@/public/social-links-profile/avatar-jessica.jpeg";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Image from "next/image";
@@ -24,7 +24,7 @@ export default function Page() {
       <div className="flex w-full max-w-[20.5rem] flex-col gap-6 rounded-xl bg-[var(--darkgrey)] p-6 md:max-w-96 md:p-10">
         <div className="flex flex-col items-center text-center">
           <Image
-            src={jessicaAvatarPic}
+            src={userAvatarPic}
             alt="Picture of user's avatar"
             loading="eager"
             priority

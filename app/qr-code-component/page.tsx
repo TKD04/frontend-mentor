@@ -20,7 +20,7 @@ export default function Page() {
     <main
       className={`${outfit.className} grid min-h-screen place-items-center bg-[var(--lightgray)] p-4 text-gray-800`}
     >
-      <div className="flex w-full max-w-80 flex-col gap-6 rounded-3xl bg-[var(--white)] p-4 shadow-[0_28px_32px_0_rgba(0,0,0,0.08)]">
+      <div className="flex w-full max-w-80 flex-col gap-6 rounded-3xl bg-[var(--white)] p-4 shadow-[0_28px_32px_0_rgba(0,0,0,0.04)]">
         <Image
           src={qrCodePic}
           alt="Picture of QR Code"

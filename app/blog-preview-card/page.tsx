@@ -47,7 +47,7 @@ export default function Page() {
             These languages are the backbone of every website, defining
             structure, content, and presentation.
           </p>
-          <div className="mt-2 flex flex-row items-center gap-3">
+          <div className="mt-2 flex items-center gap-3">
             <Image
               src={authorAvatarPic}
               alt="Picture of author's avatar"

@@ -6,14 +6,14 @@ import Image from "next/image";
 import Link from "next/link";
 import "./style.css";
 
-type SocialSiteLink = {
+type SocialSiteLink = Readonly<{
   siteName: string;
   url: string;
-};
+}>;
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"] });
-const socialSiteLinks: SocialSiteLink[] = [
+const socialSiteLinks: Readonly<SocialSiteLink[]> = [
   {
     siteName: "GitHub",
     url: "https://github.com/",

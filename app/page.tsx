@@ -18,6 +18,13 @@ export default function Home() {
               <h2 className="mb-6 text-2xl font-bold">{solution.name}</h2>
               <ul className="flex list-none flex-col gap-4">
                 <li>
+                  <Link href={solution.urls.demo} target="_blank">
+                    <div className="rounded-md bg-blue-600 px-4 py-2 font-medium transition-colors hover:bg-blue-500">
+                      Live Demo
+                    </div>
+                  </Link>
+                </li>
+                <li>
                   <Link href={solution.urls.frontendMentor} target="_blank">
                     <div className="rounded-md bg-blue-600 px-4 py-2 font-medium transition-colors hover:bg-blue-500">
                       Frontend Mentor{" "}
@@ -29,13 +36,6 @@ export default function Home() {
                   <Link href={solution.urls.github} target="_blank">
                     <div className="rounded-md bg-blue-600 px-4 py-2 font-medium transition-colors hover:bg-blue-500">
                       GitHub <ExternalLink className="inline h-4 w-4" />
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={solution.urls.demo} target="_blank">
-                    <div className="rounded-md bg-blue-600 px-4 py-2 font-medium transition-colors hover:bg-blue-500">
-                      Live Demo
                     </div>
                   </Link>
                 </li>

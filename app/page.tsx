@@ -19,14 +19,14 @@ export default function Home() {
               <ul className="flex list-none flex-col gap-4">
                 <li>
                   <Link href={solution.urls.demo} target="_blank">
-                    <div className="rounded-md bg-blue-600 px-4 py-2 font-medium transition-colors hover:bg-blue-500">
+                    <div className="rounded-md bg-green-600 px-4 py-2 font-medium transition-colors hover:bg-green-500">
                       Live Demo
                     </div>
                   </Link>
                 </li>
                 <li>
                   <Link href={solution.urls.frontendMentor} target="_blank">
-                    <div className="rounded-md bg-blue-600 px-4 py-2 font-medium transition-colors hover:bg-blue-500">
+                    <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500">
                       Frontend Mentor{" "}
                       <ExternalLink className="inline h-4 w-4" />
                     </div>
@@ -34,7 +34,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link href={solution.urls.github} target="_blank">
-                    <div className="rounded-md bg-blue-600 px-4 py-2 font-medium transition-colors hover:bg-blue-500">
+                    <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500">
                       GitHub <ExternalLink className="inline h-4 w-4" />
                     </div>
                   </Link>

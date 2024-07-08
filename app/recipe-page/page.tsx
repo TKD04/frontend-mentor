@@ -83,32 +83,35 @@ export default function Page() {
             </h2>
             <ol className="ml-5 flex list-decimal flex-col gap-2 pl-2 marker:font-bold">
               <li className="pl-5">
-                <strong>Beat the eggs</strong>: In a bowl, beat the eggs with a
-                pinch of salt and pepper until they are well mixed. You can add
-                a tablespoon of water or milk for a fluffier texture.
+                <strong className="font-bold">Beat the eggs</strong>: In a bowl,
+                beat the eggs with a pinch of salt and pepper until they are
+                well mixed. You can add a tablespoon of water or milk for a
+                fluffier texture.
               </li>
               <li className="pl-5">
-                <strong>Heat the pan</strong>: Place a non-stick frying pan over
-                medium heat and add butter or oil.
+                <strong className="font-bold">Heat the pan</strong>: Place a
+                non-stick frying pan over medium heat and add butter or oil.
               </li>
               <li className="pl-5">
-                <strong>Cook the omelette</strong>: Once the butter is melted
-                and bubbling, pour in the eggs. Tilt the pan to ensure the eggs
-                evenly coat the surface.
+                <strong className="font-bold">Cook the omelette</strong>: Once
+                the butter is melted and bubbling, pour in the eggs. Tilt the
+                pan to ensure the eggs evenly coat the surface.
               </li>
               <li className="pl-5">
-                <strong>Add fillings (optional)</strong> : When the eggs begin
-                to set at the edges but are still slightly runny in the middle,
-                sprinkle your chosen fillings over one half of the omelette.
+                <strong className="font-bold">Add fillings (optional)</strong> :
+                When the eggs begin to set at the edges but are still slightly
+                runny in the middle, sprinkle your chosen fillings over one half
+                of the omelette.
               </li>
               <li className="pl-5">
-                <strong>Fold and serve</strong> : As the omelette continues to
-                cook, carefully lift one edge and fold it over the fillings. Let
-                it cook for another minute, then slide it onto a plate.
+                <strong className="font-bold">Fold and serve</strong> : As the
+                omelette continues to cook, carefully lift one edge and fold it
+                over the fillings. Let it cook for another minute, then slide it
+                onto a plate.
               </li>
               <li className="pl-5">
-                <strong>Enjoy</strong>: Serve hot, with additional salt and
-                pepper if needed.
+                <strong className="font-bold">Enjoy</strong>: Serve hot, with
+                additional salt and pepper if needed.
               </li>
             </ol>
           </section>

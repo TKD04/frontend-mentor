@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main
-      className={`${outfit.className} min-h-screen bg-[var(--eggshell)] p-6 text-[var(--wengebrown)] md:grid md:place-items-center`}
+      className={`${outfit.className} min-h-screen bg-[var(--eggshell)] text-[var(--wengebrown)] md:grid md:place-items-center md:p-6`}
     >
       <article className="mx-auto w-full bg-[var(--white)] md:max-w-[46rem] md:rounded-3xl md:p-10">
         <Image

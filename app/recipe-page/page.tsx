@@ -30,7 +30,7 @@ export default function Page() {
           priority
           className="h-auto w-full md:mb-10 md:rounded-xl"
         />
-        <div className="flex flex-col gap-8 p-8 md:gap-7 md:p-0">
+        <section className="flex flex-col gap-8 p-8 md:gap-7 md:p-0">
           <h1
             className={`${youngSerif.className} text-4xl text-[var(--darkcharcoal)]`}
           >
@@ -147,7 +147,7 @@ export default function Page() {
               </tbody>
             </table>
           </section>
-        </div>
+        </section>
       </article>
     </main>
   );

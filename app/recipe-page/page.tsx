@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main
-      className={`${outfit.className} min-h-screen bg-[var(--eggshell)] text-[var(--wengebrown)] md:grid md:place-items-center md:p-6`}
+      className={`${outfit.className} min-h-screen bg-[var(--eggshell)] text-[var(--wengebrown)] md:p-6`}
     >
       <article className="mx-auto w-full bg-[var(--white)] md:max-w-[46rem] md:rounded-3xl md:p-10 md:shadow-sm">
         <Image
@@ -81,7 +81,7 @@ export default function Page() {
             >
               Instructions
             </h2>
-            <ol className="ml-5 flex list-decimal flex-col gap-2 marker:font-bold">
+            <ol className="marker:font-bold] ml-5 flex list-decimal flex-col gap-2">
               <li className="pl-5">
                 <strong>Beat the eggs</strong>: In a bowl, beat the eggs with a
                 pinch of salt and pepper until they are well mixed. You can add

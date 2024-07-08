@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main
-      className={`${outfit.className} min-h-screen bg-[var(--eggshell)] text-[var(--wengebrown)] md:p-6`}
+      className={`${outfit.className} min-h-screen bg-[var(--eggshell)] p-6 text-[var(--wengebrown)] md:grid md:place-items-center`}
     >
       <article className="mx-auto w-full bg-[var(--white)] md:max-w-[46rem] md:rounded-3xl md:p-10">
         <Image
@@ -45,7 +45,7 @@ export default function Page() {
             <h2 className="mb-4 text-xl font-semibold text-[var(--darkraspberry)]">
               Preparation time
             </h2>
-            <ul className="list-square ml-5 flex flex-col gap-2">
+            <ul className="ml-5 flex list-square flex-col gap-2">
               <li className="pl-5">
                 <strong className="font-bold">Total</strong>: Approximately 10
                 minutes
@@ -64,7 +64,7 @@ export default function Page() {
             >
               Ingredients
             </h2>
-            <ul className="list-square ml-5 flex flex-col gap-2">
+            <ul className="ml-5 flex list-square flex-col gap-2">
               <li className="pl-5">2-3 large eggs</li>
               <li className="pl-5">Salt, to taste</li>
               <li className="pl-5">Pepper, to taste</li>

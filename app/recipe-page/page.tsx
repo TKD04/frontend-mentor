@@ -45,7 +45,7 @@ export default function Page() {
             <h2 className="mb-4 text-xl font-semibold text-[var(--darkraspberry)]">
               Preparation time
             </h2>
-            <ul className="ml-5 flex list-square flex-col gap-2">
+            <ul className="ml-5 flex list-disc flex-col gap-2">
               <li className="pl-5">
                 <strong className="font-bold">Total</strong>: Approximately 10
                 minutes
@@ -64,7 +64,7 @@ export default function Page() {
             >
               Ingredients
             </h2>
-            <ul className="ml-5 flex list-square flex-col gap-2 pl-2">
+            <ul className="ml-5 flex list-disc flex-col gap-2 pl-2">
               <li className="pl-5">2-3 large eggs</li>
               <li className="pl-5">Salt, to taste</li>
               <li className="pl-5">Pepper, to taste</li>

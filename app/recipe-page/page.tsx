@@ -64,7 +64,7 @@ export default function Page() {
             >
               Ingredients
             </h2>
-            <ul className="ml-5 flex list-square flex-col gap-2">
+            <ul className="ml-5 flex list-square flex-col gap-2 pl-2">
               <li className="pl-5">2-3 large eggs</li>
               <li className="pl-5">Salt, to taste</li>
               <li className="pl-5">Pepper, to taste</li>
@@ -81,7 +81,7 @@ export default function Page() {
             >
               Instructions
             </h2>
-            <ol className="ml-5 flex list-decimal flex-col gap-2 marker:font-bold">
+            <ol className="ml-5 flex list-decimal flex-col gap-2 pl-2 marker:font-bold">
               <li className="pl-5">
                 <strong>Beat the eggs</strong>: In a bowl, beat the eggs with a
                 pinch of salt and pepper until they are well mixed. You can add

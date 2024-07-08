@@ -21,7 +21,7 @@ export default function Page() {
     <main
       className={`${outfit.className} min-h-screen bg-[var(--eggshell)] text-[var(--wengebrown)] md:grid md:place-items-center md:p-6`}
     >
-      <article className="mx-auto w-full bg-[var(--white)] md:max-w-[46rem] md:rounded-3xl md:p-10">
+      <article className="mx-auto w-full bg-[var(--white)] md:max-w-[46rem] md:rounded-3xl md:p-10 md:shadow-sm">
         <Image
           src={omelettePic}
           alt="Picture of omelette"

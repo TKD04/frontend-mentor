@@ -81,7 +81,7 @@ export default function Page() {
             >
               Instructions
             </h2>
-            <ol className="marker:font-bold] ml-5 flex list-decimal flex-col gap-2">
+            <ol className="ml-5 flex list-decimal flex-col gap-2 marker:font-bold">
               <li className="pl-5">
                 <strong>Beat the eggs</strong>: In a bowl, beat the eggs with a
                 pinch of salt and pepper until they are well mixed. You can add

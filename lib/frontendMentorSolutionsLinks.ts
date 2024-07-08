@@ -38,6 +38,16 @@ const frontendMentorSolutionsLinks: Readonly<FrontendMentorSolutionLink[]> = [
       demo: "/social-links-profile",
     },
   },
+  {
+    name: "Recipe page",
+    urls: {
+      frontendMentor:
+        "https://www.frontendmentor.io/solutions/recipe-page-using-nextjs-w96PdtQ1LZ",
+      github:
+        "https://github.com/TKD04/frontend-mentor/tree/main/app/recipe-page",
+      demo: "/recipe-page",
+    },
+  },
 ];
 
 export default frontendMentorSolutionsLinks;

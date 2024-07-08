@@ -10,7 +10,7 @@ export default function Home() {
           TKD04&apos;s Frontend Mentor Solutions
         </h1>
         <ul className="grid list-none grid-cols-1 gap-6 md:grid-cols-2">
-          {frontendMentorSolutionsLinks.map((solution) => (
+          {[...frontendMentorSolutionsLinks].reverse().map((solution) => (
             <li
               key={solution.name}
               className="rounded-xl bg-gray-800 p-6 shadow"

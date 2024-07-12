@@ -15,6 +15,7 @@ export default function Home() {
               <Link
                 href="https://www.frontendmentor.io/profile/TKD04"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500">
                   Frontend Mentor Profile{" "}
@@ -26,6 +27,7 @@ export default function Home() {
               <Link
                 href="https://github.com/TKD04/frontend-mentor"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500">
                   GitHub Repository <ExternalLink className="inline h-4 w-4" />
@@ -51,7 +53,11 @@ export default function Home() {
                     </Link>
                   </li>
                   <li>
-                    <Link href={solution.urls.frontendMentor} target="_blank">
+                    <Link
+                      href={solution.urls.frontendMentor}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500">
                         Frontend Mentor{" "}
                         <ExternalLink className="inline h-4 w-4" />
@@ -59,7 +65,11 @@ export default function Home() {
                     </Link>
                   </li>
                   <li>
-                    <Link href={solution.urls.github} target="_blank">
+                    <Link
+                      href={solution.urls.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500">
                         GitHub <ExternalLink className="inline h-4 w-4" />
                       </div>

@@ -69,7 +69,7 @@ export default function Page() {
         <ul className="flex flex-col gap-4 text-center">
           {socialSiteLinks.map((socialSiteLink) => (
             <li key={socialSiteLink.siteName}>
-              <Link href={socialSiteLink.url}>
+              <Link href={socialSiteLink.url} rel="noopener noreferrer">
                 <div className="rounded-lg bg-[var(--grey)] py-3 text-sm font-semibold transition-colors hover:bg-[var(--green)] hover:text-[var(--darkgrey)]">
                   {socialSiteLink.siteName}
                 </div>

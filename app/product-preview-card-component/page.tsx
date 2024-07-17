@@ -26,7 +26,7 @@ export default function Page() {
       <article className="flex w-full flex-col rounded-lg bg-[var(--white)] shadow-[0_0_8px_0_rgba(0,0,0,0.04)] md:max-w-[37.5rem] md:flex-row">
         <ArtDirectionPicture
           src={{ mobile: perfumePicMobile, desktop: perfumePicDesktop }}
-          minWidthForDesktop="768px"
+          minWidthForDesktop={768}
           alt="Picture of perfume"
           loading="eager"
           placeholder="blur"

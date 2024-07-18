@@ -19,7 +19,7 @@ export default function Home() {
               >
                 <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500">
                   Frontend Mentor Profile{" "}
-                  <ExternalLink className="inline h-4 w-4" />
+                  <ExternalLink className="inline size-4" />
                 </div>
               </Link>
             </li>
@@ -30,7 +30,7 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500">
-                  GitHub Repository <ExternalLink className="inline h-4 w-4" />
+                  GitHub Repository <ExternalLink className="inline size-4" />
                 </div>
               </Link>
             </li>
@@ -60,7 +60,7 @@ export default function Home() {
                     >
                       <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500">
                         Frontend Mentor{" "}
-                        <ExternalLink className="inline h-4 w-4" />
+                        <ExternalLink className="inline size-4" />
                       </div>
                     </Link>
                   </li>
@@ -71,7 +71,7 @@ export default function Home() {
                       rel="noopener noreferrer"
                     >
                       <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500">
-                        GitHub <ExternalLink className="inline h-4 w-4" />
+                        GitHub <ExternalLink className="inline size-4" />
                       </div>
                     </Link>
                   </li>

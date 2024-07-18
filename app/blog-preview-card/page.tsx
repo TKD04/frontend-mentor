@@ -53,7 +53,7 @@ export default function Page() {
               alt="Picture of author's avatar"
               loading="eager"
               placeholder="blur"
-              className="h-8 w-8 rounded-full"
+              className="size-8 rounded-full"
             />
             <span className="text-xs font-extrabold md:text-sm">
               Greg Hooper

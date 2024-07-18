@@ -56,7 +56,7 @@ export default function Page() {
             loading="eager"
             placeholder="blur"
             priority
-            className="mb-6 h-[5.5rem] w-[5.5rem] rounded-full"
+            className="mb-6 size-[5.5rem] rounded-full"
           />
           <h1 className="mb-2 text-2xl font-semibold">Jessica Randall</h1>
           <span className="mb-6 text-sm font-semibold text-[var(--green)]">

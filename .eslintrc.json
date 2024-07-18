@@ -1,6 +1,7 @@
 {
   "plugins": [
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "eslint-plugin-react-compiler"
   ],
   "env": {
     "es2021": true

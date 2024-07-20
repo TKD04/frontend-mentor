@@ -19,7 +19,10 @@ export default function ArtDirectionPicture({
   minWidthForDesktop,
   ...rest
 }: ArtDirectionPictureProps) {
-  const { props: imgProps } = getImageProps({ ...rest, src: src.mobile });
+  const { props: mobileImageProps } = getImageProps({
+    ...rest,
+    src: src.mobile,
+  });
   const { props: desktopImageProps } = getImageProps({
     ...rest,
     src: src.desktop,
@@ -28,12 +31,18 @@ export default function ArtDirectionPicture({
   return (
     <picture>
       <source
+        media={`(max-width: ${minWidthForDesktop - 1})`}
+        width={mobileImageProps.width}
+        height={mobileImageProps.height}
+        srcSet={mobileImageProps.srcSet}
+      />
+      <source
         media={`(min-width: ${minWidthForDesktop}px)`}
         width={desktopImageProps.width}
         height={desktopImageProps.height}
         srcSet={desktopImageProps.srcSet}
       />
-      <img {...imgProps} />
+      <img {...mobileImageProps} />
     </picture>
   );
 }

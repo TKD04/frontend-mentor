@@ -4,6 +4,7 @@ import type { ImageProps } from "next/dist/shared/lib/get-img-props";
 import { getImageProps } from "next/image";
 
 // https://nextjs.org/docs/pages/api-reference/components/image#art-direction
+
 type ImagePropsSrc = ImageProps["src"];
 type ArtDirectionPictureProps = {
   src: {

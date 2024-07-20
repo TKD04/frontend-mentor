@@ -30,7 +30,6 @@ export default function Page() {
           alt="Picture of perfume"
           loading="eager"
           placeholder="blur"
-          priority
           className="h-auto w-full rounded-t-lg md:rounded-bl-lg md:rounded-tr-none"
         />
         <section className="flex flex-col gap-4 p-6 md:max-w-[50%] md:gap-[1.35rem] md:p-8">

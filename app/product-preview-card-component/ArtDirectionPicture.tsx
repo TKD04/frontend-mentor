@@ -31,7 +31,7 @@ export default function ArtDirectionPicture({
   return (
     <picture>
       <source
-        media={`(max-width: ${minWidthForDesktop - 1})`}
+        media={`(max-width: ${minWidthForDesktop - 1}px)`}
         width={mobileImageProps.width}
         height={mobileImageProps.height}
         srcSet={mobileImageProps.srcSet}

@@ -57,7 +57,7 @@ export default function Page() {
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
-          <section className="flex items-center justify-start gap-4 md:-mt-0.5">
+          <section className="flex items-center justify-start gap-5 md:-mt-0.5">
             <span
               className={`${fraunces.className} text-[1.95rem] font-bold text-[var(--dark-cyan)]`}
             >

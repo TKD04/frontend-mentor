@@ -46,9 +46,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main
-      className={`${inter.className} grid min-h-screen place-items-center bg-[var(--offblack)] p-4 text-[var(--white)]`}
+      className={`${inter.className} grid min-h-screen place-items-center bg-[var(--off-black)] p-4 text-[var(--white)]`}
     >
-      <div className="flex w-full max-w-[20.5rem] flex-col gap-6 rounded-xl bg-[var(--darkgrey)] p-6 md:max-w-96 md:p-10">
+      <div className="flex w-full max-w-[20.5rem] flex-col gap-6 rounded-xl bg-[var(--dark-grey)] p-6 md:max-w-96 md:p-10">
         <div className="flex flex-col items-center text-center">
           <Image
             src={userAvatarPic}
@@ -70,7 +70,7 @@ export default function Page() {
           {socialSiteLinks.map((socialSiteLink) => (
             <li key={socialSiteLink.siteName}>
               <Link href={socialSiteLink.url} rel="noopener noreferrer">
-                <div className="rounded-lg bg-[var(--grey)] py-3 text-sm font-semibold transition-colors hover:bg-[var(--green)] hover:text-[var(--darkgrey)]">
+                <div className="rounded-lg bg-[var(--grey)] py-3 text-sm font-semibold transition-colors hover:bg-[var(--green)] hover:text-[var(--dark-grey)]">
                   {socialSiteLink.siteName}
                 </div>
               </Link>

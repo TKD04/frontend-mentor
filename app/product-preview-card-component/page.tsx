@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main
-      className={`${montserrat.className} grid min-h-screen place-items-center bg-[var(--cream)] px-4 py-8 font-medium text-[var(--darkgrayishblue)]`}
+      className={`${montserrat.className} grid min-h-screen place-items-center bg-[var(--cream)] px-4 py-8 font-medium text-[var(--dark-grayish-blue)]`}
     >
       <article className="flex w-full flex-col rounded-lg bg-[var(--white)] shadow-[0_0_8px_0_rgba(0,0,0,0.04)] md:max-w-[37.5rem] md:flex-row">
         <picture>
@@ -46,7 +46,7 @@ export default function Page() {
         <section className="flex flex-col gap-4 p-6 md:max-w-[50%] md:gap-[1.35rem] md:p-8">
           <span className="text-xs uppercase tracking-[0.25rem]">Perfume</span>
           <h1
-            className={`${fraunces.className} text-[2rem] font-bold leading-8 text-[var(--verydarkblue)]`}
+            className={`${fraunces.className} text-[2rem] font-bold leading-8 text-[var(--very-dark-blue)]`}
           >
             Gabrielle Essence Eau De Parfum
           </h1>
@@ -56,7 +56,7 @@ export default function Page() {
           </p>
           <section className="flex items-center justify-start gap-4">
             <span
-              className={`${fraunces.className} text-[2rem] font-bold text-[var(--darkcyan)]`}
+              className={`${fraunces.className} text-[2rem] font-bold text-[var(--dark-cyan)]`}
             >
               $149.99
             </span>
@@ -64,7 +64,7 @@ export default function Page() {
           </section>
           <button
             type="button"
-            className="flex appearance-none items-center justify-center gap-3 rounded-lg bg-[var(--darkcyan)] py-[0.85rem] text-[var(--white)] transition-colors hover:bg-[hsl(156,42%,18%)]"
+            className="flex appearance-none items-center justify-center gap-3 rounded-lg bg-[var(--dark-cyan)] py-[0.85rem] text-[var(--white)] transition-colors hover:bg-[var(--dark-cyan-hover)]"
           >
             <Image
               width={15}

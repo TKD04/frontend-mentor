@@ -67,7 +67,7 @@ export default function Page() {
           </section>
           <button
             type="button"
-            className="flex appearance-none items-center justify-center gap-4 rounded-lg bg-[var(--dark-cyan)] py-[0.85rem] text-[var(--white)] transition-colors hover:bg-[var(--dark-cyan-hover)]"
+            className="flex appearance-none items-center justify-center gap-3 rounded-lg bg-[var(--dark-cyan)] py-[0.85rem] text-[var(--white)] transition-colors hover:bg-[var(--dark-cyan-hover)]"
           >
             <Image
               width={15}

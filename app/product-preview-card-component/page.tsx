@@ -4,9 +4,9 @@ import perfumePicMobile from "@/public/product-preview-card-component/image-prod
 import type { Metadata } from "next";
 import { Fraunces, Montserrat } from "next/font/google";
 import Image from "next/image";
-import ArtDirectionPicture from "./ArtDirectionPicture";
 import "./style.css";
 
+const BREAK_POINT_TAILWIND_MD = 768;
 const BASE_PATH = nextCofnig.basePath ?? "";
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["500", "700"] });
 const fraunces = Fraunces({ subsets: ["latin"], weight: ["700"] });
@@ -24,14 +24,25 @@ export default function Page() {
       className={`${montserrat.className} grid min-h-screen place-items-center bg-[var(--cream)] px-4 py-8 font-medium text-[var(--darkgrayishblue)]`}
     >
       <article className="flex w-full flex-col rounded-lg bg-[var(--white)] shadow-[0_0_8px_0_rgba(0,0,0,0.04)] md:max-w-[37.5rem] md:flex-row">
-        <ArtDirectionPicture
-          src={{ mobile: perfumePicMobile, desktop: perfumePicDesktop }}
-          minWidthForDesktop={768}
-          alt="Picture of perfume"
-          loading="eager"
-          placeholder="blur"
-          className="h-auto w-full rounded-t-lg md:rounded-bl-lg md:rounded-tr-none"
-        />
+        <picture>
+          <source
+            media={`(max-width: ${BREAK_POINT_TAILWIND_MD - 1}px)`}
+            width={perfumePicMobile.width}
+            height={perfumePicMobile.height}
+            srcSet={perfumePicMobile.src}
+          />
+          <source
+            media={`(min-width: ${BREAK_POINT_TAILWIND_MD}px)`}
+            width={perfumePicDesktop.width}
+            height={perfumePicDesktop.height}
+            srcSet={perfumePicDesktop.src}
+          />
+          <img
+            src={perfumePicMobile.src}
+            alt="Picture of perfume"
+            className="h-auto w-full rounded-t-lg md:rounded-bl-lg md:rounded-tr-none"
+          />
+        </picture>
         <section className="flex flex-col gap-4 p-6 md:max-w-[50%] md:gap-[1.35rem] md:p-8">
           <span className="text-xs uppercase tracking-[0.25rem]">Perfume</span>
           <h1

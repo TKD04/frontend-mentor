@@ -24,6 +24,7 @@ export default function Page() {
       className={`${montserrat.className} grid min-h-screen place-items-center bg-[var(--cream)] px-4 py-8 font-medium text-[var(--dark-grayish-blue)]`}
     >
       <article className="flex w-full flex-col rounded-lg bg-[var(--white)] shadow-[0_0_8px_0_rgba(0,0,0,0.04)] md:max-w-[37.5rem] md:flex-row">
+        {/* Not worked: https://nextjs.org/docs/pages/api-reference/components/image#art-direction */}
         <picture>
           <source
             media={`(max-width: ${BREAK_POINT_TAILWIND_MD - 1}px)`}

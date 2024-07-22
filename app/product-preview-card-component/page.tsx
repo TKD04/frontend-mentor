@@ -59,7 +59,7 @@ export default function Page() {
           </p>
           <section className="flex items-center justify-start gap-4 md:-mt-0.5">
             <span
-              className={`${fraunces.className} text-[2rem] font-bold text-[var(--dark-cyan)]`}
+              className={`${fraunces.className} text-[1.95rem] font-bold text-[var(--dark-cyan)]`}
             >
               $149.99
             </span>

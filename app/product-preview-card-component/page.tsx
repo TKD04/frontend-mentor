@@ -62,7 +62,7 @@ export default function Page() {
             >
               $149.99
             </span>
-            <span className="text-[0.85rem] line-through">$169.99</span>
+            <span className="text-[0.8rem] line-through">$169.99</span>
           </section>
           <button
             type="button"

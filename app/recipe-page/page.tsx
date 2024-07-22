@@ -24,7 +24,7 @@ export default function Page() {
       <article className="mx-auto w-full bg-[var(--white)] md:max-w-[46rem] md:rounded-3xl md:p-10 md:shadow-sm">
         <Image
           src={omelettePic}
-          alt="Picture of omelette"
+          alt="Omelette"
           loading="eager"
           placeholder="blur"
           priority

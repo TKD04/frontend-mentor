@@ -45,7 +45,7 @@ export default function Page() {
           />
         </picture>
         <section className="flex flex-col gap-4 p-6 md:max-w-[50%] md:gap-[1.35rem] md:p-8">
-          <span className="text-xs uppercase tracking-[0.4rem] md:-mt-0.5">
+          <span className="text-xs uppercase tracking-[0.3rem] md:-mt-0.5">
             Perfume
           </span>
           <h1

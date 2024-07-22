@@ -52,7 +52,7 @@ export default function Page() {
         <div className="flex flex-col items-center text-center">
           <Image
             src={userAvatarPic}
-            alt="Picture of user's avatar"
+            alt="Avatar"
             loading="eager"
             placeholder="blur"
             priority

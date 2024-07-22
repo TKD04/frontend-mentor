@@ -23,7 +23,7 @@ export default function Page() {
       <div className="flex w-full max-w-80 flex-col gap-6 rounded-3xl bg-[var(--white)] p-4 shadow-[0_28px_32px_0_rgba(0,0,0,0.04)]">
         <Image
           src={qrCodePic}
-          alt="Picture of QR Code"
+          alt="QR Code"
           loading="eager"
           placeholder="blur"
           priority

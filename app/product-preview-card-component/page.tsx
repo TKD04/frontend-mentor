@@ -39,7 +39,7 @@ export default function Page() {
           />
           <img
             src={perfumePicMobile.src}
-            alt="Picture of perfume"
+            alt="Product perfume"
             className="h-auto w-full rounded-t-lg md:rounded-bl-lg md:rounded-tr-none"
           />
         </picture>

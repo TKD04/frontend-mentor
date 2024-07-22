@@ -26,7 +26,7 @@ export default function Page() {
           width={336}
           height={201}
           src={`${BASE_PATH}/blog-preview-card/illustration-article.svg`}
-          alt="Picture of illustration article"
+          alt="Illustration article"
           loading="eager"
           priority
           className="h-auto w-full rounded-xl"
@@ -50,7 +50,7 @@ export default function Page() {
           <div className="mt-2 flex items-center gap-3">
             <Image
               src={authorAvatarPic}
-              alt="Picture of author's avatar"
+              alt="Author's avatar"
               loading="eager"
               placeholder="blur"
               className="size-8 rounded-full"

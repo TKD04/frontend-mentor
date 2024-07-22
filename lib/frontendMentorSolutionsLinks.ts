@@ -48,6 +48,16 @@ const frontendMentorSolutionsLinks: Readonly<FrontendMentorSolutionLink[]> = [
       demo: "/recipe-page",
     },
   },
+  {
+    name: "Product preview card component",
+    urls: {
+      frontendMentor:
+        "https://www.frontendmentor.io/solutions/product-preview-card-component-using-nextjs-ycANnBkb9q",
+      github:
+        "https://github.com/TKD04/frontend-mentor/tree/main/app/product-preview-card-component",
+      demo: "https://tkd04.github.io/frontend-mentor/product-preview-card-component",
+    },
+  },
 ];
 
 export default frontendMentorSolutionsLinks;

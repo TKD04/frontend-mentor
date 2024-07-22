@@ -46,7 +46,7 @@ export default function Page() {
         <section className="flex flex-col gap-4 p-6 md:max-w-[50%] md:gap-[1.35rem] md:p-8">
           <span className="text-xs uppercase tracking-[0.25rem]">Perfume</span>
           <h1
-            className={`${fraunces.className} text-[2rem] font-bold leading-8 text-[var(--very-dark-blue)]`}
+            className={`${fraunces.className} -mt-1 text-[2rem] font-bold leading-8 text-[var(--very-dark-blue)]`}
           >
             Gabrielle Essence Eau De Parfum
           </h1>

@@ -43,6 +43,8 @@ export default function Page() {
             srcSet={perfumePicDesktop.src}
           />
           <img
+            width={perfumePicMobile.width}
+            height={perfumePicMobile.height}
             src={perfumePicMobile.src}
             alt="Product perfume"
             className="h-auto w-full rounded-t-lg md:rounded-bl-lg md:rounded-tr-none"

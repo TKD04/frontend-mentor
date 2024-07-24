@@ -1,29 +1,33 @@
+"use client";
+
 import nextCofnig from "@/next.config.mjs";
 import perfumePicDesktop from "@/public/product-preview-card-component/image-product-desktop.jpg";
 import perfumePicMobile from "@/public/product-preview-card-component/image-product-mobile.jpg";
-import type { Metadata } from "next";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { Fraunces, Montserrat } from "next/font/google";
 import Image from "next/image";
+import { useEffect } from "react";
 import "./style.css";
 
-const BREAK_POINT_TAILWIND_MD = 768;
 const BASE_PATH = nextCofnig.basePath ?? "";
+const BREAK_POINT_TAILWIND_MD = 768;
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["500", "700"] });
 const fraunces = Fraunces({ subsets: ["latin"], weight: ["700"] });
 
-export const metadata: Metadata = {
-  title: "Frontend Mentor | Product preview card component",
-  icons: {
-    icon: `${BASE_PATH}/product-preview-card-component/favicon-32x32.png`,
-  },
-};
-
 export default function Page() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <main
       className={`${montserrat.className} grid min-h-screen place-items-center bg-[var(--cream)] px-4 py-8 font-medium text-[var(--dark-grayish-blue)]`}
     >
-      <article className="flex w-full flex-col rounded-lg bg-[var(--white)] shadow-[0_0_8px_0_rgba(0,0,0,0.04)] md:max-w-[37.5rem] md:flex-row">
+      <article
+        className="flex w-full flex-col rounded-lg bg-[var(--white)] shadow-[0_0_8px_0_rgba(0,0,0,0.04)] md:max-w-[37.5rem] md:flex-row"
+        data-aos="fade-up"
+      >
         {/* Not worked: https://nextjs.org/docs/pages/api-reference/components/image#art-direction */}
         <picture>
           <source

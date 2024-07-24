@@ -1,27 +1,31 @@
+"use client";
+
 import nextCofnig from "@/next.config.mjs";
 import authorAvatarPic from "@/public/blog-preview-card/image-avatar.webp";
-import type { Metadata } from "next";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { Figtree } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 import "./style.css";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const figtree = Figtree({ subsets: ["latin"], weight: ["500", "800"] });
 
-export const metadata: Metadata = {
-  title: "Frontend Mentor | Blog preview card",
-  icons: {
-    icon: `${BASE_PATH}/blog-preview-card/favicon-32x32.png`,
-  },
-};
-
 export default function Page() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <main
       className={`${figtree.className} grid min-h-screen place-items-center bg-[var(--yellow)] p-6 text-gray-800`}
     >
-      <article className="pointer-events-none flex w-full max-w-[20.5rem] flex-col gap-6 rounded-3xl border border-[var(--black)] bg-[var(--white)] p-6 shadow-[8px_8px_0_0_var(--black)] transition-shadow hover:shadow-[16px_16px_0_0_var(--black)] md:max-w-96">
+      <article
+        className="pointer-events-none flex w-full max-w-[20.5rem] flex-col gap-6 rounded-3xl border border-[var(--black)] bg-[var(--white)] p-6 shadow-[8px_8px_0_0_var(--black)] transition-shadow hover:shadow-[16px_16px_0_0_var(--black)] md:max-w-96"
+        data-aos="fade-up"
+      >
         <Image
           width={336}
           height={201}

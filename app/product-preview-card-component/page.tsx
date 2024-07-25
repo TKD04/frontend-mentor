@@ -79,7 +79,7 @@ export default function Page() {
               width={15}
               height={16}
               src={`${BASE_PATH}/product-preview-card-component/icon-cart.svg`}
-              alt="Icon of shopping cart"
+              alt="Shopping cart"
               loading="eager"
               className="inline"
             />

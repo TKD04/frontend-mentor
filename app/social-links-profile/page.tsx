@@ -7,36 +7,10 @@ import { Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
+import socialSiteLinks from "./socialSiteLinks";
 import "./style.css";
 
-type SocialSiteLink = Readonly<{
-  siteName: string;
-  url: string;
-}>;
-
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"] });
-const socialSiteLinks: Readonly<SocialSiteLink[]> = [
-  {
-    siteName: "GitHub",
-    url: "https://github.com/",
-  },
-  {
-    siteName: "Frontend Mentor",
-    url: "https://www.frontendmentor.io/",
-  },
-  {
-    siteName: "LinkedIn",
-    url: "https://www.linkedin.com/",
-  },
-  {
-    siteName: "Twitter",
-    url: "https://x.com/",
-  },
-  {
-    siteName: "Instagram",
-    url: "https://www.instagram.com/",
-  },
-];
 
 export default function Page() {
   useEffect(() => {
@@ -47,7 +21,10 @@ export default function Page() {
     <main
       className={`${inter.className} grid min-h-screen place-items-center bg-[var(--off-black)] p-4 text-[var(--white)]`}
     >
-      <div className="flex w-full max-w-[20.5rem] flex-col gap-6 rounded-xl bg-[var(--dark-grey)] p-6 md:max-w-96 md:p-10" data-aos="fade-up">
+      <div
+        className="flex w-full max-w-[20.5rem] flex-col gap-6 rounded-xl bg-[var(--dark-grey)] p-6 md:max-w-96 md:p-10"
+        data-aos="fade-up"
+      >
         <div className="flex flex-col items-center text-center">
           <Image
             src={userAvatarPic}

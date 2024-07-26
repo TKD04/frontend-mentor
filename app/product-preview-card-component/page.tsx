@@ -50,22 +50,20 @@ export default function Page() {
             className="h-auto w-full rounded-t-lg md:rounded-bl-lg md:rounded-tr-none"
           />
         </picture>
-        <section className="flex flex-col gap-4 p-6 md:max-w-[50%] md:gap-[1.35rem] md:p-8">
-          <span className="text-xs uppercase tracking-[0.3rem] md:-mt-0.5">
-            Perfume
-          </span>
+        <section className="flex flex-col gap-4 p-6 md:max-w-[50%] md:gap-6 md:p-8">
+          <span className="text-xs uppercase tracking-[0.3rem]">Perfume</span>
           <h1
-            className={`${fraunces.className} -mt-1 text-[2rem] font-bold leading-8 text-[var(--very-dark-blue)] md:mt-0.5`}
+            className={`${fraunces.className} -mt-1 text-[1.95rem] font-bold leading-8 text-[var(--very-dark-blue)]`}
           >
             Gabrielle Essence Eau De Parfum
           </h1>
-          <p className="text-[14px] md:leading-[1.45rem]">
+          <p className="text-[14px] leading-[1.45rem]">
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
-          <section className="flex items-center justify-start gap-5 md:-mt-0.5">
+          <section className="-mt-1 flex items-center justify-start gap-5">
             <span
-              className={`${fraunces.className} text-[1.95rem] font-bold text-[var(--dark-cyan)]`}
+              className={`${fraunces.className} text-[2rem] font-bold text-[var(--dark-cyan)]`}
             >
               $149.99
             </span>
@@ -73,7 +71,7 @@ export default function Page() {
           </section>
           <button
             type="button"
-            className="flex appearance-none items-center justify-center gap-3 rounded-lg bg-[var(--dark-cyan)] py-[0.85rem] text-[var(--white)] transition-colors hover:bg-[var(--dark-cyan-hover)]"
+            className="-mt-0.5 flex appearance-none items-center justify-center gap-3 rounded-lg bg-[var(--dark-cyan)] py-[0.87rem] text-[var(--white)] transition-colors hover:bg-[var(--dark-cyan-hover)]"
           >
             <Image
               width={15}

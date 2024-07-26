@@ -50,7 +50,7 @@ export default function Home() {
             {[...frontendMentorSolutionsLinks].reverse().map((solution) => (
               <li
                 key={solution.name}
-                className="rounded-xl bg-gray-800 p-6 shadow"
+                className="flex flex-col justify-between rounded-xl bg-gray-800 p-6 shadow"
               >
                 <h2 className="mb-6 text-2xl font-bold">{solution.name}</h2>
                 <ul className="flex list-none flex-col gap-4">

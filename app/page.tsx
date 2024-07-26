@@ -19,7 +19,7 @@ export default function Home() {
           TKD04&apos;s Frontend Mentor Solutions
         </h1>
         <section className="mb-6 rounded-xl bg-gray-800 p-6 shadow">
-          <ul className="grid list-none grid-cols-1 gap-6 md:grid-cols-2">
+          <ul className="grid list-none grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
             <li>
               <Link
                 href="https://www.frontendmentor.io/profile/TKD04"

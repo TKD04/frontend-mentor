@@ -4,8 +4,11 @@ import frontendMentorSolutionsLinks from "@/lib/frontendMentorSolutionsLinks";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { ExternalLink } from "lucide-react";
+import { Inter } from "next/font/google";
 import Link from "next/link";
 import { useEffect } from "react";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   useEffect(() => {
@@ -13,7 +16,9 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex min-h-screen justify-center bg-gray-900 p-6 text-gray-100">
+    <main
+      className={`${inter.className} flex min-h-screen justify-center bg-gray-900 p-6 text-gray-100`}
+    >
       <article className="w-full max-w-prose" data-aos="fade-up">
         <h1 className="mb-8 text-4xl font-extrabold">
           TKD04&apos;s Frontend Mentor Solutions

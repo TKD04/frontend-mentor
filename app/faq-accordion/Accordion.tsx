@@ -11,11 +11,12 @@ type AccordionProps = {
 export default function Accordion({ items }: AccordionProps) {
   return (
     <ul className="flex list-none flex-col">
-      {items.map((item) => (
+      {items.map((item, index) => (
         <AccordionItem
           key={item.title}
           title={item.title}
           content={item.content}
+          isOpenDefault={index === 0}
         />
       ))}
     </ul>

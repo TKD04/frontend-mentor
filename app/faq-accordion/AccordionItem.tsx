@@ -3,11 +3,12 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
 import type { KeyboardEvent, MouseEvent } from "react";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type AccordionItemProps = {
   title: string;
   content: string;
+  isOpenDefault: boolean;
 };
 
 const BASE_PATH = nextCofnig.basePath ?? "";
@@ -40,32 +41,20 @@ const animateCloseAccordion = (
     },
   });
 
-export default function AccordionItem({ title, content }: AccordionItemProps) {
-  const [isOpen, setIsOpen] = useState(false);
+export default function AccordionItem({
+  title,
+  content,
+  isOpenDefault,
+}: AccordionItemProps) {
+  const [isOpen, setIsOpen] = useState(isOpenDefault);
   const liRef = useRef<HTMLLIElement>(null);
   const detailsRef = useRef<HTMLDetailsElement>(null);
   const divRef = useRef<HTMLDivElement>(null);
   const { contextSafe } = useGSAP({ scope: liRef });
 
-  const handleToggleAccordion = contextSafe(() => {
-    const detailsCurrent = detailsRef.current;
-    const divCurrent = divRef.current;
-
-    if (detailsCurrent === null || divCurrent === null) {
-      throw new Error("detailsCurrent and divCurrent must not null");
-    }
-
-    if (isOpen) {
-      animateCloseAccordion(divCurrent, detailsCurrent).restart();
-    } else {
-      detailsCurrent.setAttribute("open", "true");
-      animateOpenAccordion(divCurrent).restart();
-    }
-    setIsOpen(!isOpen);
-  });
   const handleClickItem = (e: MouseEvent) => {
     e.preventDefault();
-    handleToggleAccordion();
+    setIsOpen(!isOpen);
   };
   const handleKeyDownItem = (e: KeyboardEvent<HTMLElement>) => {
     if (!(e.key === " " || e.key === "Enter")) {
@@ -73,8 +62,25 @@ export default function AccordionItem({ title, content }: AccordionItemProps) {
     }
 
     e.preventDefault();
-    handleToggleAccordion();
+    setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    contextSafe(() => {
+      const detailsCurrent = detailsRef.current;
+      const divCurrent = divRef.current;
+
+      if (detailsCurrent === null || divCurrent === null) {
+        throw new Error("detailsCurrent and divCurrent must not null");
+      }
+      if (isOpen) {
+        detailsCurrent.setAttribute("open", "true");
+        animateOpenAccordion(divCurrent).restart();
+      } else {
+        animateCloseAccordion(divCurrent, detailsCurrent).restart();
+      }
+    })();
+  }, [contextSafe, isOpen]);
 
   return (
     <li

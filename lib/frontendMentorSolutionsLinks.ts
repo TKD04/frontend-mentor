@@ -58,6 +58,16 @@ const frontendMentorSolutionsLinks: Readonly<FrontendMentorSolutionLink[]> = [
       demo: "https://tkd04.github.io/frontend-mentor/product-preview-card-component",
     },
   },
+  {
+    name: "FAQ accordion",
+    urls: {
+      frontendMentor:
+        "https://www.frontendmentor.io/solutions/faq-accordion-using-nextjs-lt2w9bdNBQ",
+      github:
+        "https://github.com/TKD04/frontend-mentor/tree/main/app/faq-accordion",
+      demo: "https://tkd04.github.io/frontend-mentor/faq-accordion",
+    },
+  },
 ];
 
 export default frontendMentorSolutionsLinks;

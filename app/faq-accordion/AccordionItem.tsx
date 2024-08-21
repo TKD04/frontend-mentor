@@ -90,7 +90,7 @@ export default function AccordionItem({
       <details ref={detailsRef}>
         <summary
           // Using "flex" to remove details-marker */}
-          className="flex cursor-pointer items-center justify-between gap-6 font-semibold leading-[1.2rem] transition-colors hover:text-[var(--accordion-item-hover)] lg:text-lg"
+          className="flex cursor-pointer items-center justify-between gap-4 font-semibold leading-[1.2rem] transition-colors hover:text-[var(--accordion-item-hover)] lg:text-lg"
           onClick={handleClickItem}
           // Using "onKeyDown" to fix "jsx-a11y/click-events-have-key-events"
           onKeyDown={handleKeyDownItem}

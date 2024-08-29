@@ -46,7 +46,7 @@
     "eslint-plugin-jest": "^28.8.0",
     "eslint-plugin-jsx-a11y": "^6.9.0",
     "eslint-plugin-react": "^7.35.0",
-    "eslint-plugin-react-compiler": "^0.0.0-experimental-0998c1e-20240625",
+    "eslint-plugin-react-compiler": "^0.0.0-experimental-0924e7a-20240827",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-tailwindcss": "^3.17.4",
     "jest": "^29.7.0",

@@ -24,7 +24,7 @@ export default function Page() {
         className="flex w-full max-w-[68rem] flex-col items-center"
         data-aos="fade-up"
       >
-        <h1 className="mb-4 text-center text-[1.5rem] font-extralight text-[var(--very-dark-blue)] md:mb-[0.8rem] md:text-4xl md:leading-[3.6rem]">
+        <h1 className="mb-4 text-center text-[1.5rem] font-extralight text-[var(--very-dark-blue)] md:mb-[0.8rem] md:text-4xl md:leading-[3.1rem]">
           Reliable, efficient delivery
           <br />
           <span className="font-semibold">Powered by Technology</span>

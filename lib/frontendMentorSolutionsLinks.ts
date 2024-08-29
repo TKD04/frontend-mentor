@@ -68,6 +68,16 @@ const frontendMentorSolutionsLinks: Readonly<FrontendMentorSolutionLink[]> = [
       demo: "https://tkd04.github.io/frontend-mentor/faq-accordion",
     },
   },
+  {
+    name: "Four card feature section",
+    urls: {
+      frontendMentor:
+        "https://www.frontendmentor.io/solutions/four-card-feature-section-using-nextjs-GzWb4jSKrg",
+      github:
+        "https://github.com/TKD04/frontend-mentor/tree/main/app/four-card-feature-section",
+      demo: "https://tkd04.github.io/frontend-mentor/four-card-feature-section",
+    },
+  },
 ];
 
 export default frontendMentorSolutionsLinks;

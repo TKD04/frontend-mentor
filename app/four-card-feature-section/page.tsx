@@ -35,7 +35,7 @@ export default function Page() {
         </p>
         <div className="mt-20 flex max-w-xs flex-col gap-[1.6rem] md:mt-16 md:max-w-none md:flex-row md:items-center">
           <section className="grid basis-1/3 rounded-md border-t-4 border-t-[var(--cyan)] bg-white p-7 shadow-[0_12px_12px_0_rgba(16,16,148,0.11)]">
-            <h2 className="mb-[0.2rem] text-xl font-semibold text-[var(--very-dark-blue)]">
+            <h2 className="mb-[0.2rem] text-xl font-semibold text-[var(--very-dark-blue)] md:mb-[0.5rem]">
               Supervisor
             </h2>
             <p className="text-[0.8rem] leading-[1.4rem]">
@@ -46,12 +46,12 @@ export default function Page() {
               height={64}
               src={`${BASE_PATH}/four-card-feature-section/icon-supervisor.svg`}
               alt="Supervisor"
-              className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-14"
+              className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-[3.2rem]"
             />
           </section>
           <div className="flex basis-1/3 flex-col gap-[1.6rem]">
             <section className="grid rounded-md border-t-4 border-t-[var(--red)] bg-white p-7 shadow-[0_12px_12px_0_rgba(16,16,148,0.11)]">
-              <h2 className="mb-[0.2rem] text-xl font-semibold text-[var(--very-dark-blue)]">
+              <h2 className="mb-[0.2rem] text-xl font-semibold text-[var(--very-dark-blue)] md:mb-[0.5rem]">
                 Team Builder
               </h2>
               <p className="text-[0.8rem] leading-[1.4rem]">
@@ -63,11 +63,11 @@ export default function Page() {
                 height={64}
                 src={`${BASE_PATH}/four-card-feature-section/icon-team-builder.svg`}
                 alt="Team builder"
-                className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-14"
+                className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-[3.2rem]"
               />
             </section>
             <section className="grid rounded-md border-t-4 border-t-[var(--orange)] bg-white p-7 shadow-[0_12px_12px_0_rgba(16,16,148,0.11)]">
-              <h2 className="mb-[0.2rem] text-xl font-semibold text-[var(--very-dark-blue)]">
+              <h2 className="mb-[0.2rem] text-xl font-semibold text-[var(--very-dark-blue)] md:mb-[0.5rem]">
                 Karma
               </h2>
               <p className="text-[0.8rem] leading-[1.4rem]">
@@ -78,12 +78,12 @@ export default function Page() {
                 height={64}
                 src={`${BASE_PATH}/four-card-feature-section/icon-karma.svg`}
                 alt="Karma"
-                className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-14"
+                className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-[3.2rem]"
               />
             </section>
           </div>
           <section className="grid basis-1/3 rounded-md border-t-4 border-t-[var(--blue)] bg-white p-7 shadow-[0_12px_12px_0_rgba(16,16,148,0.11)]">
-            <h2 className="mb-[0.2rem] text-xl font-semibold text-[var(--very-dark-blue)]">
+            <h2 className="mb-[0.2rem] text-xl font-semibold text-[var(--very-dark-blue)] md:mb-[0.5rem]">
               Calculator
             </h2>
             <p className="text-[0.8rem] leading-[1.4rem]">
@@ -94,7 +94,7 @@ export default function Page() {
               height={64}
               src={`${BASE_PATH}/four-card-feature-section/icon-calculator.svg`}
               alt="Calculator"
-              className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-14"
+              className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-[3.2rem]"
             />
           </section>
         </div>

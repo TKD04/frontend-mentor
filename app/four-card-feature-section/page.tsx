@@ -1,17 +1,29 @@
+"use client";
+
 import nextCofnig from "@/next.config.mjs";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { Poppins } from "next/font/google";
 import Image from "next/image";
+import { useEffect } from "react";
 import "./style.css";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const poppins = Poppins({ subsets: ["latin"], weight: ["200", "400", "600"] });
 
 export default function Page() {
+  useEffect(() => {
+    Aos.init();
+  });
+
   return (
     <main
       className={`${poppins.className} flex min-h-screen justify-center bg-[var(--very-light-gray)] p-8 pb-[4.8rem] pt-[5.2rem] text-[var(--grayish-blue)] md:pt-[4.5rem]`}
     >
-      <article className="flex w-full max-w-[68rem] flex-col items-center">
+      <article
+        className="flex w-full max-w-[68rem] flex-col items-center"
+        data-aos="fade-up"
+      >
         <h1 className="mb-4 text-center text-[1.5rem] font-extralight text-[var(--very-dark-blue)] md:mb-[0.8rem] md:text-4xl md:leading-[3.6rem]">
           Reliable, efficient delivery
           <br />

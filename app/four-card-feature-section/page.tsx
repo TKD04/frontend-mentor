@@ -34,7 +34,7 @@ export default function Page() {
           points to ensure that your project is successful
         </p>
         <div className="mt-20 flex max-w-xs flex-col gap-[1.6rem] md:mt-16 md:max-w-none md:flex-row md:items-center">
-          <section className="grid basis-1/3 rounded-md border-t-4 border-t-[var(--cyan)] p-7 shadow-[0_12px_12px_0_rgba(16,16,148,0.11)]">
+          <section className="grid basis-1/3 rounded-md border-t-4 border-t-[var(--cyan)] bg-white p-7 shadow-[0_12px_12px_0_rgba(16,16,148,0.11)]">
             <h2 className="mb-[0.2rem] text-xl font-semibold text-[var(--very-dark-blue)]">
               Supervisor
             </h2>
@@ -50,7 +50,7 @@ export default function Page() {
             />
           </section>
           <div className="flex basis-1/3 flex-col gap-[1.6rem]">
-            <section className="grid rounded-md border-t-4 border-t-[var(--red)] p-7 shadow-[0_12px_12px_0_rgba(16,16,148,0.11)]">
+            <section className="grid rounded-md border-t-4 border-t-[var(--red)] bg-white p-7 shadow-[0_12px_12px_0_rgba(16,16,148,0.11)]">
               <h2 className="mb-[0.2rem] text-xl font-semibold text-[var(--very-dark-blue)]">
                 Team Builder
               </h2>
@@ -66,7 +66,7 @@ export default function Page() {
                 className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-14"
               />
             </section>
-            <section className="grid rounded-md border-t-4 border-t-[var(--orange)] p-7 shadow-[0_12px_12px_0_rgba(16,16,148,0.11)]">
+            <section className="grid rounded-md border-t-4 border-t-[var(--orange)] bg-white p-7 shadow-[0_12px_12px_0_rgba(16,16,148,0.11)]">
               <h2 className="mb-[0.2rem] text-xl font-semibold text-[var(--very-dark-blue)]">
                 Karma
               </h2>
@@ -82,7 +82,7 @@ export default function Page() {
               />
             </section>
           </div>
-          <section className="grid basis-1/3 rounded-md border-t-4 border-t-[var(--blue)] p-7 shadow-[0_12px_12px_0_rgba(16,16,148,0.11)]">
+          <section className="grid basis-1/3 rounded-md border-t-4 border-t-[var(--blue)] bg-white p-7 shadow-[0_12px_12px_0_rgba(16,16,148,0.11)]">
             <h2 className="mb-[0.2rem] text-xl font-semibold text-[var(--very-dark-blue)]">
               Calculator
             </h2>

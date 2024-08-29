@@ -29,7 +29,7 @@ export default function Page() {
           <br />
           <span className="font-semibold">Powered by Technology</span>
         </h1>
-        <p className="max-w-lg text-center text-[15px] leading-6">
+        <p className="max-w-xs text-center text-[15px] leading-6 md:max-w-lg">
           Our Artificial Intelligence powered tools use millions of project data
           points to ensure that your project is successful
         </p>

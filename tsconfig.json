@@ -36,7 +36,8 @@
     "noUnusedParameters": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "allowJs": true
+    "allowJs": true,
+    "target": "ES2017"
   },
   "include": [
     "next-env.d.ts",

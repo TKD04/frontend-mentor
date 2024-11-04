@@ -48,6 +48,12 @@
           "*.config.ts"
         ]
       }
+    ],
+    "import/extensions": [
+      "off"
+    ],
+    "import/order": [
+      "off"
     ]
   },
   "parser": "@typescript-eslint/parser",

@@ -57,7 +57,7 @@
     "airbnb-typescript",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:tailwindcss/recommended",
-    "prettier",
-    "next/core-web-vitals"
+    "plugin:@next/next/recommended",
+    "prettier"
   ]
 }

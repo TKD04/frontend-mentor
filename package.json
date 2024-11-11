@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "update": "ncu -u && npm i",
     "lint": "eslint .",
     "test": "jest",
     "format": "prettier . --write"

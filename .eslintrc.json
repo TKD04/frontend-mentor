@@ -54,7 +54,8 @@
     ],
     "import/order": [
       "off"
-    ]
+    ],
+    "react-compiler/react-compiler": "error"
   },
   "parser": "@typescript-eslint/parser",
   "extends": [

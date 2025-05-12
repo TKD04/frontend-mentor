@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Page() {
+export default function FourCardFeatureSection() {
   return (
     <main
       className={`${poppins.className} flex min-h-screen justify-center bg-[var(--very-light-gray)] p-8 pb-[4.8rem] pt-20 text-[var(--grayish-blue)] md:pb-20`}

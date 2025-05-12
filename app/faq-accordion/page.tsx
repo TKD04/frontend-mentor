@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Page() {
+export default function FaqAccordion() {
   return (
     <div className="relative">
       <div

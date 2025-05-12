@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Page() {
+export default function RecipePage() {
   return (
     <main
       className={`${outfit.className} min-h-screen bg-[var(--egg-shell)] text-[var(--wenge-brown)] md:p-6`}

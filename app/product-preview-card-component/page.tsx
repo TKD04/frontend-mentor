@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Page() {
+export default function ProductPreviewCardComponent() {
   return (
     <main
       className={`${montserrat.className} grid min-h-screen place-items-center bg-[var(--cream)] px-4 py-8 font-medium text-[var(--dark-grayish-blue)]`}

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Page() {
+export default function SocialLinksProfile() {
   return (
     <main
       className={`${inter.className} grid min-h-screen place-items-center bg-[var(--off-black)] p-4 text-[var(--white)]`}

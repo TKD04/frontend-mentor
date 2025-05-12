@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Page() {
+export default function QrCodeComponent() {
   return (
     <main
       className={`${outfit.className} grid min-h-screen place-items-center bg-[var(--light-gray)] p-4 text-gray-800`}

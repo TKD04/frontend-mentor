@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Page() {
+export default function BlogPreviewCard() {
   return (
     <main
       className={`${figtree.className} grid min-h-screen place-items-center bg-[var(--yellow)] p-6 text-gray-800`}

@@ -1,11 +1,7 @@
-"use client";
-
 import nextCofnig from "@/next.config.mjs";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
 import Image from "next/image";
-import { useEffect } from "react";
 import type { AccordionItemData } from "./Accordion";
 import Accordion from "./Accordion";
 import FAQS from "./faqs";
@@ -21,11 +17,14 @@ const workSans = Work_Sans({
   weight: ["400", "600", "700"],
 });
 
-export default function Page() {
-  useEffect(() => {
-    Aos.init();
-  }, []);
+export const metadata: Metadata = {
+  title: "Frontend Mentor | FAQ accordion",
+  icons: {
+    icon: `${BASE_PATH}/faq-accordion/favicon-32x32.png`,
+  },
+};
 
+export default function Page() {
   return (
     <div className="relative">
       <div
@@ -54,10 +53,7 @@ export default function Page() {
       <main
         className={`${workSans.className} grid min-h-screen place-items-center p-6 text-[var(--dark-purple)]`}
       >
-        <article
-          className="flex w-full max-w-[37.5rem] flex-col gap-4 rounded-lg bg-[var(--white)] p-6 shadow-[0_8px_24px_0_rgba(0,0,0,0.04)] lg:rounded-2xl lg:p-10 lg:shadow-[0_16px_24px_2px_rgba(0,0,0,0.06)]"
-          data-aos="fade-up"
-        >
+        <article className="flex w-full max-w-[37.5rem] flex-col gap-4 rounded-lg bg-[var(--white)] p-6 shadow-[0_8px_24px_0_rgba(0,0,0,0.04)] lg:rounded-2xl lg:p-10 lg:shadow-[0_16px_24px_2px_rgba(0,0,0,0.06)]">
           <div className="-mt-2 mb-1.5 flex gap-6">
             <Image
               width={40}

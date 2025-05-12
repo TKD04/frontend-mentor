@@ -1,29 +1,25 @@
-"use client";
-
 import nextCofnig from "@/next.config.mjs";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Image from "next/image";
-import { useEffect } from "react";
 import "./style.css";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const poppins = Poppins({ subsets: ["latin"], weight: ["200", "400", "600"] });
 
-export default function Page() {
-  useEffect(() => {
-    Aos.init();
-  });
+export const metadata: Metadata = {
+  title: "Frontend Mentor | Four card feature section",
+  icons: {
+    icon: `${BASE_PATH}/four-card-feature-section/favicon-32x32.png`,
+  },
+};
 
+export default function Page() {
   return (
     <main
       className={`${poppins.className} flex min-h-screen justify-center bg-[var(--very-light-gray)] p-8 pb-[4.8rem] pt-20 text-[var(--grayish-blue)] md:pb-20`}
     >
-      <article
-        className="flex w-full max-w-[69rem] flex-col items-center"
-        data-aos="fade-up"
-      >
+      <article className="flex w-full max-w-[69rem] flex-col items-center">
         <h1 className="mb-4 text-center text-[1.5rem] font-extralight text-[var(--very-dark-blue)] md:text-4xl md:leading-[3.2rem]">
           Reliable, efficient delivery
           <br />

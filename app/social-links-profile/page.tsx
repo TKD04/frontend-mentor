@@ -1,30 +1,28 @@
-"use client";
-
+import nextCofnig from "@/next.config.mjs";
 import userAvatarPic from "@/public/social-links-profile/avatar-jessica.jpeg";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
 import socialSiteLinks from "./socialSiteLinks";
 import "./style.css";
 
+const BASE_PATH = nextCofnig.basePath ?? "";
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
-export default function Page() {
-  useEffect(() => {
-    Aos.init();
-  }, []);
+export const metadata: Metadata = {
+  title: "Frontend Mentor | Social links profile",
+  icons: {
+    icon: `${BASE_PATH}/social-links-profile/favicon-32x32.png`,
+  },
+};
 
+export default function Page() {
   return (
     <main
       className={`${inter.className} grid min-h-screen place-items-center bg-[var(--off-black)] p-4 text-[var(--white)]`}
     >
-      <div
-        className="flex w-full max-w-[20.5rem] flex-col gap-6 rounded-xl bg-[var(--dark-grey)] p-6 md:max-w-96 md:p-10"
-        data-aos="fade-up"
-      >
+      <div className="flex w-full max-w-[20.5rem] flex-col gap-6 rounded-xl bg-[var(--dark-grey)] p-6 md:max-w-96 md:p-10">
         <div className="flex flex-col items-center text-center">
           <Image
             src={userAvatarPic}

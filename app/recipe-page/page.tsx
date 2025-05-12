@@ -1,26 +1,27 @@
-"use client";
-
+import nextCofnig from "@/next.config.mjs";
 import omelettePic from "@/public/recipe-page/image-omelette.jpeg";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import type { Metadata } from "next";
 import { Outfit, Young_Serif } from "next/font/google";
 import Image from "next/image";
-import { useEffect } from "react";
 import "./style.css";
 
+const BASE_PATH = nextCofnig.basePath ?? "";
 const youngSerif = Young_Serif({ subsets: ["latin"], weight: ["400"] });
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
-export default function Page() {
-  useEffect(() => {
-    Aos.init();
-  }, []);
+export const metadata: Metadata = {
+  title: "Frontend Mentor | Recipe page",
+  icons: {
+    icon: `${BASE_PATH}/recipe-page/favicon-32x32.png`,
+  },
+};
 
+export default function Page() {
   return (
     <main
       className={`${outfit.className} min-h-screen bg-[var(--egg-shell)] text-[var(--wenge-brown)] md:p-6`}
     >
-      <article className="mx-auto w-full bg-[var(--white)] md:max-w-[46rem] md:rounded-3xl md:p-10 md:shadow-sm" data-aos="fade-up">
+      <article className="mx-auto w-full bg-[var(--white)] md:max-w-[46rem] md:rounded-3xl md:p-10 md:shadow-sm">
         <Image
           src={omelettePic}
           alt="Omelette"

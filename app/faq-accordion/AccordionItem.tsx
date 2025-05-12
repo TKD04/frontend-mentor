@@ -1,3 +1,5 @@
+"use client";
+
 import nextCofnig from "@/next.config.mjs";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";

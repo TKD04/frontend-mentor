@@ -51,7 +51,7 @@ export default function Home() {
                 <h2 className="mb-6 text-2xl font-bold">{solution.name}</h2>
                 <ul className="flex list-none flex-col gap-4">
                   <li>
-                    <Link href={solution.urls.demo} target="_blank">
+                    <Link href={solution.urls.demo}>
                       <div className="rounded-md bg-green-600 px-4 py-2 font-medium transition-colors hover:bg-green-500">
                         Live Demo
                       </div>

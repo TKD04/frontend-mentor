@@ -55,7 +55,7 @@ const frontendMentorSolutionsLinks: Readonly<FrontendMentorSolutionLink[]> = [
         "https://www.frontendmentor.io/solutions/product-preview-card-component-using-nextjs-ycANnBkb9q",
       github:
         "https://github.com/TKD04/frontend-mentor/tree/main/app/product-preview-card-component",
-      demo: "https://tkd04.github.io/frontend-mentor/product-preview-card-component",
+      demo: "/product-preview-card-component",
     },
   },
   {
@@ -65,7 +65,7 @@ const frontendMentorSolutionsLinks: Readonly<FrontendMentorSolutionLink[]> = [
         "https://www.frontendmentor.io/solutions/faq-accordion-using-nextjs-lt2w9bdNBQ",
       github:
         "https://github.com/TKD04/frontend-mentor/tree/main/app/faq-accordion",
-      demo: "https://tkd04.github.io/frontend-mentor/faq-accordion",
+      demo: "/faq-accordion",
     },
   },
   {
@@ -75,7 +75,7 @@ const frontendMentorSolutionsLinks: Readonly<FrontendMentorSolutionLink[]> = [
         "https://www.frontendmentor.io/solutions/four-card-feature-section-using-nextjs-GzWb4jSKrg",
       github:
         "https://github.com/TKD04/frontend-mentor/tree/main/app/four-card-feature-section",
-      demo: "https://tkd04.github.io/frontend-mentor/four-card-feature-section",
+      demo: "/four-card-feature-section",
     },
   },
 ];

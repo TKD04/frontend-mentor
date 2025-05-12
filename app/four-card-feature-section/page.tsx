@@ -2,7 +2,7 @@ import nextCofnig from "@/next.config.mjs";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Image from "next/image";
-import "./style.css";
+import "./four-card-feature-section.css";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const poppins = Poppins({ subsets: ["latin"], weight: ["200", "400", "600"] });

@@ -4,7 +4,7 @@ import perfumePicMobile from "@/public/product-preview-card-component/image-prod
 import type { Metadata } from "next";
 import { Fraunces, Montserrat } from "next/font/google";
 import Image from "next/image";
-import "./style.css";
+import "./product-preview-card-component.css";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const BREAK_POINT_TAILWIND_MD = 768;

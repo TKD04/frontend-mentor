@@ -4,8 +4,8 @@ import { Work_Sans } from "next/font/google";
 import Image from "next/image";
 import type { AccordionItemData } from "./Accordion";
 import Accordion from "./Accordion";
+import "./faq-accordion.css";
 import FAQS from "./faqs";
-import "./style.css";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const FAQS_ACCORDION_ITEMS: AccordionItemData[] = FAQS.map((faq) => ({

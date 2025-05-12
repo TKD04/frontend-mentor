@@ -3,7 +3,7 @@ import qrCodePic from "@/public/qr-code-component/image-qr-code.png";
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import Image from "next/image";
-import "./style.css";
+import "./qr-code-component.css";
 
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "700"] });
 

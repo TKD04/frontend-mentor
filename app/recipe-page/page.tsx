@@ -3,7 +3,7 @@ import omelettePic from "@/public/recipe-page/image-omelette.jpeg";
 import type { Metadata } from "next";
 import { Outfit, Young_Serif } from "next/font/google";
 import Image from "next/image";
-import "./style.css";
+import "./recipe-page.css";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const youngSerif = Young_Serif({ subsets: ["latin"], weight: ["400"] });

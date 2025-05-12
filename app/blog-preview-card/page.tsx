@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import "./style.css";
+import "./blog-preview-card.css";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const figtree = Figtree({ subsets: ["latin"], weight: ["500", "800"] });

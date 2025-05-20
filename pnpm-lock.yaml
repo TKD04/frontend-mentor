@@ -11,9 +11,6 @@ importers:
       '@gsap/react':
         specifier: ^2.1.1
         version: 2.1.1
-      '@tailwindcss/postcss':
-        specifier: ^4.1.7
-        version: 4.1.7
       gsap:
         specifier: ^3.12.5
         version: 3.12.5
@@ -29,10 +26,10 @@ importers:
       react-dom:
         specifier: 19.1.0
         version: 19.1.0(react@19.1.0)
-      tailwindcss:
+    devDependencies:
+      '@tailwindcss/postcss':
         specifier: ^4.1.7
         version: 4.1.7
-    devDependencies:
       '@types/node':
         specifier: ^22
         version: 22.9.0
@@ -42,6 +39,9 @@ importers:
       '@types/react-dom':
         specifier: 19.1.5
         version: 19.1.5(@types/react@19.1.4)
+      tailwindcss:
+        specifier: ^4.1.7
+        version: 4.1.7
       typescript:
         specifier: '5.4'
         version: 5.4.5

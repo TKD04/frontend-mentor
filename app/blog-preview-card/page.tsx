@@ -1,4 +1,4 @@
-import nextCofnig from "@/next.config.mjs";
+import nextCofnig from "@/next.config";
 import authorAvatarPic from "@/public/blog-preview-card/image-avatar.webp";
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";

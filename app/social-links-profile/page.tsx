@@ -1,4 +1,4 @@
-import nextCofnig from "@/next.config.mjs";
+import nextCofnig from "@/next.config";
 import userAvatarPic from "@/public/social-links-profile/avatar-jessica.jpeg";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";

@@ -1,4 +1,4 @@
-import nextCofnig from "@/next.config.mjs";
+import nextCofnig from "@/next.config";
 import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
 import Image from "next/image";

@@ -1,4 +1,4 @@
-import nextCofnig from "@/next.config.mjs";
+import nextCofnig from "@/next.config";
 import perfumePicDesktop from "@/public/product-preview-card-component/image-product-desktop.jpg";
 import perfumePicMobile from "@/public/product-preview-card-component/image-product-mobile.jpg";
 import type { Metadata } from "next";

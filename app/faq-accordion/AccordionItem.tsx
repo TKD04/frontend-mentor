@@ -1,6 +1,6 @@
 "use client";
 
-import nextCofnig from "@/next.config.mjs";
+import nextCofnig from "@/next.config";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
@@ -26,11 +26,11 @@ const animateOpenAccordion = (content: gsap.TweenTarget) =>
       opacity: 1,
       duration: 0.4,
       ease: "power3.out",
-    },
+    }
   );
 const animateCloseAccordion = (
   content: gsap.TweenTarget,
-  element: HTMLDetailsElement,
+  element: HTMLDetailsElement
 ) =>
   gsap.to(content, {
     height: 0,

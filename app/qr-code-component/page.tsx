@@ -1,4 +1,4 @@
-import nextCofnig from "@/next.config.mjs";
+import nextCofnig from "@/next.config";
 import qrCodePic from "@/public/qr-code-component/image-qr-code.png";
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";

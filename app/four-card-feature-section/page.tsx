@@ -1,4 +1,4 @@
-import nextCofnig from "@/next.config.mjs";
+import nextCofnig from "@/next.config";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Image from "next/image";

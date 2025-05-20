@@ -1,4 +1,4 @@
-import nextCofnig from "@/next.config.mjs";
+import nextCofnig from "@/next.config";
 import omelettePic from "@/public/recipe-page/image-omelette.jpeg";
 import type { Metadata } from "next";
 import { Outfit, Young_Serif } from "next/font/google";

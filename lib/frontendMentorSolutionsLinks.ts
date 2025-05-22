@@ -7,7 +7,7 @@ type FrontendMentorSolutionLink = Readonly<{
   };
 }>;
 
-const frontendMentorSolutionsLinks: Readonly<FrontendMentorSolutionLink[]> = [
+const frontendMentorSolutionsLinks: readonly FrontendMentorSolutionLink[] = [
   {
     name: "QR code component",
     urls: {

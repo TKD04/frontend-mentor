@@ -3,7 +3,7 @@ type SocialSiteLink = Readonly<{
   url: string;
 }>;
 
-const socialSiteLinks: Readonly<SocialSiteLink[]> = [
+const socialSiteLinks: readonly SocialSiteLink[] = [
   {
     siteName: "GitHub",
     url: "https://github.com/",

@@ -3,7 +3,7 @@ type Faq = Readonly<{
   answer: string;
 }>;
 
-const FAQS: Readonly<Faq[]> = [
+const FAQS: readonly Faq[] = [
   {
     question: "What is Frontend Mentor, and how will it help me?",
     answer:

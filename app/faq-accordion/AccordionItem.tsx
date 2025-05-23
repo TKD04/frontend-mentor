@@ -1,11 +1,12 @@
 "use client";
 
-import nextCofnig from "@/next.config";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
 import type { KeyboardEvent, MouseEvent } from "react";
 import { useEffect, useRef, useState } from "react";
+
+import nextCofnig from "@/next.config";
 
 type AccordionItemProps = {
   content: string;

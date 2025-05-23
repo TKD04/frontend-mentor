@@ -1,10 +1,12 @@
-import nextCofnig from "@/next.config";
-import perfumePicDesktop from "@/public/product-preview-card-component/image-product-desktop.jpg";
-import perfumePicMobile from "@/public/product-preview-card-component/image-product-mobile.jpg";
+import "./product-preview-card-component.css";
+
 import type { Metadata } from "next";
 import { Fraunces, Montserrat } from "next/font/google";
 import Image from "next/image";
-import "./product-preview-card-component.css";
+
+import nextCofnig from "@/next.config";
+import perfumePicDesktop from "@/public/product-preview-card-component/image-product-desktop.jpg";
+import perfumePicMobile from "@/public/product-preview-card-component/image-product-mobile.jpg";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const BREAK_POINT_TAILWIND_MD = 768;

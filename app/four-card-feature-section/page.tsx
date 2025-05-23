@@ -1,8 +1,10 @@
-import nextCofnig from "@/next.config";
+import "./four-card-feature-section.css";
+
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Image from "next/image";
-import "./four-card-feature-section.css";
+
+import nextCofnig from "@/next.config";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const poppins = Poppins({ subsets: ["latin"], weight: ["200", "400", "600"] });

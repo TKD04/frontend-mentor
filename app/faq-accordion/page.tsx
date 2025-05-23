@@ -1,10 +1,13 @@
-import nextCofnig from "@/next.config";
+import "./faq-accordion.css";
+
 import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
 import Image from "next/image";
+
+import nextCofnig from "@/next.config";
+
 import type { AccordionItemData } from "./Accordion";
 import Accordion from "./Accordion";
-import "./faq-accordion.css";
 import FAQS from "./faqs";
 
 const BASE_PATH = nextCofnig.basePath ?? "";

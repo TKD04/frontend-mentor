@@ -1,9 +1,11 @@
-import nextCofnig from "@/next.config";
-import qrCodePic from "@/public/qr-code-component/image-qr-code.png";
+import "./qr-code-component.css";
+
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import Image from "next/image";
-import "./qr-code-component.css";
+
+import nextCofnig from "@/next.config";
+import qrCodePic from "@/public/qr-code-component/image-qr-code.png";
 
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "700"] });
 

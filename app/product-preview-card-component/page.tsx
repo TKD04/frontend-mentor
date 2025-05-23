@@ -27,23 +27,23 @@ export default function ProductPreviewCardComponent() {
         {/* Not working: https://nextjs.org/docs/pages/api-reference/components/image#art-direction */}
         <picture>
           <source
-            media={`(max-width: ${BREAK_POINT_TAILWIND_MD - 1}px)`}
-            width={perfumePicMobile.width}
             height={perfumePicMobile.height}
+            media={`(max-width: ${BREAK_POINT_TAILWIND_MD - 1}px)`}
             srcSet={perfumePicMobile.src}
+            width={perfumePicMobile.width}
           />
           <source
-            media={`(min-width: ${BREAK_POINT_TAILWIND_MD}px)`}
-            width={perfumePicDesktop.width}
             height={perfumePicDesktop.height}
+            media={`(min-width: ${BREAK_POINT_TAILWIND_MD}px)`}
             srcSet={perfumePicDesktop.src}
+            width={perfumePicDesktop.width}
           />
           <img
-            width={perfumePicMobile.width}
-            height={perfumePicMobile.height}
-            src={perfumePicMobile.src}
             alt="Product perfume"
             className="h-auto w-full rounded-t-lg md:rounded-tr-none md:rounded-bl-lg"
+            height={perfumePicMobile.height}
+            src={perfumePicMobile.src}
+            width={perfumePicMobile.width}
           />
         </picture>
         <section className="flex flex-col gap-4 p-6 md:max-w-[50%] md:gap-6 md:p-8">
@@ -66,16 +66,16 @@ export default function ProductPreviewCardComponent() {
             <span className="text-[0.8rem] line-through">$169.99</span>
           </section>
           <button
-            type="button"
             className="-mt-0.5 flex appearance-none items-center justify-center gap-3 rounded-lg bg-[var(--dark-cyan)] py-[0.87rem] text-[var(--white)] transition-colors hover:bg-[var(--dark-cyan-hover)]"
+            type="button"
           >
             <Image
-              width={15}
-              height={16}
-              src={`${BASE_PATH}/product-preview-card-component/icon-cart.svg`}
               alt="Shopping cart"
-              loading="eager"
               className="inline"
+              height={16}
+              loading="eager"
+              src={`${BASE_PATH}/product-preview-card-component/icon-cart.svg`}
+              width={15}
             />
             <span className="text-[0.85rem] font-bold">Add to Cart</span>
           </button>

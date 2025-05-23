@@ -38,11 +38,11 @@ export default function FourCardFeatureSection() {
               Monitors activity to identify project roadblocks
             </p>
             <Image
-              width={64}
-              height={64}
-              src={`${BASE_PATH}/four-card-feature-section/icon-supervisor.svg`}
               alt="Supervisor"
               className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-[2.55rem] md:w-[64px]"
+              height={64}
+              src={`${BASE_PATH}/four-card-feature-section/icon-supervisor.svg`}
+              width={64}
             />
           </section>
           <div className="flex basis-1/3 flex-col gap-[1.6rem] md:gap-[1.85rem]">
@@ -55,11 +55,11 @@ export default function FourCardFeatureSection() {
                 project
               </p>
               <Image
-                width={64}
-                height={64}
-                src={`${BASE_PATH}/four-card-feature-section/icon-team-builder.svg`}
                 alt="Team builder"
                 className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-[2.55rem] md:w-[64px]"
+                height={64}
+                src={`${BASE_PATH}/four-card-feature-section/icon-team-builder.svg`}
+                width={64}
               />
             </section>
             <section className="grid rounded-md border-t-4 border-t-[var(--orange)] bg-white p-7 shadow-[0_12px_12px_0_rgba(16,16,148,0.11)] md:px-8 md:pb-8">
@@ -70,11 +70,11 @@ export default function FourCardFeatureSection() {
                 Regularly evaluates our talent to ensure quality
               </p>
               <Image
-                width={64}
-                height={64}
-                src={`${BASE_PATH}/four-card-feature-section/icon-karma.svg`}
                 alt="Karma"
                 className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-[2.55rem] md:w-[64px]"
+                height={64}
+                src={`${BASE_PATH}/four-card-feature-section/icon-karma.svg`}
+                width={64}
               />
             </section>
           </div>
@@ -86,11 +86,11 @@ export default function FourCardFeatureSection() {
               Uses data from past projects to provide better delivery estimates
             </p>
             <Image
-              width={64}
-              height={64}
-              src={`${BASE_PATH}/four-card-feature-section/icon-calculator.svg`}
               alt="Calculator"
               className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-[2.55rem] md:w-[64px]"
+              height={64}
+              src={`${BASE_PATH}/four-card-feature-section/icon-calculator.svg`}
+              width={64}
             />
           </section>
         </div>

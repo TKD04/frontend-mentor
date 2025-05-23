@@ -25,12 +25,12 @@ export default function SocialLinksProfile() {
       <div className="flex w-full max-w-[20.5rem] flex-col gap-6 rounded-xl bg-[var(--dark-grey)] p-6 md:max-w-96 md:p-10">
         <div className="flex flex-col items-center text-center">
           <Image
-            src={userAvatarPic}
             alt="Avatar"
+            className="mb-6 size-[5.5rem] rounded-full"
             loading="eager"
             placeholder="blur"
             priority
-            className="mb-6 size-[5.5rem] rounded-full"
+            src={userAvatarPic}
           />
           <h1 className="mb-2 text-2xl font-semibold">Jessica Randall</h1>
           <span className="mb-6 text-sm font-semibold text-[var(--green)]">

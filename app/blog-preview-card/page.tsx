@@ -23,13 +23,13 @@ export default function BlogPreviewCard() {
     >
       <article className="pointer-events-none flex w-full max-w-[20.5rem] flex-col gap-6 rounded-3xl border border-[var(--black)] bg-[var(--white)] p-6 shadow-[8px_8px_0_0_var(--black)] transition-shadow hover:shadow-[16px_16px_0_0_var(--black)] md:max-w-96">
         <Image
-          width={336}
-          height={201}
-          src={`${BASE_PATH}/blog-preview-card/illustration-article.svg`}
           alt="Illustration article"
+          className="h-auto w-full rounded-xl"
+          height={201}
           loading="eager"
           priority
-          className="h-auto w-full rounded-xl"
+          src={`${BASE_PATH}/blog-preview-card/illustration-article.svg`}
+          width={336}
         />
         <div className="flex flex-col gap-4">
           <div className="flex flex-col items-start gap-3">
@@ -49,11 +49,11 @@ export default function BlogPreviewCard() {
           </p>
           <div className="mt-2 flex items-center gap-3">
             <Image
-              src={authorAvatarPic}
               alt="Author's avatar"
+              className="size-8 rounded-full"
               loading="eager"
               placeholder="blur"
-              className="size-8 rounded-full"
+              src={authorAvatarPic}
             />
             <span className="text-xs font-extrabold md:text-sm">
               Greg Hooper

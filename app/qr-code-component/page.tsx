@@ -23,12 +23,12 @@ export default function QrCodeComponent() {
     >
       <div className="flex w-full max-w-80 flex-col gap-6 rounded-3xl bg-[var(--white)] p-4 shadow-[0_28px_32px_0_rgba(0,0,0,0.04)]">
         <Image
-          src={qrCodePic}
           alt="QR Code"
+          className="h-auto w-full rounded-xl"
           loading="eager"
           placeholder="blur"
           priority
-          className="h-auto w-full rounded-xl"
+          src={qrCodePic}
         />
         <div className="mb-6 flex flex-col gap-3 px-3 text-center">
           <h1 className="text-[1.4rem] leading-7 font-bold text-[var(--dark-blue)]">

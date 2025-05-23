@@ -103,21 +103,21 @@ export default function AccordionItem({
           {title}
           {isOpen ? (
             <Image
-              width={30}
+              alt="Minus"
+              aria-hidden
+              className="h-auto w-[30px]"
               height={31}
               src={`${BASE_PATH}/faq-accordion/icon-minus.svg`}
-              alt="Minus"
-              className="h-auto w-[30px]"
-              aria-hidden
+              width={30}
             />
           ) : (
             <Image
-              width={30}
+              alt="Plus"
+              aria-hidden
+              className="h-auto w-[30px]"
               height={31}
               src={`${BASE_PATH}/faq-accordion/icon-plus.svg`}
-              alt="Plus"
-              className="h-auto w-[30px]"
-              aria-hidden
+              width={30}
             />
           )}
         </summary>

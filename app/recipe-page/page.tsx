@@ -10,10 +10,10 @@ const youngSerif = Young_Serif({ subsets: ["latin"], weight: ["400"] });
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
 export const metadata: Metadata = {
-  title: "Frontend Mentor | Recipe page",
   icons: {
     icon: `${BASE_PATH}/recipe-page/favicon-32x32.png`,
   },
+  title: "Frontend Mentor | Recipe page",
 };
 
 export default function RecipePage() {

@@ -12,10 +12,10 @@ const montserrat = Montserrat({ subsets: ["latin"], weight: ["500", "700"] });
 const fraunces = Fraunces({ subsets: ["latin"], weight: ["700"] });
 
 export const metadata: Metadata = {
-  title: "Frontend Mentor | Product preview card component",
   icons: {
     icon: `${BASE_PATH}/product-preview-card-component/favicon-32x32.png`,
   },
+  title: "Frontend Mentor | Product preview card component",
 };
 
 export default function ProductPreviewCardComponent() {
@@ -43,13 +43,13 @@ export default function ProductPreviewCardComponent() {
             height={perfumePicMobile.height}
             src={perfumePicMobile.src}
             alt="Product perfume"
-            className="h-auto w-full rounded-t-lg md:rounded-bl-lg md:rounded-tr-none"
+            className="h-auto w-full rounded-t-lg md:rounded-tr-none md:rounded-bl-lg"
           />
         </picture>
         <section className="flex flex-col gap-4 p-6 md:max-w-[50%] md:gap-6 md:p-8">
-          <span className="text-xs uppercase tracking-[0.3rem]">Perfume</span>
+          <span className="text-xs tracking-[0.3rem] uppercase">Perfume</span>
           <h1
-            className={`${fraunces.className} -mt-1 text-[1.95rem] font-bold leading-8 text-[var(--very-dark-blue)]`}
+            className={`${fraunces.className} -mt-1 text-[1.95rem] leading-8 font-bold text-[var(--very-dark-blue)]`}
           >
             Gabrielle Essence Eau De Parfum
           </h1>

@@ -1,8 +1,8 @@
 import AccordionItem from "./AccordionItem";
 
 export type AccordionItemData = {
-  title: string;
   content: string;
+  title: string;
 };
 type AccordionProps = {
   items: AccordionItemData[];

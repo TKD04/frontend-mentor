@@ -8,16 +8,16 @@ const BASE_PATH = nextCofnig.basePath ?? "";
 const poppins = Poppins({ subsets: ["latin"], weight: ["200", "400", "600"] });
 
 export const metadata: Metadata = {
-  title: "Frontend Mentor | Four card feature section",
   icons: {
     icon: `${BASE_PATH}/four-card-feature-section/favicon-32x32.png`,
   },
+  title: "Frontend Mentor | Four card feature section",
 };
 
 export default function FourCardFeatureSection() {
   return (
     <main
-      className={`${poppins.className} flex min-h-screen justify-center bg-[var(--very-light-gray)] p-8 pb-[4.8rem] pt-20 text-[var(--grayish-blue)] md:pb-20`}
+      className={`${poppins.className} flex min-h-screen justify-center bg-[var(--very-light-gray)] p-8 pt-20 pb-[4.8rem] text-[var(--grayish-blue)] md:pb-20`}
     >
       <article className="flex w-full max-w-[69rem] flex-col items-center">
         <h1 className="mb-4 text-center text-[1.5rem] font-extralight text-[var(--very-dark-blue)] md:text-4xl md:leading-[3.2rem]">

@@ -8,9 +8,9 @@ import type { KeyboardEvent, MouseEvent } from "react";
 import { useEffect, useRef, useState } from "react";
 
 type AccordionItemProps = {
-  title: string;
   content: string;
   isOpenDefault: boolean;
+  title: string;
 };
 
 const BASE_PATH = nextCofnig.basePath ?? "";
@@ -22,31 +22,31 @@ const animateOpenAccordion = (content: gsap.TweenTarget) =>
       opacity: 0,
     },
     {
-      height: "auto",
-      opacity: 1,
       duration: 0.4,
       ease: "power3.out",
-    }
+      height: "auto",
+      opacity: 1,
+    },
   );
 const animateCloseAccordion = (
   content: gsap.TweenTarget,
-  element: HTMLDetailsElement
+  element: HTMLDetailsElement,
 ) =>
   gsap.to(content, {
-    height: 0,
-    opacity: 0,
     duration: 0.4,
     ease: "power3.out",
-    overwrite: true,
+    height: 0,
     onComplete: () => {
       element.removeAttribute("open");
     },
+    opacity: 0,
+    overwrite: true,
   });
 
 export default function AccordionItem({
-  title,
   content,
   isOpenDefault,
+  title,
 }: AccordionItemProps) {
   const [isOpen, setIsOpen] = useState(isOpenDefault);
   const liRef = useRef<HTMLLIElement>(null);
@@ -92,7 +92,7 @@ export default function AccordionItem({
       <details ref={detailsRef}>
         <summary
           // Using "flex" to remove details-marker */}
-          className="flex cursor-pointer items-center justify-between gap-4 font-semibold leading-[1.2rem] transition-colors hover:text-[var(--accordion-item-hover)] lg:text-lg"
+          className="flex cursor-pointer items-center justify-between gap-4 leading-[1.2rem] font-semibold transition-colors hover:text-[var(--accordion-item-hover)] lg:text-lg"
           onClick={handleClickItem}
           // Using "onKeyDown" to fix "jsx-a11y/click-events-have-key-events"
           onKeyDown={handleKeyDownItem}

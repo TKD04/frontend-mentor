@@ -1,12 +1,12 @@
 import AccordionItem from "./accordion-item";
 
-export type AccordionItemData = {
+export interface AccordionItemData {
   content: string;
   title: string;
-};
-type AccordionProps = {
+}
+interface AccordionProps {
   items: AccordionItemData[];
-};
+}
 
 export default function Accordion({ items }: AccordionProps) {
   return (

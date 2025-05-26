@@ -8,11 +8,11 @@ import { useEffect, useRef, useState } from "react";
 
 import nextCofnig from "@/next.config";
 
-type AccordionItemProps = {
+interface AccordionItemProps {
   content: string;
   isOpenDefault: boolean;
   title: string;
-};
+}
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const animateOpenAccordion = (content: gsap.TweenTarget) =>

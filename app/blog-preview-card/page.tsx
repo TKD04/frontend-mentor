@@ -1,21 +1,19 @@
-import "./blog-preview-card.css";
-
+import nextCofnig from "@/next.config";
+import authorAvatarPic from "@/public/blog-preview-card/image-avatar.webp";
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-
-import nextCofnig from "@/next.config";
-import authorAvatarPic from "@/public/blog-preview-card/image-avatar.webp";
+import "./blog-preview-card.css";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const figtree = Figtree({ subsets: ["latin"], weight: ["500", "800"] });
 
 export const metadata: Metadata = {
+  title: "Frontend Mentor | Blog preview card",
   icons: {
     icon: `${BASE_PATH}/blog-preview-card/favicon-32x32.png`,
   },
-  title: "Frontend Mentor | Blog preview card",
 };
 
 export default function BlogPreviewCard() {
@@ -25,13 +23,13 @@ export default function BlogPreviewCard() {
     >
       <article className="pointer-events-none flex w-full max-w-[20.5rem] flex-col gap-6 rounded-3xl border border-[var(--black)] bg-[var(--white)] p-6 shadow-[8px_8px_0_0_var(--black)] transition-shadow hover:shadow-[16px_16px_0_0_var(--black)] md:max-w-96">
         <Image
-          alt="Illustration article"
-          className="h-auto w-full rounded-xl"
+          width={336}
           height={201}
+          src={`${BASE_PATH}/blog-preview-card/illustration-article.svg`}
+          alt="Illustration article"
           loading="eager"
           priority
-          src={`${BASE_PATH}/blog-preview-card/illustration-article.svg`}
-          width={336}
+          className="h-auto w-full rounded-xl"
         />
         <div className="flex flex-col gap-4">
           <div className="flex flex-col items-start gap-3">
@@ -51,11 +49,11 @@ export default function BlogPreviewCard() {
           </p>
           <div className="mt-2 flex items-center gap-3">
             <Image
+              src={authorAvatarPic}
               alt="Author's avatar"
-              className="size-8 rounded-full"
               loading="eager"
               placeholder="blur"
-              src={authorAvatarPic}
+              className="size-8 rounded-full"
             />
             <span className="text-xs font-extrabold md:text-sm">
               Greg Hooper

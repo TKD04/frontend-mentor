@@ -1,21 +1,19 @@
-import "./recipe-page.css";
-
+import nextCofnig from "@/next.config";
+import omelettePic from "@/public/recipe-page/image-omelette.jpeg";
 import type { Metadata } from "next";
 import { Outfit, Young_Serif } from "next/font/google";
 import Image from "next/image";
-
-import nextCofnig from "@/next.config";
-import omelettePic from "@/public/recipe-page/image-omelette.jpeg";
+import "./recipe-page.css";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const youngSerif = Young_Serif({ subsets: ["latin"], weight: ["400"] });
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
 export const metadata: Metadata = {
+  title: "Frontend Mentor | Recipe page",
   icons: {
     icon: `${BASE_PATH}/recipe-page/favicon-32x32.png`,
   },
-  title: "Frontend Mentor | Recipe page",
 };
 
 export default function RecipePage() {
@@ -25,12 +23,12 @@ export default function RecipePage() {
     >
       <article className="mx-auto w-full bg-[var(--white)] md:max-w-[46rem] md:rounded-3xl md:p-10 md:shadow-sm">
         <Image
+          src={omelettePic}
           alt="Omelette"
-          className="h-auto w-full md:mb-10 md:rounded-xl"
           loading="eager"
           placeholder="blur"
           priority
-          src={omelettePic}
+          className="h-auto w-full md:mb-10 md:rounded-xl"
         />
         <section className="flex flex-col gap-8 p-8 md:gap-7 md:p-0">
           <h1

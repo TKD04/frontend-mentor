@@ -1,8 +1,7 @@
+import frontendMentorSolutionsLinks from "@/constants/frontendMentorSolutionsLinks";
 import { ExternalLink } from "lucide-react";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-
-import frontendMentorSolutionsLinks from "@/constants/frontend-mentor-solutions-links";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,8 +19,8 @@ export default function Home() {
             <li>
               <Link
                 href="https://www.frontendmentor.io/profile/TKD04"
-                rel="noopener noreferrer"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500">
                   Frontend Mentor Profile{" "}
@@ -32,8 +31,8 @@ export default function Home() {
             <li>
               <Link
                 href="https://github.com/TKD04/frontend-mentor"
-                rel="noopener noreferrer"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500">
                   GitHub Repository <ExternalLink className="inline size-4" />
@@ -46,8 +45,8 @@ export default function Home() {
           <ul className="grid list-none grid-cols-1 gap-6 md:grid-cols-2">
             {[...frontendMentorSolutionsLinks].reverse().map((solution) => (
               <li
-                className="flex flex-col justify-between rounded-xl bg-gray-800 p-6 shadow"
                 key={solution.name}
+                className="flex flex-col justify-between rounded-xl bg-gray-800 p-6 shadow"
               >
                 <h2 className="mb-6 text-2xl font-bold">{solution.name}</h2>
                 <ul className="flex list-none flex-col gap-4">
@@ -61,8 +60,8 @@ export default function Home() {
                   <li>
                     <Link
                       href={solution.urls.frontendMentor}
-                      rel="noopener noreferrer"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500">
                         Frontend Mentor{" "}
@@ -73,8 +72,8 @@ export default function Home() {
                   <li>
                     <Link
                       href={solution.urls.github}
-                      rel="noopener noreferrer"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500">
                         GitHub <ExternalLink className="inline size-4" />

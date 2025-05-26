@@ -25,8 +25,19 @@
         "./*"
       ]
     },
-    "target": "ES2017",
-    "allowJs": true
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "allowUnusedLabels": false,
+    "noImplicitOverride": true,
+    "exactOptionalPropertyTypes": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUnusedLocals": true,
+    "allowUnreachableCode": false,
+    "noUnusedParameters": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowJs": true,
+    "target": "ES2017"
   },
   "include": [
     "next-env.d.ts",

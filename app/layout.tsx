@@ -1,11 +1,10 @@
+import type { Metadata } from "next";
 import "./globals.css";
 
-import type { Metadata } from "next";
-
 export const metadata: Metadata = {
+  title: "TKD 04's Frontend Mentor Solutions",
   description:
     "Journey of what solutions TKD04 made to solve Frontend Mentor Challenges.",
-  title: "TKD 04's Frontend Mentor Solutions",
 };
 
 export default function RootLayout({

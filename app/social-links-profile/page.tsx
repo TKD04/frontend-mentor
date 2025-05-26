@@ -1,23 +1,20 @@
-import "./social-links-profile.css";
-
+import nextCofnig from "@/next.config";
+import userAvatarPic from "@/public/social-links-profile/avatar-jessica.jpeg";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-
-import nextCofnig from "@/next.config";
-import userAvatarPic from "@/public/social-links-profile/avatar-jessica.jpeg";
-
-import socialSiteLinks from "./social-site-links";
+import "./social-links-profile.css";
+import socialSiteLinks from "./socialSiteLinks";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
 export const metadata: Metadata = {
+  title: "Frontend Mentor | Social links profile",
   icons: {
     icon: `${BASE_PATH}/social-links-profile/favicon-32x32.png`,
   },
-  title: "Frontend Mentor | Social links profile",
 };
 
 export default function SocialLinksProfile() {
@@ -28,12 +25,12 @@ export default function SocialLinksProfile() {
       <div className="flex w-full max-w-[20.5rem] flex-col gap-6 rounded-xl bg-[var(--dark-grey)] p-6 md:max-w-96 md:p-10">
         <div className="flex flex-col items-center text-center">
           <Image
+            src={userAvatarPic}
             alt="Avatar"
-            className="mb-6 size-[5.5rem] rounded-full"
             loading="eager"
             placeholder="blur"
             priority
-            src={userAvatarPic}
+            className="mb-6 size-[5.5rem] rounded-full"
           />
           <h1 className="mb-2 text-2xl font-semibold">Jessica Randall</h1>
           <span className="mb-6 text-sm font-semibold text-[var(--green)]">

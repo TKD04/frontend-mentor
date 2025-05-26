@@ -1,25 +1,23 @@
-import "./four-card-feature-section.css";
-
+import nextCofnig from "@/next.config";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Image from "next/image";
-
-import nextCofnig from "@/next.config";
+import "./four-card-feature-section.css";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const poppins = Poppins({ subsets: ["latin"], weight: ["200", "400", "600"] });
 
 export const metadata: Metadata = {
+  title: "Frontend Mentor | Four card feature section",
   icons: {
     icon: `${BASE_PATH}/four-card-feature-section/favicon-32x32.png`,
   },
-  title: "Frontend Mentor | Four card feature section",
 };
 
 export default function FourCardFeatureSection() {
   return (
     <main
-      className={`${poppins.className} flex min-h-screen justify-center bg-[var(--very-light-gray)] p-8 pt-20 pb-[4.8rem] text-[var(--grayish-blue)] md:pb-20`}
+      className={`${poppins.className} flex min-h-screen justify-center bg-[var(--very-light-gray)] p-8 pb-[4.8rem] pt-20 text-[var(--grayish-blue)] md:pb-20`}
     >
       <article className="flex w-full max-w-[69rem] flex-col items-center">
         <h1 className="mb-4 text-center text-[1.5rem] font-extralight text-[var(--very-dark-blue)] md:text-4xl md:leading-[3.2rem]">
@@ -40,11 +38,11 @@ export default function FourCardFeatureSection() {
               Monitors activity to identify project roadblocks
             </p>
             <Image
-              alt="Supervisor"
-              className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-[2.55rem] md:w-[64px]"
+              width={64}
               height={64}
               src={`${BASE_PATH}/four-card-feature-section/icon-supervisor.svg`}
-              width={64}
+              alt="Supervisor"
+              className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-[2.55rem] md:w-[64px]"
             />
           </section>
           <div className="flex basis-1/3 flex-col gap-[1.6rem] md:gap-[1.85rem]">
@@ -57,11 +55,11 @@ export default function FourCardFeatureSection() {
                 project
               </p>
               <Image
-                alt="Team builder"
-                className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-[2.55rem] md:w-[64px]"
+                width={64}
                 height={64}
                 src={`${BASE_PATH}/four-card-feature-section/icon-team-builder.svg`}
-                width={64}
+                alt="Team builder"
+                className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-[2.55rem] md:w-[64px]"
               />
             </section>
             <section className="grid rounded-md border-t-4 border-t-[var(--orange)] bg-white p-7 shadow-[0_12px_12px_0_rgba(16,16,148,0.11)] md:px-8 md:pb-8">
@@ -72,11 +70,11 @@ export default function FourCardFeatureSection() {
                 Regularly evaluates our talent to ensure quality
               </p>
               <Image
-                alt="Karma"
-                className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-[2.55rem] md:w-[64px]"
+                width={64}
                 height={64}
                 src={`${BASE_PATH}/four-card-feature-section/icon-karma.svg`}
-                width={64}
+                alt="Karma"
+                className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-[2.55rem] md:w-[64px]"
               />
             </section>
           </div>
@@ -88,11 +86,11 @@ export default function FourCardFeatureSection() {
               Uses data from past projects to provide better delivery estimates
             </p>
             <Image
-              alt="Calculator"
-              className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-[2.55rem] md:w-[64px]"
+              width={64}
               height={64}
               src={`${BASE_PATH}/four-card-feature-section/icon-calculator.svg`}
-              width={64}
+              alt="Calculator"
+              className="mt-8 h-auto w-[58px] self-end justify-self-end md:mt-[2.55rem] md:w-[64px]"
             />
           </section>
         </div>

@@ -8,7 +8,7 @@ import Link from "next/link";
 import nextCofnig from "@/next.config";
 import userAvatarPic from "@/public/social-links-profile/avatar-jessica.jpeg";
 
-import socialSiteLinks from "./socialSiteLinks";
+import socialSiteLinks from "./social-site-links";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"] });

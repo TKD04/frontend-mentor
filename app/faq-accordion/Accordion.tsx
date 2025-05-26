@@ -1,4 +1,4 @@
-import AccordionItem from "./AccordionItem";
+import AccordionItem from "./accordion-item";
 
 export type AccordionItemData = {
   content: string;

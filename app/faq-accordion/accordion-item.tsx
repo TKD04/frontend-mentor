@@ -8,7 +8,7 @@ import { useEffect, useRef, useState } from "react";
 
 import nextCofnig from "@/next.config";
 
-interface AccordionItemProps {
+interface AccordionItemProperties {
   content: string;
   isOpenDefault: boolean;
   title: string;
@@ -48,30 +48,30 @@ export default function AccordionItem({
   content,
   isOpenDefault,
   title,
-}: AccordionItemProps) {
+}: AccordionItemProperties) {
   const [isOpen, setIsOpen] = useState(isOpenDefault);
-  const liRef = useRef<HTMLLIElement>(null);
-  const detailsRef = useRef<HTMLDetailsElement>(null);
-  const divRef = useRef<HTMLDivElement>(null);
-  const { contextSafe } = useGSAP({ scope: liRef });
+  const liReference = useRef<HTMLLIElement>(null);
+  const detailsReference = useRef<HTMLDetailsElement>(null);
+  const divReference = useRef<HTMLDivElement>(null);
+  const { contextSafe } = useGSAP({ scope: liReference });
 
-  const handleClickItem = (e: MouseEvent) => {
-    e.preventDefault();
+  const handleClickItem = (mouseEvent: MouseEvent) => {
+    mouseEvent.preventDefault();
     setIsOpen(!isOpen);
   };
-  const handleKeyDownItem = (e: KeyboardEvent<HTMLElement>) => {
-    if (!(e.key === " " || e.key === "Enter")) {
+  const handleKeyDownItem = (keyboardEvent: KeyboardEvent<HTMLElement>) => {
+    if (!(keyboardEvent.key === " " || keyboardEvent.key === "Enter")) {
       return;
     }
 
-    e.preventDefault();
+    keyboardEvent.preventDefault();
     setIsOpen(!isOpen);
   };
 
   useEffect(() => {
     contextSafe(() => {
-      const detailsCurrent = detailsRef.current;
-      const divCurrent = divRef.current;
+      const detailsCurrent = detailsReference.current;
+      const divCurrent = divReference.current;
 
       if (detailsCurrent === null || divCurrent === null) {
         throw new Error("detailsCurrent and divCurrent must not null");
@@ -88,9 +88,9 @@ export default function AccordionItem({
   return (
     <li
       className="border-b border-b-[var(--light-pink)] py-5 first:pt-0 last:border-b-0 last:pb-0 lg:py-6"
-      ref={liRef}
+      ref={liReference}
     >
-      <details ref={detailsRef}>
+      <details ref={detailsReference}>
         <summary
           // Using "flex" to remove details-marker */}
           className="flex cursor-pointer items-center justify-between gap-4 leading-[1.2rem] font-semibold transition-colors hover:text-[var(--accordion-item-hover)] lg:text-lg"
@@ -126,7 +126,7 @@ export default function AccordionItem({
             made by setting padding to the tag directly under the details */}
         <div
           className="overflow-hidden text-sm leading-[1.3rem] text-[var(--grayish-purple)] lg:text-[16px] lg:leading-6"
-          ref={divRef}
+          ref={divReference}
         >
           <p className="pt-6">{content}</p>
         </div>

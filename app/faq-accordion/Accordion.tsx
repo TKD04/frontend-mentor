@@ -4,11 +4,11 @@ export interface AccordionItemData {
   content: string;
   title: string;
 }
-interface AccordionProps {
+interface AccordionProperties {
   items: AccordionItemData[];
 }
 
-export default function Accordion({ items }: AccordionProps) {
+export default function Accordion({ items }: AccordionProperties) {
   return (
     <ul className="flex list-none flex-col">
       {items.map((item, index) => (

@@ -175,7 +175,6 @@ const config = tseslint.config(
     files: [
       "{app,components,features}/**/*.ts",
       "{constants,hooks,lib}/**/*.ts",
-      "*.{js,mjs,cjs,ts}",
     ],
     name: "jsdoc",
   },
@@ -263,7 +262,7 @@ const config = tseslint.config(
         typecheck: true,
       },
     },
-  }
+  },
 );
 
 export default config;

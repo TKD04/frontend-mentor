@@ -6,11 +6,15 @@ import Image from "next/image";
 
 import nextCofnig from "@/next.config";
 
+import type { AccordionItemData } from "./accordion";
+import Accordion from "./accordion";
+import FAQS from "./faqs";
+
 const BASE_PATH = nextCofnig.basePath ?? "";
-// const FAQS_ACCORDION_ITEMS: AccordionItemData[] = FAQS.map((faq) => ({
-//   content: faq.answer,
-//   title: faq.question,
-// }));
+const FAQS_ACCORDION_ITEMS: AccordionItemData[] = FAQS.map((faq) => ({
+  content: faq.answer,
+  title: faq.question,
+}));
 const workSans = Work_Sans({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
@@ -64,7 +68,7 @@ export default function FaqAccordion() {
             />
             <h1 className="text-[2rem] font-bold lg:text-[3.6rem]">FAQs</h1>
           </div>
-          {/* <Accordion items={FAQS_ACCORDION_ITEMS} /> */}
+          <Accordion items={FAQS_ACCORDION_ITEMS} />
         </article>
       </main>
     </div>

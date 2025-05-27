@@ -13,10 +13,10 @@ export default function Accordion({ items }: AccordionProps) {
     <ul className="flex list-none flex-col">
       {items.map((item, index) => (
         <AccordionItem
-          key={item.title}
-          title={item.title}
           content={item.content}
           isOpenDefault={index === 0}
+          key={item.title}
+          title={item.title}
         />
       ))}
     </ul>

@@ -25,12 +25,12 @@ export default function RecipePage() {
     >
       <article className="mx-auto w-full bg-[var(--white)] md:max-w-[46rem] md:rounded-3xl md:p-10 md:shadow-sm">
         <Image
-          src={omelettePic}
           alt="Omelette"
+          className="h-auto w-full md:mb-10 md:rounded-xl"
           loading="eager"
           placeholder="blur"
           priority
-          className="h-auto w-full md:mb-10 md:rounded-xl"
+          src={omelettePic}
         />
         <section className="flex flex-col gap-8 p-8 md:gap-7 md:p-0">
           <h1

@@ -30,13 +30,13 @@ export default function ProductPreviewCardComponent() {
         <picture>
           <source
             height={perfumePicMobile.height}
-            media={`(max-width: ${BREAK_POINT_TAILWIND_MD - 1}px)`}
+            media={`(max-width: ${(BREAK_POINT_TAILWIND_MD - 1).toString()}px)`}
             srcSet={perfumePicMobile.src}
             width={perfumePicMobile.width}
           />
           <source
             height={perfumePicDesktop.height}
-            media={`(min-width: ${BREAK_POINT_TAILWIND_MD}px)`}
+            media={`(min-width: ${BREAK_POINT_TAILWIND_MD.toString()}px)`}
             srcSet={perfumePicDesktop.src}
             width={perfumePicDesktop.width}
           />

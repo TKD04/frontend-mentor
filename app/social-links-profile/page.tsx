@@ -1,10 +1,13 @@
-import nextCofnig from "@/next.config";
-import userAvatarPic from "@/public/social-links-profile/avatar-jessica.jpeg";
+import "./social-links-profile.css";
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import "./social-links-profile.css";
+
+import nextCofnig from "@/next.config";
+import userAvatarPic from "@/public/social-links-profile/avatar-jessica.jpeg";
+
 import socialSiteLinks from "./social-site-links";
 
 const BASE_PATH = nextCofnig.basePath ?? "";

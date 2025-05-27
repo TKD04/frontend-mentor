@@ -1,9 +1,11 @@
-import nextCofnig from "@/next.config";
-import qrCodePic from "@/public/qr-code-component/image-qr-code.png";
+import "./qr-code-component.css";
+
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import Image from "next/image";
-import "./qr-code-component.css";
+
+import nextCofnig from "@/next.config";
+import qrCodePic from "@/public/qr-code-component/image-qr-code.png";
 
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -31,10 +33,10 @@ export default function QrCodeComponent() {
           className="h-auto w-full rounded-xl"
         />
         <div className="mb-6 flex flex-col gap-3 px-3 text-center">
-          <h1 className="text-[1.4rem] font-bold leading-7 text-[var(--dark-blue)]">
+          <h1 className="text-[1.4rem] leading-7 font-bold text-[var(--dark-blue)]">
             Improve your front-end skills by building projects
           </h1>
-          <p className="text-[15px] font-normal leading-5 text-[var(--grayish-blue)]">
+          <p className="text-[15px] leading-5 font-normal text-[var(--grayish-blue)]">
             Scan the QR code to visit Frontend Mentor and take your coding
             skills to the next level
           </p>

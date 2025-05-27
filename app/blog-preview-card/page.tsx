@@ -1,10 +1,12 @@
-import nextCofnig from "@/next.config";
-import authorAvatarPic from "@/public/blog-preview-card/image-avatar.webp";
+import "./blog-preview-card.css";
+
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import "./blog-preview-card.css";
+
+import nextCofnig from "@/next.config";
+import authorAvatarPic from "@/public/blog-preview-card/image-avatar.webp";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const figtree = Figtree({ subsets: ["latin"], weight: ["500", "800"] });

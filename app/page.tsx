@@ -1,7 +1,8 @@
-import frontendMentorSolutionsLinks from "@/constants/frontend-mentor-solutions-links";
 import { ExternalLink } from "lucide-react";
 import { Inter } from "next/font/google";
 import Link from "next/link";
+
+import frontendMentorSolutionsLinks from "@/constants/frontend-mentor-solutions-links";
 
 const inter = Inter({ subsets: ["latin"] });
 

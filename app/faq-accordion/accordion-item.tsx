@@ -23,10 +23,10 @@ const animateOpenAccordion = (content: gsap.TweenTarget) =>
       opacity: 0,
     },
     {
-      height: "auto",
-      opacity: 1,
       duration: 0.4,
       ease: "power3.out",
+      height: "auto",
+      opacity: 1,
     },
   );
 const animateCloseAccordion = (
@@ -34,20 +34,20 @@ const animateCloseAccordion = (
   element: HTMLDetailsElement,
 ) =>
   gsap.to(content, {
-    height: 0,
-    opacity: 0,
     duration: 0.4,
     ease: "power3.out",
-    overwrite: true,
+    height: 0,
     onComplete: () => {
       element.removeAttribute("open");
     },
+    opacity: 0,
+    overwrite: true,
   });
 
 export default function AccordionItem({
-  title,
   content,
   isOpenDefault,
+  title,
 }: AccordionItemProps) {
   const [isOpen, setIsOpen] = useState(isOpenDefault);
   const liRef = useRef<HTMLLIElement>(null);

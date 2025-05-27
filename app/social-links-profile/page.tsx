@@ -14,10 +14,10 @@ const BASE_PATH = nextCofnig.basePath ?? "";
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
 export const metadata: Metadata = {
-  title: "Frontend Mentor | Social links profile",
   icons: {
     icon: `${BASE_PATH}/social-links-profile/favicon-32x32.png`,
   },
+  title: "Frontend Mentor | Social links profile",
 };
 
 export default function SocialLinksProfile() {

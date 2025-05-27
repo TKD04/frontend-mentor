@@ -12,10 +12,10 @@ const BASE_PATH = nextCofnig.basePath ?? "";
 const figtree = Figtree({ subsets: ["latin"], weight: ["500", "800"] });
 
 export const metadata: Metadata = {
-  title: "Frontend Mentor | Blog preview card",
   icons: {
     icon: `${BASE_PATH}/blog-preview-card/favicon-32x32.png`,
   },
+  title: "Frontend Mentor | Blog preview card",
 };
 
 export default function BlogPreviewCard() {

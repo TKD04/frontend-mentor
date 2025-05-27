@@ -12,10 +12,10 @@ const outfit = Outfit({ subsets: ["latin"], weight: ["400", "700"] });
 const BASE_PATH = nextCofnig.basePath ?? "";
 
 export const metadata: Metadata = {
-  title: "Frontend Mentor | QR Code component",
   icons: {
     icon: `${BASE_PATH}/qr-code-component/favicon-32x32.png`,
   },
+  title: "Frontend Mentor | QR Code component",
 };
 
 export default function QrCodeComponent() {

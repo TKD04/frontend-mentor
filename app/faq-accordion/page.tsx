@@ -12,8 +12,8 @@ import FAQS from "./faqs";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const FAQS_ACCORDION_ITEMS: AccordionItemData[] = FAQS.map((faq) => ({
-  title: faq.question,
   content: faq.answer,
+  title: faq.question,
 }));
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -21,10 +21,10 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Frontend Mentor | FAQ accordion",
   icons: {
     icon: `${BASE_PATH}/faq-accordion/favicon-32x32.png`,
   },
+  title: "Frontend Mentor | FAQ accordion",
 };
 
 export default function FaqAccordion() {

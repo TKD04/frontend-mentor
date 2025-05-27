@@ -4,11 +4,10 @@ export type AccordionItemData = Readonly<{
   content: string;
   title: string;
 }>;
-type AccordionProps = Readonly<{
-  items: AccordionItemData[];
-}>;
 
-export default function Accordion({ items }: AccordionProps) {
+export default function Accordion({
+  items,
+}: Readonly<{ items: AccordionItemData[] }>) {
   return (
     <ul className="flex list-none flex-col">
       {items.map((item, index) => (

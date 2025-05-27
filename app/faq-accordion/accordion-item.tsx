@@ -8,12 +8,6 @@ import { useEffect, useRef, useState } from "react";
 
 import nextCofnig from "@/next.config";
 
-type AccordionItemProps = Readonly<{
-  content: string;
-  isOpenDefault: boolean;
-  title: string;
-}>;
-
 const BASE_PATH = nextCofnig.basePath ?? "";
 const animateOpenAccordion = (content: gsap.TweenTarget) =>
   gsap.fromTo(
@@ -48,7 +42,11 @@ export default function AccordionItem({
   content,
   isOpenDefault,
   title,
-}: AccordionItemProps) {
+}: Readonly<{
+  content: string;
+  isOpenDefault: boolean;
+  title: string;
+}>) {
   const [isOpen, setIsOpen] = useState(isOpenDefault);
   const liRef = useRef<HTMLLIElement>(null);
   const detailsRef = useRef<HTMLDetailsElement>(null);

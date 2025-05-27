@@ -6,8 +6,8 @@ import Image from "next/image";
 
 import nextCofnig from "@/next.config";
 
-import type { AccordionItemData } from "./Accordion";
-import Accordion from "./Accordion";
+import type { AccordionItemData } from "./accordion";
+import Accordion from "./accordion";
 import FAQS from "./faqs";
 
 const BASE_PATH = nextCofnig.basePath ?? "";

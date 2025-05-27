@@ -9,9 +9,9 @@ import { useEffect, useRef, useState } from "react";
 import nextCofnig from "@/next.config";
 
 type AccordionItemProps = {
-  title: string;
   content: string;
   isOpenDefault: boolean;
+  title: string;
 };
 
 const BASE_PATH = nextCofnig.basePath ?? "";

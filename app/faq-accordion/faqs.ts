@@ -1,6 +1,6 @@
 type Faq = Readonly<{
-  question: string;
   answer: string;
+  question: string;
 }>;
 
 const FAQS: readonly Faq[] = [

@@ -1,9 +1,9 @@
 type FrontendMentorSolutionLink = Readonly<{
   name: string;
   urls: {
+    demo: string;
     frontendMentor: string;
     github: string;
-    demo: string;
   };
 }>;
 

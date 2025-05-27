@@ -28,7 +28,7 @@ export default function FaqAccordion() {
   return (
     <div className="relative">
       <div
-        className="fixed left-0 top-0 -z-10 h-screen w-full bg-[var(--light-pink)]"
+        className="fixed top-0 left-0 -z-10 h-screen w-full bg-[var(--light-pink)]"
         aria-hidden
       >
         <Image

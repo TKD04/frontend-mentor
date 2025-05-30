@@ -68,7 +68,7 @@ export default function ProductPreviewCardComponent() {
             <span className="text-[0.8rem] line-through">$169.99</span>
           </section>
           <button
-            className="-mt-0.5 flex appearance-none items-center justify-center gap-3 rounded-lg bg-[var(--dark-cyan)] py-[0.87rem] text-[var(--white)] transition-colors hover:bg-[var(--dark-cyan-hover)]"
+            className="-mt-0.5 flex cursor-pointer appearance-none items-center justify-center gap-3 rounded-lg bg-[var(--dark-cyan)] py-[0.87rem] text-[var(--white)] transition-colors hover:bg-[var(--dark-cyan-hover)]"
             type="button"
           >
             <Image

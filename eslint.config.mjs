@@ -43,7 +43,6 @@ export default defineConfig([
       eslintPluginUnicorn.configs.all,
       regexpPlugin.configs["flat/all"],
       perfectionistPlugin.configs["recommended-natural"],
-      eslintConfigPrettier,
     ],
     files: [
       "{app,components,features}/**/*.{ts,tsx}",
@@ -173,4 +172,5 @@ export default defineConfig([
       },
     },
   },
+  { extends: [eslintConfigPrettier] },
 ]);

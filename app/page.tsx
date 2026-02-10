@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import Link from "next/link";
 import type { JSX } from "react";
 
-import frontendMentorSolutionsLinks from "@/constants/frontend-mentor-solutions-links";
+import frontendMentorSolutionLinks from "@/constants/frontend-mentor-solution-links";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,7 +44,7 @@ const Home = (): JSX.Element => (
       </section>
       <section>
         <ul className="grid list-none grid-cols-1 gap-6 md:grid-cols-2">
-          {frontendMentorSolutionsLinks.toReversed().map((solution) => (
+          {frontendMentorSolutionLinks.toReversed().map((solution) => (
             <li
               className="flex flex-col justify-between rounded-xl bg-gray-800 p-6 shadow"
               key={solution.name}

@@ -3,7 +3,7 @@ interface SocialSiteLink {
   readonly url: string;
 }
 
-const socialSiteLinks = [
+const SOCIAL_SITE_LINKS = [
   {
     siteName: "GitHub",
     url: "https://github.com/",
@@ -26,4 +26,4 @@ const socialSiteLinks = [
   },
 ] as const satisfies readonly SocialSiteLink[];
 
-export default socialSiteLinks;
+export default SOCIAL_SITE_LINKS;

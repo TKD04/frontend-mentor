@@ -7,7 +7,7 @@ interface FrontendMentorSolutionLink {
   };
 }
 
-const frontendMentorSolutionLinks = [
+const FRONTEND_MENTOR_SOLUTION_LINKS = [
   {
     name: "QR code component",
     urls: {
@@ -80,4 +80,4 @@ const frontendMentorSolutionLinks = [
   },
 ] as const satisfies readonly FrontendMentorSolutionLink[];
 
-export default frontendMentorSolutionLinks;
+export default FRONTEND_MENTOR_SOLUTION_LINKS;

@@ -9,7 +9,7 @@ import type { JSX } from "react";
 import nextCofnig from "@/next.config";
 import userAvatarPic from "@/public/social-links-profile/avatar-jessica.jpeg";
 
-import socialSiteLinks from "./social-site-links";
+import SOCIAL_SITE_LINKS from "./social-site-links";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"] });
@@ -44,7 +44,7 @@ const SocialLinksProfile = (): JSX.Element => (
         </p>
       </div>
       <ul className="flex flex-col gap-4 text-center">
-        {socialSiteLinks.map((socialSiteLink) => (
+        {SOCIAL_SITE_LINKS.map((socialSiteLink) => (
           <li key={socialSiteLink.siteName}>
             <Link href={socialSiteLink.url} rel="noopener noreferrer">
               <div className="rounded-lg bg-[var(--grey)] py-3 text-sm font-semibold transition-colors hover:bg-[var(--green)] hover:text-[var(--dark-grey)]">

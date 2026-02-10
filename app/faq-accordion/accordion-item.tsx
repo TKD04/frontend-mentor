@@ -85,13 +85,13 @@ const AccordionItem = ({
 
   return (
     <li
-      className="border-b border-b-[var(--light-pink)] py-5 first:pt-0 last:border-b-0 last:pb-0 lg:py-6"
+      className="border-b border-b-(--light-pink) py-5 first:pt-0 last:border-b-0 last:pb-0 lg:py-6"
       ref={liReference}
     >
       <details ref={detailsReference}>
         <summary
           // Using "flex" to remove details-marker */}
-          className="flex cursor-pointer items-center justify-between gap-4 leading-[1.2rem] font-semibold transition-colors hover:text-[var(--accordion-item-hover)] lg:text-lg"
+          className="flex cursor-pointer items-center justify-between gap-4 leading-[1.2rem] font-semibold transition-colors hover:text-(--accordion-item-hover) lg:text-lg"
           onClick={handleClickItem}
           // Using "onKeyDown" to fix "jsx-a11y/click-events-have-key-events"
           onKeyDown={handleKeyDownItem}
@@ -104,7 +104,7 @@ const AccordionItem = ({
             <Image
               alt="Minus"
               aria-hidden
-              className="h-auto w-[30px]"
+              className="h-auto w-7.5"
               height={31}
               src={`${BASE_PATH}/faq-accordion/icon-minus.svg`}
               width={30}
@@ -113,7 +113,7 @@ const AccordionItem = ({
             <Image
               alt="Plus"
               aria-hidden
-              className="h-auto w-[30px]"
+              className="h-auto w-7.5"
               height={31}
               src={`${BASE_PATH}/faq-accordion/icon-plus.svg`}
               width={30}
@@ -123,7 +123,7 @@ const AccordionItem = ({
         {/* Wrapping with <div> to fix the awkward animation
             made by setting padding to the tag directly under the details */}
         <div
-          className="overflow-hidden text-sm leading-[1.3rem] text-[var(--grayish-purple)] lg:text-[16px] lg:leading-6"
+          className="overflow-hidden text-sm leading-[1.3rem] text-(--grayish-purple) lg:text-[16px] lg:leading-6"
           ref={divReference}
         >
           <p className="pt-6">{content}</p>

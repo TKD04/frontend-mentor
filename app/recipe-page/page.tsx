@@ -21,9 +21,9 @@ export const metadata: Metadata = {
 
 const RecipePage = (): JSX.Element => (
   <main
-    className={`${outfit.className} min-h-screen bg-[var(--egg-shell)] text-[var(--wenge-brown)] md:p-6`}
+    className={`${outfit.className} min-h-screen bg-(--egg-shell) text-(--wenge-brown) md:p-6`}
   >
-    <article className="mx-auto w-full bg-[var(--white)] md:max-w-[46rem] md:rounded-3xl md:p-10 md:shadow-sm">
+    <article className="mx-auto w-full bg-(--white) md:max-w-184 md:rounded-3xl md:p-10 md:shadow-sm">
       <Image
         alt="Omelette"
         className="h-auto w-full md:mb-10 md:rounded-xl"
@@ -34,7 +34,7 @@ const RecipePage = (): JSX.Element => (
       />
       <section className="flex flex-col gap-8 p-8 md:gap-7 md:p-0">
         <h1
-          className={`${youngSerif.className} text-4xl text-[var(--dark-charcoal)]`}
+          className={`${youngSerif.className} text-4xl text-(--dark-charcoal)`}
         >
           Simple Omelette Recipe
         </h1>
@@ -43,8 +43,8 @@ const RecipePage = (): JSX.Element => (
           combines beaten eggs cooked to perfection, optionally filled with your
           choice of cheese, vegetables, or meats.
         </p>
-        <section className="rounded-xl bg-[var(--rose-white)] px-8 py-4 md:py-6">
-          <h2 className="mb-4 text-xl font-semibold text-[var(--dark-raspberry)]">
+        <section className="rounded-xl bg-(--rose-white) px-8 py-4 md:py-6">
+          <h2 className="mb-4 text-xl font-semibold text-(--dark-raspberry)">
             Preparation time
           </h2>
           <ul className="ml-5 flex list-disc flex-col gap-2">
@@ -62,7 +62,7 @@ const RecipePage = (): JSX.Element => (
         </section>
         <section>
           <h2
-            className={`${youngSerif.className} mb-4 text-[1.75rem] text-[var(--nutmeg)]`}
+            className={`${youngSerif.className} mb-4 text-[1.75rem] text-(--nutmeg)`}
           >
             Ingredients
           </h2>
@@ -76,10 +76,10 @@ const RecipePage = (): JSX.Element => (
             </li>
           </ul>
         </section>
-        <hr className="border-t-[var(--light-grey)]" />
+        <hr className="border-t-(--light-grey)" />
         <section>
           <h2
-            className={`${youngSerif.className} mb-4 text-[1.75rem] text-[var(--nutmeg)]`}
+            className={`${youngSerif.className} mb-4 text-[1.75rem] text-(--nutmeg)`}
           >
             Instructions
           </h2>
@@ -117,10 +117,10 @@ const RecipePage = (): JSX.Element => (
             </li>
           </ol>
         </section>
-        <hr className="border-t-[var(--light-grey)]" />
+        <hr className="border-t-(--light-grey)" />
         <section>
           <h2
-            className={`${youngSerif.className} mb-4 text-[1.75rem] text-[var(--nutmeg)]`}
+            className={`${youngSerif.className} mb-4 text-[1.75rem] text-(--nutmeg)`}
           >
             Nutrition
           </h2>
@@ -130,15 +130,15 @@ const RecipePage = (): JSX.Element => (
           </p>
           <table className="mt-4 w-full border-collapse text-left">
             <tbody>
-              <tr className="border-b border-[var(--light-grey)]">
+              <tr className="border-b border-(--light-grey)">
                 <th className="px-8 py-2.5 font-normal">Calories</th>
                 <td className="px-8 py-2.5 font-bold">277kcal</td>
               </tr>
-              <tr className="border-b border-[var(--light-grey)]">
+              <tr className="border-b border-(--light-grey)">
                 <th className="px-8 py-2.5 font-normal">Carbs</th>
                 <td className="px-8 py-2.5 font-bold">0g</td>
               </tr>
-              <tr className="border-b border-[var(--light-grey)]">
+              <tr className="border-b border-(--light-grey)">
                 <th className="px-8 py-2.5 font-normal">Protein</th>
                 <td className="px-8 py-2.5 font-bold">20g</td>
               </tr>

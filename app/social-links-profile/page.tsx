@@ -23,20 +23,20 @@ export const metadata: Metadata = {
 
 const SocialLinksProfile = (): JSX.Element => (
   <main
-    className={`${inter.className} grid min-h-screen place-items-center bg-[var(--off-black)] p-4 text-[var(--white)]`}
+    className={`${inter.className} grid min-h-screen place-items-center bg-(--off-black) p-4 text-(--white)`}
   >
-    <div className="flex w-full max-w-[20.5rem] flex-col gap-6 rounded-xl bg-[var(--dark-grey)] p-6 md:max-w-96 md:p-10">
+    <div className="flex w-full max-w-82 flex-col gap-6 rounded-xl bg-(--dark-grey) p-6 md:max-w-96 md:p-10">
       <div className="flex flex-col items-center text-center">
         <Image
           alt="Avatar"
-          className="mb-6 size-[5.5rem] rounded-full"
+          className="mb-6 size-22 rounded-full"
           loading="eager"
           placeholder="blur"
           priority
           src={userAvatarPic}
         />
         <h1 className="mb-2 text-2xl font-semibold">Jessica Randall</h1>
-        <span className="mb-6 text-sm font-semibold text-[var(--green)]">
+        <span className="mb-6 text-sm font-semibold text-(--green)">
           London, United Kingdom
         </span>
         <p className="text-[14px] font-normal">
@@ -47,7 +47,7 @@ const SocialLinksProfile = (): JSX.Element => (
         {SOCIAL_SITE_LINKS.map((socialSiteLink) => (
           <li key={socialSiteLink.siteName}>
             <Link href={socialSiteLink.url} rel="noopener noreferrer">
-              <div className="rounded-lg bg-[var(--grey)] py-3 text-sm font-semibold transition-colors hover:bg-[var(--green)] hover:text-[var(--dark-grey)]">
+              <div className="rounded-lg bg-(--grey) py-3 text-sm font-semibold transition-colors hover:bg-(--green) hover:text-(--dark-grey)">
                 {socialSiteLink.siteName}
               </div>
             </Link>

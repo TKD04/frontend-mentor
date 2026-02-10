@@ -23,9 +23,9 @@ export const metadata: Metadata = {
 
 const ProductPreviewCardComponent = (): JSX.Element => (
   <main
-    className={`${montserrat.className} grid min-h-screen place-items-center bg-[var(--cream)] px-4 py-8 font-medium text-[var(--dark-grayish-blue)]`}
+    className={`${montserrat.className} grid min-h-screen place-items-center bg-(--cream) px-4 py-8 font-medium text-(--dark-grayish-blue)`}
   >
-    <article className="flex w-full flex-col rounded-lg bg-[var(--white)] shadow-[0_0_8px_0_rgba(0,0,0,0.04)] md:max-w-[37.5rem] md:flex-row">
+    <article className="flex w-full flex-col rounded-lg bg-(--white) shadow-[0_0_8px_0_rgba(0,0,0,0.04)] md:max-w-150 md:flex-row">
       {/* Not working: https://nextjs.org/docs/pages/api-reference/components/image#art-direction */}
       <picture>
         <source
@@ -51,7 +51,7 @@ const ProductPreviewCardComponent = (): JSX.Element => (
       <section className="flex flex-col gap-4 p-6 md:max-w-[50%] md:gap-6 md:p-8">
         <span className="text-xs tracking-[0.3rem] uppercase">Perfume</span>
         <h1
-          className={`${fraunces.className} -mt-1 text-[1.95rem] leading-8 font-bold text-[var(--very-dark-blue)]`}
+          className={`${fraunces.className} -mt-1 text-[1.95rem] leading-8 font-bold text-(--very-dark-blue)`}
         >
           Gabrielle Essence Eau De Parfum
         </h1>
@@ -61,14 +61,14 @@ const ProductPreviewCardComponent = (): JSX.Element => (
         </p>
         <section className="-mt-1 flex items-center justify-start gap-5">
           <span
-            className={`${fraunces.className} text-[2rem] font-bold text-[var(--dark-cyan)]`}
+            className={`${fraunces.className} text-[2rem] font-bold text-(--dark-cyan)`}
           >
             $149.99
           </span>
           <span className="text-[0.8rem] line-through">$169.99</span>
         </section>
         <button
-          className="-mt-0.5 flex cursor-pointer appearance-none items-center justify-center gap-3 rounded-lg bg-[var(--dark-cyan)] py-[0.87rem] text-[var(--white)] transition-colors hover:bg-[var(--dark-cyan-hover)]"
+          className="-mt-0.5 flex cursor-pointer appearance-none items-center justify-center gap-3 rounded-lg bg-(--dark-cyan) py-[0.87rem] text-(--white) transition-colors hover:bg-(--dark-cyan-hover)"
           type="button"
         >
           <Image

@@ -32,7 +32,7 @@ const FaqAccordion = (): JSX.Element => (
   <div className="relative">
     <div
       aria-hidden
-      className="fixed top-0 left-0 -z-10 h-screen w-full bg-[var(--light-pink)]"
+      className="fixed top-0 left-0 -z-10 h-screen w-full bg-(--light-pink)"
     >
       <Image
         alt="Background pattern"
@@ -54,14 +54,14 @@ const FaqAccordion = (): JSX.Element => (
       />
     </div>
     <main
-      className={`${workSans.className} grid min-h-screen place-items-center p-6 text-[var(--dark-purple)]`}
+      className={`${workSans.className} grid min-h-screen place-items-center p-6 text-(--dark-purple)`}
     >
-      <article className="flex w-full max-w-[37.5rem] flex-col gap-4 rounded-lg bg-[var(--white)] p-6 shadow-[0_8px_24px_0_rgba(0,0,0,0.04)] lg:rounded-2xl lg:p-10 lg:shadow-[0_16px_24px_2px_rgba(0,0,0,0.06)]">
+      <article className="flex w-full max-w-150 flex-col gap-4 rounded-lg bg-(--white) p-6 shadow-[0_8px_24px_0_rgba(0,0,0,0.04)] lg:rounded-2xl lg:p-10 lg:shadow-[0_16px_24px_2px_rgba(0,0,0,0.06)]">
         <div className="-mt-2 mb-1.5 flex gap-6">
           <Image
             alt="Star"
             aria-hidden
-            className="h-auto w-[24px] lg:w-[36px]"
+            className="h-auto w-6 lg:w-9"
             height={41}
             src={`${BASE_PATH}/faq-accordion/icon-star.svg`}
             width={40}

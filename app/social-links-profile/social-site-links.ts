@@ -1,9 +1,9 @@
-type SocialSiteLink = Readonly<{
-  siteName: string;
-  url: string;
-}>;
+interface SocialSiteLink {
+  readonly siteName: string;
+  readonly url: string;
+}
 
-const socialSiteLinks: readonly SocialSiteLink[] = [
+const socialSiteLinks = [
   {
     siteName: "GitHub",
     url: "https://github.com/",
@@ -24,6 +24,6 @@ const socialSiteLinks: readonly SocialSiteLink[] = [
     siteName: "Instagram",
     url: "https://www.instagram.com/",
   },
-];
+] as const satisfies readonly SocialSiteLink[];
 
 export default socialSiteLinks;

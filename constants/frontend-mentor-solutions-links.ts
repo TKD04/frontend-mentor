@@ -1,13 +1,13 @@
-type FrontendMentorSolutionLink = Readonly<{
-  name: string;
-  urls: {
-    demo: string;
-    frontendMentor: string;
-    github: string;
+interface FrontendMentorSolutionLink {
+  readonly name: string;
+  readonly urls: {
+    readonly demo: string;
+    readonly frontendMentor: string;
+    readonly github: string;
   };
-}>;
+}
 
-const frontendMentorSolutionsLinks: readonly FrontendMentorSolutionLink[] = [
+const frontendMentorSolutionsLinks = [
   {
     name: "QR code component",
     urls: {
@@ -78,6 +78,6 @@ const frontendMentorSolutionsLinks: readonly FrontendMentorSolutionLink[] = [
         "https://github.com/TKD04/frontend-mentor/tree/main/app/four-card-feature-section",
     },
   },
-];
+] as const satisfies readonly FrontendMentorSolutionLink[];
 
 export default frontendMentorSolutionsLinks;

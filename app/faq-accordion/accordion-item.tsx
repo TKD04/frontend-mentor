@@ -3,7 +3,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
-import type { KeyboardEvent, MouseEvent } from "react";
+import type { JSX, KeyboardEvent, MouseEvent } from "react";
 import { useEffect, useRef, useState } from "react";
 
 import nextCofnig from "@/next.config";
@@ -38,7 +38,7 @@ const animateCloseAccordion = (
     overwrite: true,
   });
 
-export default function AccordionItem({
+const AccordionItem = ({
   content,
   isOpenDefault,
   title,
@@ -46,7 +46,7 @@ export default function AccordionItem({
   content: string;
   isOpenDefault: boolean;
   title: string;
-}>) {
+}>): JSX.Element => {
   const [isOpen, setIsOpen] = useState(isOpenDefault);
   const liReference = useRef<HTMLLIElement>(null);
   const detailsReference = useRef<HTMLDetailsElement>(null);
@@ -131,4 +131,6 @@ export default function AccordionItem({
       </details>
     </li>
   );
-}
+};
+
+export default AccordionItem;

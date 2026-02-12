@@ -6,8 +6,3 @@
   /* I added a missing color using the color picker */
   --accordion-item-hover: hsl(280, 94%, 59%);
 }
-
-/* To remove details-marker on Safari */
-:global(details summary::-webkit-details-marker) {
-  display: none;
-}

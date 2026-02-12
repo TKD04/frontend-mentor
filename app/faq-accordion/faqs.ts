@@ -24,6 +24,6 @@ const FAQS: readonly Faq[] = [
       "The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.",
     question: "How can I get help if I'm stuck on a Frontend Mentor challenge?",
   },
-] satisfies readonly Faq[];
+] as const satisfies readonly Faq[];
 
 export default FAQS;

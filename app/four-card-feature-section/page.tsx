@@ -1,11 +1,11 @@
-import "./four-card-feature-section.css";
-
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Image from "next/image";
 import type { JSX } from "react";
 
 import nextCofnig from "@/next.config";
+
+import style from "./four-card-feature-section.module.css";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const poppins = Poppins({ subsets: ["latin"], weight: ["200", "400", "600"] });
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 const Page = (): JSX.Element => (
   <main
-    className={`${poppins.className} flex min-h-screen justify-center bg-(--very-light-gray) p-8 pt-20 pb-[4.8rem] text-(--grayish-blue) md:pb-20`}
+    className={`${style["colors"]} ${poppins.className} flex min-h-screen justify-center bg-(--very-light-gray) p-8 pt-20 pb-[4.8rem] text-(--grayish-blue) md:pb-20`}
   >
     <article className="flex w-full max-w-276 flex-col items-center">
       <h1 className="mb-4 text-center text-[1.5rem] font-extralight text-(--very-dark-blue) md:text-4xl md:leading-[3.2rem]">

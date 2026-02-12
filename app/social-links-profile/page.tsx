@@ -1,5 +1,3 @@
-import "./social-links-profile.css";
-
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Image from "next/image";
@@ -9,6 +7,7 @@ import type { JSX } from "react";
 import nextCofnig from "@/next.config";
 import userAvatarPic from "@/public/social-links-profile/avatar-jessica.jpeg";
 
+import style from "./social-links-profile.module.css";
 import SOCIAL_SITE_LINKS from "./social-site-links";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
@@ -23,7 +22,7 @@ export const metadata: Metadata = {
 
 const Page = (): JSX.Element => (
   <main
-    className={`${inter.className} grid min-h-screen place-items-center bg-(--off-black) p-4 text-(--white)`}
+    className={`${style["colors"]} ${inter.className} grid min-h-screen place-items-center bg-(--off-black) p-4 text-(--white)`}
   >
     <div className="flex w-full max-w-82 flex-col gap-6 rounded-xl bg-(--dark-grey) p-6 md:max-w-96 md:p-10">
       <div className="flex flex-col items-center text-center">

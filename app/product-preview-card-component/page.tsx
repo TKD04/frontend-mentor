@@ -1,5 +1,3 @@
-import "./product-preview-card-component.css";
-
 import type { Metadata } from "next";
 import { Fraunces, Montserrat } from "next/font/google";
 import Image from "next/image";
@@ -8,6 +6,8 @@ import type { JSX } from "react";
 import nextCofnig from "@/next.config";
 import perfumePicDesktop from "@/public/product-preview-card-component/image-product-desktop.jpg";
 import perfumePicMobile from "@/public/product-preview-card-component/image-product-mobile.jpg";
+
+import style from "./product-preview-card-component.module.css";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const BREAK_POINT_TAILWIND_MD = 768;
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 const Page = (): JSX.Element => (
   <main
-    className={`${montserrat.className} grid min-h-screen place-items-center bg-(--cream) px-4 py-8 font-medium text-(--dark-grayish-blue)`}
+    className={`${style["colors"]} ${montserrat.className} grid min-h-screen place-items-center bg-(--cream) px-4 py-8 font-medium text-(--dark-grayish-blue)`}
   >
     <article className="flex w-full flex-col rounded-lg bg-(--white) shadow-[0_0_8px_0_rgba(0,0,0,0.04)] md:max-w-150 md:flex-row">
       {/* Not working: https://nextjs.org/docs/pages/api-reference/components/image#art-direction */}

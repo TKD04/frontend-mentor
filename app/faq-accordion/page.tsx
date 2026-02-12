@@ -1,5 +1,3 @@
-import "./faq-accordion.css";
-
 import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
 import Image from "next/image";
@@ -9,6 +7,7 @@ import nextCofnig from "@/next.config";
 
 import type { AccordionItemData } from "./accordion";
 import Accordion from "./accordion";
+import style from "./faq-accordion.module.css";
 import FAQS from "./faqs";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
@@ -54,7 +53,7 @@ const Page = (): JSX.Element => (
       />
     </div>
     <main
-      className={`${workSans.className} grid min-h-screen place-items-center p-6 text-(--dark-purple)`}
+      className={`${style["colors"]} ${workSans.className} grid min-h-screen place-items-center p-6 text-(--dark-purple)`}
     >
       <article className="flex w-full max-w-150 flex-col gap-4 rounded-lg bg-(--white) p-6 shadow-[0_8px_24px_0_rgba(0,0,0,0.04)] lg:rounded-2xl lg:p-10 lg:shadow-[0_16px_24px_2px_rgba(0,0,0,0.06)]">
         <div className="-mt-2 mb-1.5 flex gap-6">

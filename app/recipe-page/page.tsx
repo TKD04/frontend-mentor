@@ -1,5 +1,3 @@
-import "./recipe-page.css";
-
 import type { Metadata } from "next";
 import { Outfit, Young_Serif } from "next/font/google";
 import Image from "next/image";
@@ -7,6 +5,8 @@ import type { JSX } from "react";
 
 import nextCofnig from "@/next.config";
 import omelettePic from "@/public/recipe-page/image-omelette.jpeg";
+
+import style from "./recipe-page.module.css";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const youngSerif = Young_Serif({ subsets: ["latin"], weight: ["400"] });
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 const Page = (): JSX.Element => (
   <main
-    className={`${outfit.className} min-h-screen bg-(--egg-shell) text-(--wenge-brown) md:p-6`}
+    className={`${style["colors"]} ${outfit.className} min-h-screen bg-(--egg-shell) text-(--wenge-brown) md:p-6`}
   >
     <article className="mx-auto w-full bg-(--white) md:max-w-184 md:rounded-3xl md:p-10 md:shadow-sm">
       <Image

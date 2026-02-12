@@ -1,5 +1,3 @@
-import "./blog-preview-card.css";
-
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import Image from "next/image";
@@ -8,6 +6,8 @@ import type { JSX } from "react";
 
 import nextCofnig from "@/next.config";
 import authorAvatarPic from "@/public/blog-preview-card/image-avatar.webp";
+
+import style from "./blog-preview-card.module.css";
 
 const BASE_PATH = nextCofnig.basePath ?? "";
 const figtree = Figtree({ subsets: ["latin"], weight: ["500", "800"] });
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 const Page = (): JSX.Element => (
   <main
-    className={`${figtree.className} grid min-h-screen place-items-center bg-(--yellow) p-6 text-gray-800`}
+    className={`${style["colors"]} ${figtree.className} grid min-h-screen place-items-center bg-(--yellow) p-6 text-gray-800`}
   >
     <article className="pointer-events-none flex w-full max-w-82 flex-col gap-6 rounded-3xl border border-(--black) bg-[var(--white)] p-6 shadow-[8px_8px_0_0_var(--black)] transition-shadow hover:shadow-[16px_16px_0_0_var(--black)] md:max-w-96">
       <Image

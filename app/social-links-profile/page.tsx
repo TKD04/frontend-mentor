@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "Frontend Mentor | Social links profile",
 };
 
-const SocialLinksProfile = (): JSX.Element => (
+const Page = (): JSX.Element => (
   <main
     className={`${inter.className} grid min-h-screen place-items-center bg-(--off-black) p-4 text-(--white)`}
   >
@@ -58,4 +58,4 @@ const SocialLinksProfile = (): JSX.Element => (
   </main>
 );
 
-export default SocialLinksProfile;
+export default Page;

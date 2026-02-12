@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Frontend Mentor | Four card feature section",
 };
 
-const FourCardFeatureSection = (): JSX.Element => (
+const Page = (): JSX.Element => (
   <main
     className={`${poppins.className} flex min-h-screen justify-center bg-(--very-light-gray) p-8 pt-20 pb-[4.8rem] text-(--grayish-blue) md:pb-20`}
   >
@@ -100,4 +100,4 @@ const FourCardFeatureSection = (): JSX.Element => (
   </main>
 );
 
-export default FourCardFeatureSection;
+export default Page;

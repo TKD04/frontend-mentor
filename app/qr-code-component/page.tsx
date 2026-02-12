@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "Frontend Mentor | QR Code component",
 };
 
-const QrCodeComponent = (): JSX.Element => (
+const Page = (): JSX.Element => (
   <main
     className={`${outfit.className} grid min-h-screen place-items-center bg-(--light-gray) p-4 text-gray-800`}
   >
@@ -45,4 +45,4 @@ const QrCodeComponent = (): JSX.Element => (
   </main>
 );
 
-export default QrCodeComponent;
+export default Page;

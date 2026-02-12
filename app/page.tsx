@@ -7,7 +7,7 @@ import FRONTEND_MENTOR_SOLUTION_LINKS from "@/constants/frontend-mentor-solution
 
 const inter = Inter({ subsets: ["latin"] });
 
-const Home = (): JSX.Element => (
+const Page = (): JSX.Element => (
   <main
     className={`${inter.className} flex min-h-screen justify-center bg-gray-900 p-6 text-gray-100`}
   >
@@ -89,4 +89,4 @@ const Home = (): JSX.Element => (
   </main>
 );
 
-export default Home;
+export default Page;

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "Frontend Mentor | Blog preview card",
 };
 
-const BlogPreviewCard = (): JSX.Element => (
+const Page = (): JSX.Element => (
   <main
     className={`${figtree.className} grid min-h-screen place-items-center bg-(--yellow) p-6 text-gray-800`}
   >
@@ -64,4 +64,4 @@ const BlogPreviewCard = (): JSX.Element => (
   </main>
 );
 
-export default BlogPreviewCard;
+export default Page;

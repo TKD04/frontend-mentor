@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "Frontend Mentor | Product preview card component",
 };
 
-const ProductPreviewCardComponent = (): JSX.Element => (
+const Page = (): JSX.Element => (
   <main
     className={`${montserrat.className} grid min-h-screen place-items-center bg-(--cream) px-4 py-8 font-medium text-(--dark-grayish-blue)`}
   >
@@ -86,4 +86,4 @@ const ProductPreviewCardComponent = (): JSX.Element => (
   </main>
 );
 
-export default ProductPreviewCardComponent;
+export default Page;

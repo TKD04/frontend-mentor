@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   title: "Frontend Mentor | FAQ accordion",
 };
 
-const FaqAccordion = (): JSX.Element => (
+const Page = (): JSX.Element => (
   <div className="relative">
     <div
       aria-hidden
@@ -74,4 +74,4 @@ const FaqAccordion = (): JSX.Element => (
   </div>
 );
 
-export default FaqAccordion;
+export default Page;

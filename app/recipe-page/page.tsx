@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "Frontend Mentor | Recipe page",
 };
 
-const RecipePage = (): JSX.Element => (
+const Page = (): JSX.Element => (
   <main
     className={`${outfit.className} min-h-screen bg-(--egg-shell) text-(--wenge-brown) md:p-6`}
   >
@@ -154,4 +154,4 @@ const RecipePage = (): JSX.Element => (
   </main>
 );
 
-export default RecipePage;
+export default Page;

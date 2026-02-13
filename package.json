@@ -48,9 +48,8 @@
     "coverage": "vitest run --coverage",
     "dev": "next dev --turbopack",
     "format": "prettier . --write",
-    "start": "next start",
-    "test": "vitest",
-    "lint": "eslint . --cache"
+    "lint": "eslint . --cache",
+    "test": "vitest"
   },
   "version": "0.1.0"
 }

@@ -6,9 +6,9 @@ import Image from "next/image";
 import type { JSX, KeyboardEvent, MouseEvent } from "react";
 import { useEffect, useRef, useState } from "react";
 
-import nextCofnig from "@/next.config";
+import minusIcon from "@/public/faq-accordion/icon-minus.svg";
+import plusIcon from "@/public/faq-accordion/icon-plus.svg";
 
-const BASE_PATH = nextCofnig.basePath ?? "";
 const animateOpenAccordion = (content: gsap.TweenTarget) =>
   gsap.fromTo(
     content,
@@ -106,7 +106,7 @@ const AccordionItem = ({
               aria-hidden
               className="h-auto w-7.5"
               height={31}
-              src={`${BASE_PATH}/faq-accordion/icon-minus.svg`}
+              src={minusIcon}
               width={30}
             />
           ) : (
@@ -115,7 +115,7 @@ const AccordionItem = ({
               aria-hidden
               className="h-auto w-7.5"
               height={31}
-              src={`${BASE_PATH}/faq-accordion/icon-plus.svg`}
+              src={plusIcon}
               width={30}
             />
           )}

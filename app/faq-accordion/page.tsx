@@ -3,14 +3,15 @@ import { Work_Sans } from "next/font/google";
 import Image from "next/image";
 import type { JSX } from "react";
 
-import nextCofnig from "@/next.config";
+import bgPatternDesktop from "@/public/faq-accordion/background-pattern-desktop.svg";
+import bgPatternMobile from "@/public/faq-accordion/background-pattern-mobile.svg";
+import starIcon from "@/public/faq-accordion/icon-star.svg";
 
 import type { AccordionItemData } from "./accordion";
 import Accordion from "./accordion";
 import style from "./faq-accordion.module.css";
 import FAQS from "./faqs";
 
-const BASE_PATH = nextCofnig.basePath ?? "";
 const FAQS_ACCORDION_ITEMS: AccordionItemData[] = FAQS.map((faq) => ({
   content: faq.answer,
   title: faq.question,
@@ -36,7 +37,7 @@ const Page = (): JSX.Element => (
         height={232}
         loading="eager"
         priority
-        src={`${BASE_PATH}/faq-accordion/background-pattern-mobile.svg`}
+        src={bgPatternMobile}
         width={375}
       />
       <Image
@@ -45,7 +46,7 @@ const Page = (): JSX.Element => (
         height={320}
         loading="eager"
         priority
-        src={`${BASE_PATH}/faq-accordion/background-pattern-desktop.svg`}
+        src={bgPatternDesktop}
         width={1440}
       />
     </div>
@@ -59,7 +60,7 @@ const Page = (): JSX.Element => (
             aria-hidden
             className="h-auto w-6 lg:w-9"
             height={41}
-            src={`${BASE_PATH}/faq-accordion/icon-star.svg`}
+            src={starIcon}
             width={40}
           />
           <h1 className="text-[2rem] font-bold lg:text-[3.6rem]">FAQs</h1>

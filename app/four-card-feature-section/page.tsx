@@ -3,11 +3,13 @@ import { Poppins } from "next/font/google";
 import Image from "next/image";
 import type { JSX } from "react";
 
-import nextCofnig from "@/next.config";
+import calculatorIcon from "@/public/four-card-feature-section/icon-calculator.svg";
+import karmaIcon from "@/public/four-card-feature-section/icon-karma.svg";
+import supervisorIcon from "@/public/four-card-feature-section/icon-supervisor.svg";
+import teamBuilderIcon from "@/public/four-card-feature-section/icon-team-builder.svg";
 
 import style from "./four-card-feature-section.module.css";
 
-const BASE_PATH = nextCofnig.basePath ?? "";
 const poppins = Poppins({ subsets: ["latin"], weight: ["200", "400", "600"] });
 
 export const metadata: Metadata = {
@@ -40,7 +42,7 @@ const Page = (): JSX.Element => (
             alt="Supervisor"
             className="mt-8 h-auto w-14.5 self-end justify-self-end md:mt-[2.55rem] md:w-16"
             height={64}
-            src={`${BASE_PATH}/four-card-feature-section/icon-supervisor.svg`}
+            src={supervisorIcon}
             width={64}
           />
         </section>
@@ -57,7 +59,7 @@ const Page = (): JSX.Element => (
               alt="Team builder"
               className="mt-8 h-auto w-14.5 self-end justify-self-end md:mt-[2.55rem] md:w-16"
               height={64}
-              src={`${BASE_PATH}/four-card-feature-section/icon-team-builder.svg`}
+              src={teamBuilderIcon}
               width={64}
             />
           </section>
@@ -72,7 +74,7 @@ const Page = (): JSX.Element => (
               alt="Karma"
               className="mt-8 h-auto w-14.5 self-end justify-self-end md:mt-[2.55rem] md:w-16"
               height={64}
-              src={`${BASE_PATH}/four-card-feature-section/icon-karma.svg`}
+              src={karmaIcon}
               width={64}
             />
           </section>
@@ -88,7 +90,7 @@ const Page = (): JSX.Element => (
             alt="Calculator"
             className="mt-8 h-auto w-14.5 self-end justify-self-end md:mt-[2.55rem] md:w-16"
             height={64}
-            src={`${BASE_PATH}/four-card-feature-section/icon-calculator.svg`}
+            src={calculatorIcon}
             width={64}
           />
         </section>

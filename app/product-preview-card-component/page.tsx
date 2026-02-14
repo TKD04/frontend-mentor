@@ -3,13 +3,12 @@ import { Fraunces, Montserrat } from "next/font/google";
 import Image from "next/image";
 import type { JSX } from "react";
 
-import nextCofnig from "@/next.config";
+import cartIcon from "@/public/product-preview-card-component/icon-cart.svg";
 import perfumePicDesktop from "@/public/product-preview-card-component/image-product-desktop.jpg";
 import perfumePicMobile from "@/public/product-preview-card-component/image-product-mobile.jpg";
 
 import style from "./product-preview-card-component.module.css";
 
-const BASE_PATH = nextCofnig.basePath ?? "";
 const BREAK_POINT_TAILWIND_MD = 768;
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["500", "700"] });
 const fraunces = Fraunces({ subsets: ["latin"], weight: ["700"] });
@@ -73,7 +72,7 @@ const Page = (): JSX.Element => (
             className="inline"
             height={16}
             loading="eager"
-            src={`${BASE_PATH}/product-preview-card-component/icon-cart.svg`}
+            src={cartIcon}
             width={15}
           />
           <span className="text-[0.85rem] font-bold">Add to Cart</span>

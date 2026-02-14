@@ -4,12 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import type { JSX } from "react";
 
-import nextCofnig from "@/next.config";
+import articleIllustration from "@/public/blog-preview-card/illustration-article.svg";
 import authorAvatarPic from "@/public/blog-preview-card/image-avatar.webp";
 
 import style from "./blog-preview-card.module.css";
 
-const BASE_PATH = nextCofnig.basePath ?? "";
 const figtree = Figtree({ subsets: ["latin"], weight: ["500", "800"] });
 
 export const metadata: Metadata = {
@@ -27,7 +26,7 @@ const Page = (): JSX.Element => (
         height={201}
         loading="eager"
         priority
-        src={`${BASE_PATH}/blog-preview-card/illustration-article.svg`}
+        src={articleIllustration}
         width={336}
       />
       <div className="flex flex-col gap-4">

@@ -21,9 +21,6 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  icons: {
-    icon: `${BASE_PATH}/faq-accordion/favicon-32x32.png`,
-  },
   title: "Frontend Mentor | FAQ accordion",
 };
 

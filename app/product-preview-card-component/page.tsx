@@ -15,9 +15,6 @@ const montserrat = Montserrat({ subsets: ["latin"], weight: ["500", "700"] });
 const fraunces = Fraunces({ subsets: ["latin"], weight: ["700"] });
 
 export const metadata: Metadata = {
-  icons: {
-    icon: `${BASE_PATH}/product-preview-card-component/favicon-32x32.png`,
-  },
   title: "Frontend Mentor | Product preview card component",
 };
 

@@ -11,9 +11,6 @@ const BASE_PATH = nextCofnig.basePath ?? "";
 const poppins = Poppins({ subsets: ["latin"], weight: ["200", "400", "600"] });
 
 export const metadata: Metadata = {
-  icons: {
-    icon: `${BASE_PATH}/four-card-feature-section/favicon-32x32.png`,
-  },
   title: "Frontend Mentor | Four card feature section",
 };
 

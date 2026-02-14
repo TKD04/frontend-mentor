@@ -4,19 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import type { JSX } from "react";
 
-import nextCofnig from "@/next.config";
 import userAvatarPic from "@/public/social-links-profile/avatar-jessica.jpeg";
 
 import style from "./social-links-profile.module.css";
 import SOCIAL_SITE_LINKS from "./social-site-links";
 
-const BASE_PATH = nextCofnig.basePath ?? "";
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
 export const metadata: Metadata = {
-  icons: {
-    icon: `${BASE_PATH}/social-links-profile/favicon-32x32.png`,
-  },
   title: "Frontend Mentor | Social links profile",
 };
 

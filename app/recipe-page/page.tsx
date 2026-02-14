@@ -3,19 +3,14 @@ import { Outfit, Young_Serif } from "next/font/google";
 import Image from "next/image";
 import type { JSX } from "react";
 
-import nextCofnig from "@/next.config";
 import omelettePic from "@/public/recipe-page/image-omelette.jpeg";
 
 import style from "./recipe-page.module.css";
 
-const BASE_PATH = nextCofnig.basePath ?? "";
 const youngSerif = Young_Serif({ subsets: ["latin"], weight: ["400"] });
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
 export const metadata: Metadata = {
-  icons: {
-    icon: `${BASE_PATH}/recipe-page/favicon-32x32.png`,
-  },
   title: "Frontend Mentor | Recipe page",
 };
 

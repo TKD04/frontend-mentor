@@ -23,7 +23,7 @@ const Page = (): JSX.Element => (
         className="h-auto w-full rounded-xl"
         loading="eager"
         placeholder="blur"
-        priority
+        preload
         src={qrCodeImg}
       />
       <div className="mb-6 flex flex-col gap-3 px-3 text-center">

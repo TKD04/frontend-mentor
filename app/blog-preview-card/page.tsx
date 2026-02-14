@@ -25,7 +25,7 @@ const Page = (): JSX.Element => (
         className="h-auto w-full rounded-xl"
         height={201}
         loading="eager"
-        priority
+        preload
         src={articleIllustration}
         width={336}
       />

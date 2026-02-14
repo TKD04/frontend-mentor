@@ -26,7 +26,7 @@ const Page = (): JSX.Element => (
           className="mb-6 size-22 rounded-full"
           loading="eager"
           placeholder="blur"
-          priority
+          preload
           src={userAvatarImg}
         />
         <h1 className="mb-2 text-2xl font-semibold">Jessica Randall</h1>

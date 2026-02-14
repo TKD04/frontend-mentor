@@ -24,7 +24,7 @@ const Page = (): JSX.Element => (
         className="h-auto w-full md:mb-10 md:rounded-xl"
         loading="eager"
         placeholder="blur"
-        priority
+        preload
         src={omeletteImg}
       />
       <section className="flex flex-col gap-8 p-8 md:gap-7 md:p-0">

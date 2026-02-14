@@ -36,7 +36,7 @@ const Page = (): JSX.Element => (
         className="h-auto w-full lg:hidden"
         height={232}
         loading="eager"
-        priority
+        preload
         src={bgPatternMobile}
         width={375}
       />
@@ -45,7 +45,7 @@ const Page = (): JSX.Element => (
         className="hidden h-auto w-full lg:inline-block"
         height={320}
         loading="eager"
-        priority
+        preload
         src={bgPatternDesktop}
         width={1440}
       />

@@ -3,7 +3,7 @@ import { Outfit, Young_Serif } from "next/font/google";
 import Image from "next/image";
 import type { JSX } from "react";
 
-import omelettePic from "@/public/recipe-page/image-omelette.jpeg";
+import omeletteImg from "@/public/recipe-page/image-omelette.jpeg";
 
 import style from "./recipe-page.module.css";
 
@@ -25,7 +25,7 @@ const Page = (): JSX.Element => (
         loading="eager"
         placeholder="blur"
         priority
-        src={omelettePic}
+        src={omeletteImg}
       />
       <section className="flex flex-col gap-8 p-8 md:gap-7 md:p-0">
         <h1

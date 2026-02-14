@@ -3,7 +3,7 @@ import { Outfit } from "next/font/google";
 import Image from "next/image";
 import type { JSX } from "react";
 
-import qrCodePic from "@/public/qr-code-component/image-qr-code.png";
+import qrCodeImg from "@/public/qr-code-component/image-qr-code.png";
 
 import style from "./qr-code-component.module.css";
 
@@ -24,7 +24,7 @@ const Page = (): JSX.Element => (
         loading="eager"
         placeholder="blur"
         priority
-        src={qrCodePic}
+        src={qrCodeImg}
       />
       <div className="mb-6 flex flex-col gap-3 px-3 text-center">
         <h1 className="text-[1.4rem] leading-7 font-bold text-(--dark-blue)">

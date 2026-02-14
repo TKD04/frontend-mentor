@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { JSX } from "react";
 
-import userAvatarPic from "@/public/social-links-profile/avatar-jessica.jpeg";
+import userAvatarImg from "@/public/social-links-profile/avatar-jessica.jpeg";
 
 import style from "./social-links-profile.module.css";
 import SOCIAL_SITE_LINKS from "./social-site-links";
@@ -27,7 +27,7 @@ const Page = (): JSX.Element => (
           loading="eager"
           placeholder="blur"
           priority
-          src={userAvatarPic}
+          src={userAvatarImg}
         />
         <h1 className="mb-2 text-2xl font-semibold">Jessica Randall</h1>
         <span className="mb-6 text-sm font-semibold text-(--green)">

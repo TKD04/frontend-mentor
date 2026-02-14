@@ -5,7 +5,7 @@ import Link from "next/link";
 import type { JSX } from "react";
 
 import articleIllustration from "@/public/blog-preview-card/illustration-article.svg";
-import authorAvatarPic from "@/public/blog-preview-card/image-avatar.webp";
+import authorAvatarImg from "@/public/blog-preview-card/image-avatar.webp";
 
 import style from "./blog-preview-card.module.css";
 
@@ -51,7 +51,7 @@ const Page = (): JSX.Element => (
             className="size-8 rounded-full"
             loading="eager"
             placeholder="blur"
-            src={authorAvatarPic}
+            src={authorAvatarImg}
           />
           <span className="text-xs font-extrabold md:text-sm">Greg Hooper</span>
         </div>

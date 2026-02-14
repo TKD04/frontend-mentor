@@ -20,7 +20,7 @@ const Page = (): JSX.Element => (
   <main
     className={`${style["colors"]} ${figtree.className} grid min-h-screen place-items-center bg-(--yellow) p-6 text-gray-800`}
   >
-    <article className="pointer-events-none flex w-full max-w-82 flex-col gap-6 rounded-3xl border border-(--black) bg-[var(--white)] p-6 shadow-[8px_8px_0_0_var(--black)] transition-shadow hover:shadow-[16px_16px_0_0_var(--black)] md:max-w-96">
+    <article className="pointer-events-none flex w-full max-w-82 flex-col gap-6 rounded-3xl border border-(--black) bg-(--white) p-6 shadow-[8px_8px_0_0_var(--black)] transition-shadow hover:shadow-[16px_16px_0_0_var(--black)] md:max-w-96">
       <Image
         alt="Illustration article"
         className="h-auto w-full rounded-xl"

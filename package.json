@@ -61,7 +61,6 @@
     "dev": "next dev --turbopack",
     "format": "prettier . --write",
     "lint": "eslint . --cache",
-    "start": "next start",
     "test": "vitest"
   },
   "version": "0.1.0"

@@ -2,14 +2,16 @@ import type { JSX } from "react";
 
 import AccordionItem from "./accordion-item";
 
-export type AccordionItemData = Readonly<{
-  content: string;
-  title: string;
-}>;
+export interface AccordionItemData {
+  readonly content: string;
+  readonly title: string;
+}
 
-const Accordion = ({
-  items,
-}: Readonly<{ items: AccordionItemData[] }>): JSX.Element => (
+interface AccordionProps {
+  readonly items: AccordionItemData[];
+}
+
+const Accordion = ({ items }: AccordionProps): JSX.Element => (
   <ul className="flex list-none flex-col">
     {items.map((item, index) => (
       <AccordionItem

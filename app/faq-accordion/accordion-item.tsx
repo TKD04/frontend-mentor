@@ -9,6 +9,12 @@ import { useEffect, useRef, useState } from "react";
 import minusIcon from "@/public/faq-accordion/icon-minus.svg";
 import plusIcon from "@/public/faq-accordion/icon-plus.svg";
 
+interface AccordionItemProps {
+  readonly content: string;
+  readonly isOpenDefault: boolean;
+  readonly title: string;
+}
+
 const animateOpenAccordion = (content: gsap.TweenTarget) =>
   gsap.fromTo(
     content,
@@ -42,11 +48,7 @@ const AccordionItem = ({
   content,
   isOpenDefault,
   title,
-}: Readonly<{
-  content: string;
-  isOpenDefault: boolean;
-  title: string;
-}>): JSX.Element => {
+}: AccordionItemProps): JSX.Element => {
   const [isOpen, setIsOpen] = useState(isOpenDefault);
   const liReference = useRef<HTMLLIElement>(null);
   const detailsReference = useRef<HTMLDetailsElement>(null);

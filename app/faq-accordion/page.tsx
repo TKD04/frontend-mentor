@@ -10,10 +10,11 @@ import Accordion from "./accordion";
 import style from "./faq-accordion.module.css";
 import FAQS from "./faqs";
 
-const FAQS_ACCORDION_ITEMS: AccordionItemData[] = FAQS.map((faq) => ({
+const FAQS_ACCORDION_ITEMS = FAQS.map((faq, index) => ({
   content: faq.answer,
+  index,
   title: faq.question,
-}));
+})) satisfies readonly AccordionItemData[];
 
 const workSans = Work_Sans({
   subsets: ["latin"],

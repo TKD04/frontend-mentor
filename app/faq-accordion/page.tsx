@@ -14,6 +14,7 @@ const FAQS_ACCORDION_ITEMS: AccordionItemData[] = FAQS.map((faq) => ({
   content: faq.answer,
   title: faq.question,
 }));
+
 const workSans = Work_Sans({
   subsets: ["latin"],
   weight: ["400", "600", "700"],

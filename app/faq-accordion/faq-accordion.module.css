@@ -6,3 +6,18 @@
   /* I added a missing color using the color picker */
   --accordion-item-hover: hsl(280, 94%, 59%);
 }
+
+/*
+ * NOTE: Background images are defined here instead of Tailwind classes
+ * because Tailwind's arbitrary (e.g., bg-[url(...)]) do not
+ * automatically prepend the GitHub Pages 'basePath' during build.
+ */
+.background {
+  background-image: url("/faq-accordion/background-pattern-mobile.svg");
+}
+
+@media (min-width: 1024px) {
+  .background {
+    background-image: url("/faq-accordion/background-pattern-desktop.svg");
+  }
+}

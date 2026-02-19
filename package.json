@@ -33,6 +33,8 @@
     "eslint-plugin-unicorn": "^62.0.0",
     "eslint-plugin-vitest": "^0.5.4",
     "globals": "^16.5.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "postcss-load-config": "^6.0.1",
     "prettier": "^3.8.0",
     "prettier-plugin-tailwindcss": "^0.6.14",
@@ -61,6 +63,7 @@
     "dev": "next dev --turbopack",
     "format": "prettier . --write",
     "lint": "eslint . --cache",
+    "prepare": "husky",
     "test": "vitest"
   },
   "version": "0.1.0"

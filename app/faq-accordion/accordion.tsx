@@ -19,13 +19,7 @@ const Accordion = ({ items }: AccordionProps): JSX.Element => {
   const [openIndex, setOpenIndex] = useState<number | undefined>(0);
 
   const handleClick = (index: number): void => {
-    if (index === openIndex) {
-      setOpenIndex(undefined);
-
-      return;
-    }
-
-    setOpenIndex(index);
+    setOpenIndex((previous) => (index === previous ? undefined : index));
   };
 
   return (

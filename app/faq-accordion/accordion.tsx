@@ -7,7 +7,6 @@ import AccordionItem from "./accordion-item";
 
 export interface AccordionItemData {
   readonly content: string;
-  readonly index: number;
   readonly title: string;
 }
 
@@ -24,12 +23,13 @@ const Accordion = ({ items }: AccordionProps): JSX.Element => {
 
   return (
     <ul className="flex list-none flex-col">
-      {items.map((item) => (
+      {items.map((item, index) => (
         <AccordionItem
           handleClick={handleClick}
-          isOpen={item.index === openIndex}
+          index={index}
+          isOpen={index === openIndex}
           item={item}
-          key={item.index}
+          key={item.title}
         />
       ))}
     </ul>

@@ -10,9 +10,8 @@ import Accordion from "./accordion";
 import style from "./faq-accordion.module.css";
 import FAQS from "./faqs";
 
-const FAQS_ACCORDION_ITEMS = FAQS.map((faq, index) => ({
+const FAQS_ACCORDION_ITEMS = FAQS.map((faq) => ({
   content: faq.answer,
-  index,
   title: faq.question,
 })) satisfies readonly AccordionItemData[];
 

@@ -8,12 +8,14 @@ import type { AccordionItemData } from "./accordion";
 
 interface AccordionItemProps {
   readonly handleClick: (index: number) => void;
+  readonly index: number;
   readonly isOpen: boolean;
   readonly item: AccordionItemData;
 }
 
 const AccordionItem = ({
   handleClick,
+  index,
   isOpen,
   item,
 }: AccordionItemProps): JSX.Element => (
@@ -23,7 +25,7 @@ const AccordionItem = ({
         className="flex cursor-pointer items-center justify-between gap-4 leading-[1.2rem] font-semibold transition-colors hover:text-(--accordion-item-hover) lg:text-lg"
         onClick={(event_) => {
           event_.preventDefault();
-          handleClick(item.index);
+          handleClick(index);
         }}
       >
         {item.title}

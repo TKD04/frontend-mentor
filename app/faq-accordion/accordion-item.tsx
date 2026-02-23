@@ -22,7 +22,7 @@ const AccordionItem = ({
   <li className="border-b border-b-(--light-pink) py-5 first:pt-0 last:border-b-0 last:pb-0 md:py-6">
     <details open={isOpen}>
       <summary
-        className="flex cursor-pointer items-center justify-between gap-4 leading-[1.2rem] font-semibold transition-colors hover:text-(--accordion-item-hover) md:text-lg"
+        className="flex cursor-pointer items-center justify-between gap-4 leading-[1.2rem] font-semibold transition-colors hover:text-(--accordion-item-hover) active:text-(--accordion-item-hover) md:text-lg"
         onClick={(event_) => {
           event_.preventDefault();
           handleClick(index);

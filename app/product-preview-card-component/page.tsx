@@ -64,7 +64,7 @@ const Page = (): JSX.Element => (
           <span className="text-[0.8rem] line-through">$169.99</span>
         </section>
         <button
-          className="-mt-0.5 flex cursor-pointer appearance-none items-center justify-center gap-3 rounded-lg bg-(--dark-cyan) py-[0.87rem] text-(--white) transition-colors hover:bg-(--dark-cyan-hover)"
+          className="-mt-0.5 flex cursor-pointer appearance-none items-center justify-center gap-3 rounded-lg bg-(--dark-cyan) py-[0.87rem] text-(--white) transition-colors hover:bg-(--dark-cyan-hover) active:bg-(--dark-cyan-hover)"
           type="button"
         >
           <Image

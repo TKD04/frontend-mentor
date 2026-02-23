@@ -41,7 +41,7 @@ const Page = (): JSX.Element => (
         {SOCIAL_SITE_LINKS.map((socialSiteLink) => (
           <li key={socialSiteLink.siteName}>
             <Link href={socialSiteLink.url} rel="noopener noreferrer">
-              <div className="rounded-lg bg-(--grey) py-3 text-sm font-semibold transition-colors hover:bg-(--green) hover:text-(--dark-grey)">
+              <div className="rounded-lg bg-(--grey) py-3 text-sm font-semibold transition-colors hover:bg-(--green) hover:text-(--dark-grey) active:bg-(--green) active:text-(--dark-grey)">
                 {socialSiteLink.siteName}
               </div>
             </Link>

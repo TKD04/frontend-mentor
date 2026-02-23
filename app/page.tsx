@@ -23,7 +23,7 @@ const Page = (): JSX.Element => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500">
+              <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500 active:bg-gray-500">
                 Frontend Mentor Profile{" "}
                 <ExternalLink className="inline size-4" />
               </div>
@@ -35,7 +35,7 @@ const Page = (): JSX.Element => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500">
+              <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500 active:bg-gray-500">
                 GitHub Repository <ExternalLink className="inline size-4" />
               </div>
             </Link>
@@ -53,7 +53,7 @@ const Page = (): JSX.Element => (
               <ul className="flex list-none flex-col gap-4">
                 <li>
                   <Link href={solution.urls.demo}>
-                    <div className="rounded-md bg-green-600 px-4 py-2 font-medium transition-colors hover:bg-green-500">
+                    <div className="rounded-md bg-green-600 px-4 py-2 font-medium transition-colors hover:bg-green-500 active:bg-green-500">
                       Live Demo
                     </div>
                   </Link>
@@ -64,7 +64,7 @@ const Page = (): JSX.Element => (
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                    <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500">
+                    <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500 active:bg-gray-500">
                       Frontend Mentor <ExternalLink className="inline size-4" />
                     </div>
                   </Link>
@@ -75,7 +75,7 @@ const Page = (): JSX.Element => (
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                    <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500">
+                    <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500 active:bg-gray-500">
                       GitHub <ExternalLink className="inline size-4" />
                     </div>
                   </Link>

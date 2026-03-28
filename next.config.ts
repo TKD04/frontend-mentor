@@ -8,4 +8,5 @@ export default {
     unoptimized: true,
   },
   output: "export",
+  reactCompiler: true,
 } satisfies NextConfig;

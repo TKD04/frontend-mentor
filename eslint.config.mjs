@@ -14,6 +14,7 @@ import perfectionistPlugin from "eslint-plugin-perfectionist";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
 import reactRefreshPlugin from "eslint-plugin-react-refresh";
 import regexpPlugin from "eslint-plugin-regexp";
+import eslintPluginSecurity from "eslint-plugin-security";
 import eslintPluginSimpleImportSort from "eslint-plugin-simple-import-sort";
 import eslintPluginUnicorn from "eslint-plugin-unicorn";
 import globals from "globals";
@@ -47,6 +48,7 @@ export default defineConfig([
       airbnbXRules.base.importsStrict,
       airbnbXRules.typescript.typescriptEslintStrict,
       eslintPluginUnicorn.configs.all,
+      eslintPluginSecurity.configs.recommended,
       regexpPlugin.configs["flat/all"],
       perfectionistPlugin.configs["recommended-natural"],
     ],

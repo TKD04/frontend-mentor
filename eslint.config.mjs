@@ -1,4 +1,6 @@
+import e18e from "@e18e/eslint-plugin";
 import js from "@eslint/js";
+import json from "@eslint/json";
 import vitestPlugin from "@vitest/eslint-plugin";
 import { defineConfig, globalIgnores } from "eslint/config";
 import {
@@ -48,6 +50,7 @@ export default defineConfig([
       airbnbXRules.base.importsStrict,
       airbnbXRules.typescript.typescriptEslintStrict,
       eslintPluginUnicorn.configs.all,
+      e18e.configs.recommended,
       eslintPluginSecurity.configs.recommended,
       regexpPlugin.configs["flat/all"],
       perfectionistPlugin.configs["recommended-natural"],
@@ -200,6 +203,17 @@ export default defineConfig([
       vitest: {
         typecheck: true,
       },
+    },
+  },
+  {
+    // https://github.com/e18e/eslint-plugin?tab=readme-ov-file#linting-packagejson
+    extends: ["e18e/recommended"],
+    files: ["package.json"],
+    language: "json/json",
+    name: "dependencies",
+    plugins: {
+      e18e,
+      json,
     },
   },
   {

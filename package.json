@@ -1,4 +1,16 @@
 {
+  "name": "frontend-mentor",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "coverage": "vitest run --coverage",
+    "dev": "next dev --turbopack",
+    "format": "oxfmt",
+    "lint": "eslint . --cache",
+    "prepare": "husky",
+    "test": "vitest"
+  },
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "lucide-react": "^0.436.0",
@@ -39,25 +51,12 @@
     "globals": "^16.5.0",
     "husky": "^9.1.7",
     "nano-staged": "^0.9.0",
+    "oxfmt": "^0.58.0",
     "postcss-load-config": "^6.0.1",
-    "prettier": "^3.8.3",
-    "prettier-plugin-tailwindcss": "^0.6.14",
     "tailwindcss": "^4.3.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.59.3",
     "vitest": "^3.2.4"
   },
-  "name": "frontend-mentor",
-  "packageManager": "pnpm@11.1.3+sha512.c85357fe17ca12dd23dd7071822666dfd7e3cb76fe214e3370b5ea2fb34f2a231185509b63e717f3cd0acb38dd3f8d82bcd5e8172400ae678b70ea4fbed0896d",
-  "private": true,
-  "scripts": {
-    "build": "next build",
-    "coverage": "vitest run --coverage",
-    "dev": "next dev --turbopack",
-    "format": "prettier . --write",
-    "lint": "eslint . --cache",
-    "prepare": "husky",
-    "test": "vitest"
-  },
-  "version": "0.1.0"
+  "packageManager": "pnpm@11.1.3+sha512.c85357fe17ca12dd23dd7071822666dfd7e3cb76fe214e3370b5ea2fb34f2a231185509b63e717f3cd0acb38dd3f8d82bcd5e8172400ae678b70ea4fbed0896d"
 }

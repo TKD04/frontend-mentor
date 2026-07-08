@@ -8,7 +8,7 @@
     "source.removeUnusedImports": "always",
     "source.sort.json": "always"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "oxc.oxc-vscode",
   "editor.formatOnSave": true,
   "editor.linkedEditing": true,
   "editor.tabSize": 2,

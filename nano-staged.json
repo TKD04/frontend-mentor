@@ -1,4 +1,4 @@
 {
-  "*.{css,json,md}": ["prettier --write"],
-  "*.{ts?(x),mjs}": ["eslint", "prettier --write"]
+  "*": "oxfmt --no-error-on-unmatched-pattern",
+  "*.{ts?(x),mjs}": ["eslint"]
 }

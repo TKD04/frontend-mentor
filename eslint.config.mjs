@@ -14,6 +14,8 @@ import reactHooksPlugin from "eslint-plugin-react-hooks";
 import reactRefreshPlugin from "eslint-plugin-react-refresh";
 import regexpPlugin from "eslint-plugin-regexp";
 import eslintPluginSecurity from "eslint-plugin-security";
+import tailwindCssPlugin from "eslint-plugin-tailwindcss";
+import testingLibraryPlugin from "eslint-plugin-testing-library";
 import tsdocPlugin from "eslint-plugin-tsdoc";
 import eslintPluginUnicorn from "eslint-plugin-unicorn";
 import { defineConfig, globalIgnores } from "eslint/config";
@@ -163,7 +165,6 @@ export default defineConfig([
       reactRefreshPlugin.configs.next,
     ],
     files: ["{app,components,features}/**/*.tsx", "hooks/**/use*.ts"],
-    ignores: ["{app,components,features}/**/*.test.tsx"],
     name: "next",
     rules: {
       // Disabled "react/jsx-sort-props" in favor of "perfectionist/sort-jsx-props"
@@ -171,7 +172,17 @@ export default defineConfig([
     },
   },
   {
-    extends: [vitestPlugin.configs.all],
+    extends: [tailwindCssPlugin.configs.recommended],
+    files: ["{app,constants,components,features,hooks}/**/*.{ts,tsx}"],
+    name: "tailwindcss",
+    settings: {
+      tailwindcss: {
+        cssConfigPath: "./app/globals.css",
+      },
+    },
+  },
+  {
+    extends: [vitestPlugin.configs.all, testingLibraryPlugin.configs["flat/react"]],
     files: ["{app,components,features}/**/*.test.{ts,tsx}", "{constants,hooks,lib}/**/*.test.ts"],
     name: "test",
     settings: {

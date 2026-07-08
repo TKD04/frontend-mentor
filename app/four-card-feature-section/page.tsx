@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import type { JSX } from "react";
+
 import { Poppins } from "next/font/google";
 import Image from "next/image";
-import type { JSX } from "react";
 
 import calculatorIcon from "@/public/four-card-feature-section/icon-calculator.svg";
 import karmaIcon from "@/public/four-card-feature-section/icon-karma.svg";
@@ -27,8 +28,8 @@ const Page = (): JSX.Element => (
         <span className="font-semibold">Powered by Technology</span>
       </h1>
       <p className="max-w-xs text-center text-[15px] leading-6 md:max-w-lg">
-        Our Artificial Intelligence powered tools use millions of project data
-        points to ensure that your project is successful
+        Our Artificial Intelligence powered tools use millions of project data points to ensure that
+        your project is successful
       </p>
       <div className="mt-20 flex max-w-xs flex-col gap-[1.6rem] md:mt-[4.1rem] md:max-w-none md:flex-row md:items-center md:gap-[1.85rem]">
         <section className="grid basis-1/3 rounded-md border-t-4 border-t-(--cyan) bg-white p-7 shadow-[0_12px_12px_0_rgba(16,16,148,0.11)] md:px-8 md:pb-8">
@@ -52,8 +53,7 @@ const Page = (): JSX.Element => (
               Team Builder
             </h2>
             <p className="text-[0.8rem] leading-[1.4rem]">
-              Scans our talent network to create the optimal team for your
-              project
+              Scans our talent network to create the optimal team for your project
             </p>
             <Image
               alt="Team builder"

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import type { JSX } from "react";
+
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import type { JSX } from "react";
 
 import userAvatarImg from "@/public/social-links-profile/avatar-jessica.jpeg";
 
@@ -30,12 +31,8 @@ const Page = (): JSX.Element => (
           src={userAvatarImg}
         />
         <h1 className="mb-2 text-2xl font-semibold">Jessica Randall</h1>
-        <span className="mb-6 text-sm font-semibold text-(--green)">
-          London, United Kingdom
-        </span>
-        <p className="text-[14px] font-normal">
-          &quot;Front-end developer and avid reader.&quot;
-        </p>
+        <span className="mb-6 text-sm font-semibold text-(--green)">London, United Kingdom</span>
+        <p className="text-[14px] font-normal">&quot;Front-end developer and avid reader.&quot;</p>
       </div>
       <ul className="flex flex-col gap-4 text-center">
         {SOCIAL_SITE_LINKS.map((socialSiteLink) => (

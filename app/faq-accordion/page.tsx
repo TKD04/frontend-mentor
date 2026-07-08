@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import type { JSX } from "react";
+
 import { Work_Sans } from "next/font/google";
 import Image from "next/image";
-import type { JSX } from "react";
 
 import starIcon from "@/public/faq-accordion/icon-star.svg";
 
 import type { AccordionItemData } from "./accordion";
+
 import Accordion from "./accordion";
 import style from "./faq-accordion.module.css";
 import FAQS from "./faqs";

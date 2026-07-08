@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import type { JSX } from "react";
+
 import { Outfit } from "next/font/google";
 import Image from "next/image";
-import type { JSX } from "react";
 
 import qrCodeImg from "@/public/qr-code-component/image-qr-code.png";
 
@@ -31,8 +32,7 @@ const Page = (): JSX.Element => (
           Improve your front-end skills by building projects
         </h1>
         <p className="text-[15px] leading-5 font-normal text-(--grayish-blue)">
-          Scan the QR code to visit Frontend Mentor and take your coding skills
-          to the next level
+          Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
         </p>
       </div>
     </div>

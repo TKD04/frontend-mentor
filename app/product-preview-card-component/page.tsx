@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import type { JSX } from "react";
+
 import { Fraunces, Montserrat } from "next/font/google";
 import Image from "next/image";
-import type { JSX } from "react";
 
 import cartIcon from "@/public/product-preview-card-component/icon-cart.svg";
 import perfumePicDesktop from "@/public/product-preview-card-component/image-product-desktop.jpg";
@@ -52,13 +53,11 @@ const Page = (): JSX.Element => (
           Gabrielle Essence Eau De Parfum
         </h1>
         <p className="text-[14px] leading-[1.45rem]">
-          A floral, solar and voluptuous interpretation composed by Olivier
-          Polge, Perfumer-Creator for the House of CHANEL.
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator
+          for the House of CHANEL.
         </p>
         <section className="-mt-1 flex items-center justify-start gap-5">
-          <span
-            className={`${fraunces.className} text-[2rem] font-bold text-(--dark-cyan)`}
-          >
+          <span className={`${fraunces.className} text-[2rem] font-bold text-(--dark-cyan)`}>
             $149.99
           </span>
           <span className="text-[0.8rem] line-through">$169.99</span>

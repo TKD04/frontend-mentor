@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import type { JSX } from "react";
+
 import { Figtree } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import type { JSX } from "react";
 
 import articleIllustration from "@/public/blog-preview-card/illustration-article.svg";
 import authorAvatarImg from "@/public/blog-preview-card/image-avatar.webp";
@@ -34,16 +35,14 @@ const Page = (): JSX.Element => (
           <span className="rounded bg-(--yellow) px-3 py-1.5 text-xs font-extrabold md:text-sm">
             Learning
           </span>
-          <span className="text-xs font-medium md:text-sm">
-            Published 21 Dec 2023
-          </span>
+          <span className="text-xs font-medium md:text-sm">Published 21 Dec 2023</span>
         </div>
         <h1 className="pointer-events-auto text-xl font-extrabold transition-colors hover:text-(--yellow) active:text-(--yellow) md:text-2xl">
           <Link href="/blog-preview-card">HTML & CSS foundations</Link>
         </h1>
         <p className="text-sm font-medium text-(--grey) md:text-base">
-          These languages are the backbone of every website, defining structure,
-          content, and presentation.
+          These languages are the backbone of every website, defining structure, content, and
+          presentation.
         </p>
         <div className="mt-2 flex items-center gap-3">
           <Image

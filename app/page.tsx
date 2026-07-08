@@ -1,7 +1,8 @@
+import type { JSX } from "react";
+
 import { ExternalLink } from "lucide-react";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import type { JSX } from "react";
 
 import FRONTEND_MENTOR_SOLUTION_LINKS from "@/constants/frontend-mentor-solution-links";
 
@@ -12,9 +13,7 @@ const Page = (): JSX.Element => (
     className={`${inter.className} flex min-h-screen justify-center bg-gray-900 p-6 text-gray-100`}
   >
     <article className="w-full max-w-prose">
-      <h1 className="mb-8 text-4xl font-extrabold">
-        TKD04&apos;s Frontend Mentor Solutions
-      </h1>
+      <h1 className="mb-8 text-4xl font-extrabold">TKD04&apos;s Frontend Mentor Solutions</h1>
       <section className="mb-6 rounded-xl bg-gray-800 p-6 shadow">
         <ul className="grid list-none grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
           <li>
@@ -24,8 +23,7 @@ const Page = (): JSX.Element => (
               target="_blank"
             >
               <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500 active:bg-gray-500">
-                Frontend Mentor Profile{" "}
-                <ExternalLink className="inline size-4" />
+                Frontend Mentor Profile <ExternalLink className="inline size-4" />
               </div>
             </Link>
           </li>
@@ -70,11 +68,7 @@ const Page = (): JSX.Element => (
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href={solution.urls.github}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
+                  <Link href={solution.urls.github} rel="noopener noreferrer" target="_blank">
                     <div className="rounded-md bg-gray-600 px-4 py-2 font-medium transition-colors hover:bg-gray-500 active:bg-gray-500">
                       GitHub <ExternalLink className="inline size-4" />
                     </div>

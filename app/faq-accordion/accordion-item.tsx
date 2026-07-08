@@ -1,5 +1,6 @@
-import Image from "next/image";
 import type { JSX } from "react";
+
+import Image from "next/image";
 
 import minusIcon from "@/public/faq-accordion/icon-minus.svg";
 import plusIcon from "@/public/faq-accordion/icon-plus.svg";
@@ -13,12 +14,7 @@ interface AccordionItemProps {
   readonly item: AccordionItemData;
 }
 
-const AccordionItem = ({
-  handleClick,
-  index,
-  isOpen,
-  item,
-}: AccordionItemProps): JSX.Element => (
+const AccordionItem = ({ handleClick, index, isOpen, item }: AccordionItemProps): JSX.Element => (
   <li className="border-b border-b-(--light-pink) py-5 first:pt-0 last:border-b-0 last:pb-0 md:py-6">
     <details open={isOpen}>
       <summary
